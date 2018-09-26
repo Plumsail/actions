@@ -1,5 +1,5 @@
-SP connector (SharePoint)
-==================================
+Microsoft Flow actions
+======================
 
 Provides advanced set of Microsoft Flow actions for SharePoint. It allows you to change permissions on sites, lists, list items. You can create sites from templates and many more. 
 

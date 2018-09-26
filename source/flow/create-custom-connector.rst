@@ -11,16 +11,7 @@ Click *'Create custom connector → Import an OpenAPI from URL'*:
 .. image:: ../_static/img/getting-started/connector-from-url.png
    :alt: Connector from URL
 
-There are two connectors available in Plumsail Actions:
-
-- `Plumsail Documents <../flow/actions/document-processing.html>`_ - provides a set of actions for operations with Documents
-- `Plumsail SharePoint <../flow/actions/sharepoint-processing.html>`_ - provides a set of actions for operations with SharePoint
-
-If you want to use *'Plumsail Documents'*, fill in name *'Plumsail Documents'* and swagger definition URL:
-
-  https://api.plumsail.com/swagger/DocumentsFlow/swagger.json
-
-If you want to use *'Plumsail SharePoint'*, fill in name *'Plumsail SharePoint'* and swagger definition URL:
+Fill in name *'Plumsail SharePoint'* and swagger definition URL:
 
   https://api.plumsail.com/swagger/SharePointFlow/swagger.json
 
