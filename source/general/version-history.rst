@@ -53,6 +53,12 @@ Version 1.3.2
 
 - Minor bug fixes
 
+Version 1.2.8
+-------------
+
+- Added statistics of calls to Plumsail Documents page in Plumsail Account
+- Minor bug fixes
+
 Version 1.2.1
 -------------
 
@@ -73,7 +79,7 @@ Version 1.2.1
 
 - Minor bug fixes
 
-Version 1.0.1
+Version 1.0.2
 -------------
 
 - Public REST API core
