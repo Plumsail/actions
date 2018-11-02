@@ -50,7 +50,7 @@ Plumsail Actions Documentation
     :name: toc-test-api
     :maxdepth: 2
     
-    REST API Reference <https://api.plumsail.com/swagger>  
+    REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=SharePoint>  
 
   .. rst-class:: single-page-nav
 
