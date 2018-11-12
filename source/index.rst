@@ -51,6 +51,7 @@ Plumsail Actions Documentation
     general/licensing-details
     general/upgrade-renew
     general/sla
+    general/architecture
     general/security-policy
     Privacy policy <https://plumsail.com/privacy-policy/actions-privacy-policy/>
 
