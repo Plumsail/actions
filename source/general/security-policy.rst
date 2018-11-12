@@ -1,5 +1,10 @@
-Security policy
-###############
+Data protection and security
+============================
+
+Privacy Policy
+--------------
+
+General information about privacy protection can be found in the `Plumsail Actions Privacy Policy <privacy-policy.html>`_.
 
 Application security
 --------------------
