@@ -10,7 +10,7 @@ High-level architecture
 During the designing process, our goal was to build a scalable, resilient, and highly available product. 
 
 The core component of this architecture is a web front end (API) that serves client requests, checks authentication and creates new jobs in Azure Queue. 
-The workers perform resource-intensive tasks like document conversion, calling SharePoint and so on. 
+The workers perform resource-intensive tasks like calling SharePoint and so on. 
 
 The web front end communicates with the worker through a message queue. 
 It allows us independently upgrade and scale the services without any downtime. 

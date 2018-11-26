@@ -42,11 +42,9 @@ Plumsail Actions Documentation
     general/version-history
     general/licensing-details
     general/upgrade-renew
-    general/sla
     general/architecture
     general/security-policy
-    general/upgrade-renew
-    general/sla    
+    general/sla
 
   .. toctree::
     :caption: REST API
