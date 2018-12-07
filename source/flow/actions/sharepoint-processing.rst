@@ -2564,3 +2564,42 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
 
 .. image:: ../../_static/img/flow/sharepoint/StartSharePointListWorkflowExample.png
    :alt: Start SharePoint List Workflow Example
+
+
+Provision PnP template to SharePoint
+-----------------------------------------
+Deploys a PnP template to SharePoint. Using this action you can create different objects such as: sites, pages, lists with custom columns, etc.
+
+.. rubric:: Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  XML Template Content
+       -  PnP Provision XML template
+       -   ::
+
+           <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+              <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.3.1811.0, Culture=neutral, PublicKeyToken=null" />
+                <pnp:Templates ID="CONTAINER-MYPAGEWITHWEBPART">
+                  <pnp:ProvisioningTemplate ID="MYPAGEWITHWEBPART" Version="1" Scope="Undefined">
+                    <pnp:Pages>
+                      <pnp:Page Url="{site}/sitepages/TestPage.aspx" Overwrite="true" Layout="ThreeColumns">
+                      </pnp:Page>
+                      </pnp:Pages>
+                  </pnp:ProvisioningTemplate>
+                </pnp:Templates>
+          </pnp:Provisioning>
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/PnPProvisionExample.png
+   :alt: PnP Provision Example
