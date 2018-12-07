@@ -2573,7 +2573,7 @@ Deploys a PnP template to SharePoint. Using this action you can create different
 .. rubric:: Parameters
 
 .. list-table::
-    :header-rows: 2
+    :header-rows: 1
     :widths: 10 30 20
 
     *  -  Parameter
