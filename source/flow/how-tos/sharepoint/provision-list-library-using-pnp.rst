@@ -9,7 +9,48 @@ This action allows you to create different objects such as: pages, lists with cu
 Create a SharePoint list with custom columns
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let's say we need to create a Sharepoint list with 3 columns.
+Let's say we need to create a Sharepoint list with 3 text columns. PnP script allows creting diffeetn list types: 
+GenericList, DocumentLibrary, Survey, etc. To define the list type we need to use tag TemplateType
+
+<pnp:ListInstance Title="Employees" TemplateType="100" Url="Lists/Employees">
+
+TemplateType = 100 means GenericList.
+
+Also we decided to create 3 text columns. Then we need to use tag Type:
+
+<Field Type="Text" DisplayName="Test1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{78698283-db53-488b-8a8b-c097c8a29026}"/>
+
+The whole script looks like this:
+
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.3.1811.0, Culture=neutral, PublicKeyToken=null" />
+  <pnp:Templates ID="CONTAINER-LISTDEMO">
+    <pnp:ProvisioningTemplate ID="LISTDEMO" Version="1" Scope="Undefined">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Employees" TemplateType="100" Url="Lists/Employees">
+          <pnp:Views>
+            <View Name="MainView" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/Employees/AllItems.aspx">
+
+              <ViewFields>
+                <FieldRef Name="Test1" />
+                <FieldRef Name="Test2" />
+                <FieldRef Name="Test3" />
+              </ViewFields>
+
+            </View>
+          </pnp:Views>
+
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="Test1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{78698283-db53-488b-8a8b-c097c8a29026}"/>
+            <Field Type="Text" DisplayName="Test2" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{78698283-db53-488b-8a8b-c097c8a29027}"/>
+            <Field Type="Text" DisplayName="Test3" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{78698283-db53-488b-8a8b-c097c8a29028}"/>
+          </pnp:Fields>
+  
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
 
 
 Conclusion
