@@ -2581,7 +2581,12 @@ Deploys a PnP template to SharePoint. Using this action you can create different
        -  Example
     *  -  XML Template Content
        -  PnP Provision XML template
-       -  <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
+       -  
+       
+       .. code:: html
+
+
+       <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
               <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.3.1811.0, Culture=neutral, PublicKeyToken=null" />
                 <pnp:Templates ID="CONTAINER-MYPAGEWITHWEBPART">
                   <pnp:ProvisioningTemplate ID="MYPAGEWITHWEBPART" Version="1" Scope="Undefined">
@@ -2592,6 +2597,8 @@ Deploys a PnP template to SharePoint. Using this action you can create different
                   </pnp:ProvisioningTemplate>
                 </pnp:Templates>
           </pnp:Provisioning>
+
+          
        
 
     *  -  SharePoint Site URL

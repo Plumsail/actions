@@ -9,7 +9,7 @@ This action allows you to create different objects such as: pages, lists with cu
 Create a SharePoint list with custom columns
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let's say we need to create a Sharepoint list with 3 text columns. PnP script allows creting diffeetn list types: 
+Let's say we need to create a Sharepoint list with 3 text columns. PnP script allows creating different list types: 
 GenericList, DocumentLibrary, Survey, etc. To define the list type we need to use tag TemplateType
 
 <pnp:ListInstance Title="Employees" TemplateType="100" Url="Lists/Employees">
@@ -53,6 +53,11 @@ The whole script looks like this:
     </pnp:ProvisioningTemplate>
   </pnp:Templates>
 </pnp:Provisioning>
+
+
+To create a library we need to change TemplateType. In this case it'll be TemplateType = 101. 
+You can find all TemplateType codes in `this article <https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.listtemplatetype.aspx>`_ 
+
 
 
 Conclusion
