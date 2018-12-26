@@ -11,7 +11,7 @@ First of all you need to connect to the source site using this command
 
 Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite
 
-There are 2 availbel commands to get a template:
+There are 2 available commands to get a template:
 
 Get-PnPProvisioningTemplate and Get-PnPProvisioningTemplateFromGallery
 
@@ -24,22 +24,24 @@ We'll use first command
 
 Get-PnPProvisioningTemplate -Out path
 
-It creates and saves a template in the path. Then we can get the file in MS flow and select it in `Provision PnP template to SharePoint`_ .
+You can also modify already created provisioning template using `other PnP functions`_.
+
+After that n we can get the file in MS flow and select it in `Provision PnP template to SharePoint`_ .
 
 |flow|
 
 Conclusion
 ----------
 
-That is it. These few simple steps can help you to manage your company's projects more effectively.
-
-.. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_ explaining how to Create SharePoint site by a custom template and grant permissions in Microsoft Flow and Azure Logic Apps.
+PowerShell PnP provides many usefull function to create and modify PnP provisioning templates. 
+However, you can also create a PnP template `manually`_ and insert PnP code directly into Plumsail `Provision PnP template to SharePoint`_
 
 
 .. _Plumsail SharePoint connector: https://plumsail.com/actions/sharepoint/
 .. _oficial MIcrosoft documentation: https://plumsail.com/actions/sharepoint/
-.. _Provision PnP template to SharePoint: ../../actions/sharepoint-processing.rst#provision-pnp-template-to-sharepoint
+.. _other PnP functions: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/add-pnpdatarowstoprovisioningtemplate?view=sharepoint-ps
+.. _Provision PnP template to SharePoint: ../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint
+.. _manually: ../../actions/sharepoint-processing.rst#provision-pnp-template-to-sharepoint
 .. _registering an account: ../../../getting-started/sign-up.html
 
 .. |flow| image:: ../../../_static/img/flow/sharepoint/provision-pnp-template-to-sp.png
