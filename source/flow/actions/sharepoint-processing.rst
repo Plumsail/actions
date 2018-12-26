@@ -2581,7 +2581,7 @@ Deploys a PnP template to SharePoint. Using this action you can create different
        -  Example
     *  -  XML Template Content
        -  PnP Provision XML template
-       -  Check out this example
+       -  Check out this `example <https://docs.microsoft.com/en-us/connectors/office365connector/#Send_approval_email>`_
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
