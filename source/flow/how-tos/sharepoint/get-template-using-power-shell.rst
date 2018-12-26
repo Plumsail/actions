@@ -9,7 +9,7 @@ Create a SharePoint list with custom columns
 
 First of all you need to connect to the source site using this command
 
-..code: Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite
+.. code : Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite
 
 Conclusion
 ----------
