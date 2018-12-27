@@ -13,16 +13,20 @@ Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite
 
 There are 2 available commands to get a template:
 
-Get-PnPProvisioningTemplate and Get-PnPProvisioningTemplateFromGallery
+:code:Get-PnPProvisioningTemplate 
+
+and  
+
+:code:Get-PnPProvisioningTemplateFromGallery
 
 First one creates a provisioning site template, including all data and all settings.
-Second - gets template from existing templates and searches the galery.
+Second - creates template from existing templates and searches the galery.
 
-You can find more information about the commands and available options in `oficial MIcrosoft documentation`_ .
+You can find more information about the commands and available options in `official MIcrosoft documentation`_ .
 
 We'll use first command
 
-Get-PnPProvisioningTemplate -Out path
+:code: Get-PnPProvisioningTemplate -Out path
 
 You can also modify already created provisioning template using `other PnP functions`_.
 
@@ -33,14 +37,14 @@ After that we can get the file in MS flow and select it in `Provision PnP templa
 Conclusion
 ----------
 
-PowerShell PnP provides many usefull function to create and modify PnP provisioning templates. 
+PowerShell PnP provides many usefull functions to create and modify PnP provisioning templates. 
 However, you can also create a PnP template `manually`_ and insert PnP code directly into Plumsail `Provision PnP template to SharePoint`_
 
 |flow1|
 
 
 .. _Plumsail SharePoint connector: https://plumsail.com/actions/sharepoint/
-.. _oficial MIcrosoft documentation: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/add-pnpapp?view=sharepoint-ps
+.. _official MIcrosoft documentation: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/add-pnpapp?view=sharepoint-ps
 .. _other PnP functions: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/add-pnpdatarowstoprovisioningtemplate?view=sharepoint-ps
 .. _Provision PnP template to SharePoint: ../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint
 .. _manually: ../../actions/sharepoint-processing.rst#provision-pnp-template-to-sharepoint
