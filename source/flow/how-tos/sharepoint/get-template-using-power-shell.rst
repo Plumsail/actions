@@ -13,11 +13,11 @@ Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite
 
 There are 2 available commands to get a template:
 
-:code: `Get-PnPProvisioningTemplate` 
+:code:`Get-PnPProvisioningTemplate` 
 
 and  
 
-:code: `Get-PnPProvisioningTemplateFromGallery`
+:code:`Get-PnPProvisioningTemplateFromGallery`
 
 First one creates a provisioning site template, including all data and all settings.
 Second - creates template from existing templates and searches the galery.
@@ -26,7 +26,7 @@ You can find more information about the commands and available options in `offic
 
 We'll use first command
 
-:code: `Get-PnPProvisioningTemplate -Out path`
+:code:`Get-PnPProvisioningTemplate -Out path`
 
 You can also modify already created provisioning template using `other PnP functions`_.
 
