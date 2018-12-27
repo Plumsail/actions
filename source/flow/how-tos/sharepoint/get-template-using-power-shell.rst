@@ -39,6 +39,7 @@ Conclusion
 
 PowerShell PnP provides many usefull functions to create and modify PnP provisioning templates. 
 However, you can also create a PnP template `manually`_ and insert PnP code directly into Plumsail `Provision PnP template to SharePoint`_
+If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
 |flow1|
 
