@@ -89,7 +89,7 @@ Grant specific permissions on site to a SharePoint user or Group with the help o
 Remove Permissions from SharePoint Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from site for specified SharePoint user or group with the help of Microsoft Flow.
+Delete permissions from site for specified SharePoint user or group with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -109,16 +109,6 @@ Delete specific permissions from site for specified SharePoint user or group wit
     *  -  User or group
        -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
-    *  -  Role Type
-       -  permission levels:
-                   * Full control
-                   * Design
-                   * Edit
-                   * Contribute
-                   * Read
-                   * ViewOnly
-                
-       -  Read
     *  -  SharePoint Site Url
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
@@ -242,7 +232,7 @@ Grant specific permissions to a user on a SharePoint list with the help of Micro
 Remove Permissions from SharePoint List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from a user on a SharePoint list with the help of Microsoft Flow.
+Delete permissions from a user on a SharePoint list with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -265,16 +255,6 @@ Delete specific permissions from a user on a SharePoint list with the help of Mi
     *  -  User or group
        -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
-    *  -  Role Type
-       -  permission levels:
-                   * Full control
-                   * Design
-                   * Edit
-                   * Contribute
-                   * Read
-                   * ViewOnly
-                
-       -  Read
     *  -  SharePoint Site Url
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
@@ -407,7 +387,7 @@ Grant specific permissions to a user on a SharePoint list item with the help of 
 Remove Permissions from SharePoint Item
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Delete specific permissions from a user on a SharePoint list item with the help of Microsoft Flow.
+Delete permissions from a user on a SharePoint list item with the help of Microsoft Flow.
 
 .. rubric:: Input Parameters
 
@@ -433,16 +413,6 @@ Delete specific permissions from a user on a SharePoint list item with the help 
     *  -  User or group
        -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  :code:`user@contoso.com`
-    *  -  Role Type
-       -  permission levels:
-                   * Full control
-                   * Design
-                   * Edit
-                   * Contribute
-                   * Read
-                   * ViewOnly
-                
-       -  Read
     *  -  SharePoint Site Url
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
