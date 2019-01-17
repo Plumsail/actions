@@ -38,6 +38,7 @@ You can find the documentation for all operations included in "Change Permission
 - :ref:`remove-permissions-item`
 - :ref:`remove-all-permissions-item`
 - :ref:`restore-inheritance-permissions-item`
+- :ref:`grant-permissions-folder`
 
 
 .. _grant-permissions-site:
@@ -495,6 +496,50 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 
 .. image:: ../../_static/img/flow/sharepoint/RestorePermissionsOnItemExample.png
    :alt: Restore Permissions Inheritance for SharePoint Item Example
+
+   .. _grant-permissions-folder:
+
+Grant Permissions on SharePoint Folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Grant specific permissions on folder to a SharePoint user or Group with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Grant' for this case.
+       -  Grant
+    *  -  Target
+       -  The target of action: Site, List, Item. You should pick 'Site' for this case.
+       -  Site
+    *  -  User or group
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  :code:`user@contoso.com`
+    *  -  Role Type
+       -  permission levels:
+                   * Full control
+                   * Design
+                   * Edit
+                   * Contribute
+                   * Read
+                   * ViewOnly
+                
+       -  Read
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/GrantPermissionsOnSiteFolder.png
+   :alt: Grant Permissions on SharePoint Folder Example
 
 Activate SharePoint Feature
 ----------------------------------
