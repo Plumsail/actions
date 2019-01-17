@@ -39,7 +39,13 @@ You can find the documentation for all operations included in "Change Permission
 - :ref:`remove-all-permissions-item`
 - :ref:`restore-inheritance-permissions-item`
 - :ref:`grant-permissions-folder`
-
+- :ref:`remove-permissions-folder`
+- :ref:`remove-all-permissions-folder`
+- :ref:`restore-inheritance-permissions-folder`
+- :ref:`grant-permissions-document`
+- :ref:`remove-permissions-document`
+- :ref:`remove-all-permissions-document`
+- :ref:`restore-inheritance-permissions-document`
 
 .. _grant-permissions-site:
 
@@ -497,7 +503,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 .. image:: ../../_static/img/flow/sharepoint/RestorePermissionsOnItemExample.png
    :alt: Restore Permissions Inheritance for SharePoint Item Example
 
-   .. _grant-permissions-folder:
+.. _grant-permissions-folder:
 
 Grant Permissions on SharePoint Folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -517,11 +523,8 @@ Grant specific permissions on folder to a SharePoint user or Group with the help
        -  The type of action for changing permissions. You should pick 'Grant' for this case.
        -  Grant
     *  -  Target
-       -  The target of action: Site, List, Item. You should pick 'Site' for this case.
-       -  Site
-    *  -  User or group
-       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
-       -  :code:`user@contoso.com`
+       -  The target of action: Site, List, Item, Folder, Document. You should pick 'Folder' for this case.
+       -  Folder
     *  -  Role Type
        -  permission levels:
                    * Full control
@@ -532,14 +535,285 @@ Grant specific permissions on folder to a SharePoint user or Group with the help
                    * ViewOnly
                 
        -  Read
+    *  -  Folder URL
+       -  The URL of the source folder. You can use full URL as well as domain relative URL.
+       -  :code:`/Sales/96`
+          :code:`https://contoso.sharepoint.com/sites/subSite/Sales/96`
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+    *  -  User or group
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  :code:`user@contoso.com`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/GrantPermissionsOnFolder.png
+   :alt: Grant Permissions on SharePoint Folder Example
+
+.. _remove-permissions-folder:
+
+Remove Permissions from SharePoint Folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Delete permissions from a user on a SharePoint folder with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Remove' for this case.
+       -  Remove
+    *  -  Target
+       -  The target of action: Site, List, Item, Folder, Document. You should pick 'Folder' for this case.
+       -  Folder
+    *  -  Folder URL
+       -  The URL of the source folder. You can use full URL as well as domain relative URL.
+       -  :code:`/Sales/96`
+          :code:`https://contoso.sharepoint.com/sites/subSite/Sales/96`
+    *  -  User or group
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  :code:`user@contoso.com`
     *  -  SharePoint Site Url
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/sharepoint/GrantPermissionsOnSiteFolder.png
-   :alt: Grant Permissions on SharePoint Folder Example
+.. image:: ../../_static/img/flow/sharepoint/RemovePermissionsOnFolderExample.png
+   :alt: Remove Permissions from SharePoint Folder Example
+
+.. _remove-all-permissions-folder:
+
+Remove All Permissions from SharePoint Folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Removing all user permissions from a SharePoint Folder with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RemoveAll' for this case.
+       -  RemoveAll
+    *  -  Target
+       -  The target of action: Site, List, Item, Folder, Document. You should pick 'Folder' for this case.
+       -  Folder
+    *  -  Folder URL
+       -  The URL of the source folder. You can use full URL as well as domain relative URL.
+       -  :code:`/Sales/96`
+          :code:`https://contoso.sharepoint.com/sites/subSite/Sales/96`
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemoveAllPermissionsOnFolderExample.png
+   :alt: Remove All Permissions from SharePoint Folder Example    
+
+.. _restore-inheritance-permissions-folder:
+
+Restore Permissions Inheritance for SharePoint Folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Remove unique permissions and restore permission inheritance on a SharePoint folder with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RestoreInheritance' for this case.
+       -  RestoreInheritance
+    *  -  Target
+       -  The target of action: Site, List, Item, Folder, Document. You should pick 'Folder' for this case.
+       -  Folder
+    *  -  Folder URL
+       -  The URL of the source folder. You can use full URL as well as domain relative URL.
+       -  :code:`/Sales/96`
+          :code:`https://contoso.sharepoint.com/sites/subSite/Sales/96`
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RestorePermissionsOnFolderExample.png
+   :alt: Restore Permissions Inheritance for SharePoint Folder Example
+
+.. _grant-permissions-document:
+
+Grant Permissions on SharePoint Document
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Grant specific permissions on document to a SharePoint user or Group with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Grant' for this case.
+       -  Grant
+    *  -  Target
+       -  The target of action: Site, List, Item, Folder, Document. You should pick 'Document' for this case.
+       -  Document
+    *  -  Role Type
+       -  permission levels:
+                   * Full control
+                   * Design
+                   * Edit
+                   * Contribute
+                   * Read
+                   * ViewOnly
+                
+       -  Read
+    *  -  Document URL
+       -  The URL of the source document. You can use full URL as well as domain relative URL.
+       -  :code:`/Lib/Doc.docx`
+          :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Doc.docx`
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+    *  -  User or group
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  :code:`user@contoso.com`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/GrantPermissionsOnDocument.png
+   :alt: Grant Permissions on SharePoint Document Example
+
+.. _remove-permissions-document:
+
+Remove Permissions from SharePoint Document
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Delete permissions from a user on a SharePoint document with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'Remove' for this case.
+       -  Remove
+    *  -  Target
+       -  The target of action: Site, List, Item, Folder, Document. You should pick 'Document' for this case.
+       -  Document
+    *  -  Document URL
+       -  The URL of the source document. You can use full URL as well as domain relative URL.
+       -  :code:`/Lib/Doc.docx`
+          :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Doc.docx`
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+    *  -  User or group
+       -  Login, Email or Name of a User or Group. Also you can specify multiple items using semicolon ';' delimited
+       -  :code:`user@contoso.com`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemovePermissionsOnDocumentExample.png
+   :alt: Remove Permissions from SharePoint Document Example
+
+.. _remove-all-permissions-document:
+
+Remove All Permissions from SharePoint Document
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Removing all user permissions from a SharePoint Document with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RemoveAll' for this case.
+       -  RemoveAll
+    *  -  Target
+       -  The target of action: Site, List, Item, Folder, Document. You should pick 'Document' for this case.
+       -  Document
+    *  -  Document URL
+       -  The URL of the source document. You can use full URL as well as domain relative URL.
+       -  :code:`/Lib/Doc.docx`
+          :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Doc.docx`
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemoveAllPermissionsOnDocumentExample.png
+   :alt: Remove All Permissions from SharePoint Document Example    
+
+.. _restore-inheritance-permissions-document:
+
+Restore Permissions Inheritance for SharePoint Document
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Remove unique permissions and restore permission inheritance on a SharePoint document with the help of Microsoft Flow.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Action type
+       -  The type of action for changing permissions. You should pick 'RestoreInheritance' for this case.
+       -  RestoreInheritance
+    *  -  Target
+       -  The target of action: Site, List, Item, Folder, Document. You should pick 'Document' for this case.
+       -  Document
+    *  -  Document URL
+       -  The URL of the source document. You can use full URL as well as domain relative URL.
+       -  :code:`/Lib/Doc.docx`
+          :code:`https://contoso.sharepoint.com/sites/subSite/Lib/Doc.docx`
+    *  -  SharePoint Site Url
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RestorePermissionsOnDocumentExample.png
+   :alt: Restore Permissions Inheritance for SharePoint Document Example
 
 Activate SharePoint Feature
 ----------------------------------
