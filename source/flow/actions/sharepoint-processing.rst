@@ -1020,6 +1020,14 @@ Create Team SharePoint Site
        -  The title of the site to create.
        -  Team site
 
+    *  -  Site Design
+       -  The custom site design that will be used.  This parameter may be in use only for `SP Custom Credentials key type. <https://plumsail.com/docs/actions/v1.x/getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ You can select a value from a dropdown list of the available values. If in some reasons you can't see target site design, you can specify it manually by its identifier value.
+       -  ::
+
+            Contoso customer tracking
+            a317d0e7-a13d-4427-a302-2875c628a46e
+            
+
     *  -  Classification
        -  The Site classification to use.
        -  HR
@@ -1076,12 +1084,14 @@ Create Communication SharePoint Site
        -  Site for HR
 
     *  -  Site Design
-       -  The built-in site design to used.
+       -  The built-in and custom site design to use. If you used `SP Custom Credentials key type <https://plumsail.com/docs/actions/v1.x/getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ you can select a value from a dropdown list of the available values. If in some reasons you can't see target site design, you can specify it manually by its identifier value or name (for built-in values).
        -  ::
 
             Topic
             Showcase
             Blank
+            Contoso customer tracking
+            a317d0e7-a13d-4427-a302-2875c628a46e
 
     *  -  LCID
        -  The language to use for the site. If not specified will default to the language setting of the clientcontext.
