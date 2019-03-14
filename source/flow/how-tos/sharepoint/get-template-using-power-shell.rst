@@ -6,10 +6,16 @@ which can be used with Plumsail SharePoint connector `Provision PnP template to 
 
 Create a SharePoint list with custom columns
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+First of all you need to install SharePoint PnP library of PowerShell commands.
+Microsoft provides 3 ways to install the cmdlets and you can find them in the `official MS article`_ .
 
-First of all you need to connect to the source site using this command
+After installing the cmdlets you need to connect to your SharePoint site:
 
-Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite
+:code:`Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite`
+
+or in case of multi-factor authentication use
+
+:code:`Connect-PnPOnline -Url https://yoursite.sharepoint.com -UseWebLogin`
 
 There are 2 available commands to get a template:
 
@@ -45,6 +51,7 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 
 
 .. _Plumsail SharePoint connector: https://plumsail.com/actions/sharepoint/
+.. _official MS article: https://docs.microsoft.com/ru-ru/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps#installation
 .. _official MIcrosoft documentation: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/add-pnpapp?view=sharepoint-ps
 .. _other PnP functions: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/add-pnpdatarowstoprovisioningtemplate?view=sharepoint-ps
 .. _Provision PnP template to SharePoint: ../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint
