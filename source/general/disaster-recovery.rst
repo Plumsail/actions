@@ -75,4 +75,4 @@ To process the tasks, we use a group of workers that do all required processing.
 .. _CloudFlare: https://www.cloudflare.com/
 .. _Azure SQL: https://azure.microsoft.com/en-us/support/legal/sla/sql-database/v1_0/
 .. _Azure Storage SLA: https://azure.microsoft.com/en-us/support/legal/sla/storage/v1_0/
-.. _architecture: arhitecture.html
+.. _architecture: architecture.html

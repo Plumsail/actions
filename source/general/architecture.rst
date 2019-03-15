@@ -49,8 +49,5 @@ For SharePoint actions, we are storing credentials attached to API key. That dat
 Related documents: 
 
 * `Disaster Recovery Plan <disaster-recovery.html>`_
-* `Azure SOC 1 Report <../_static/files/general/security/azure-soc-1-type-2-report-2017-10-01-to-2018-9-30.pdf>`_  
-* `Azure SOC 2 Report <../_static/files/general/security/azure-soc-2-type-2-report-2017-10-01-to-2018-9-30.pdf>`_  
-* `Azure SOC 3 Report <../_static/files/general/security/azure-soc-3-report-2017-10-01-to-2018-9-30.pdf>`_
 
 .. _by default: https://azure.microsoft.com/sv-se/blog/announcing-default-encryption-for-azure-blobs-files-table-and-queue-storage/
