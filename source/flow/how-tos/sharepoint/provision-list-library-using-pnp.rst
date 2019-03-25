@@ -1,64 +1,44 @@
-Provision SharePoint list or library with custom columns using PnP
+How to create SharePoint list from PnP provisioning template in Microsoft Flow
 ============================================================================================================================
 
-This article will show how to use a PnP script to create a SharePoint list or library and how to use this script in Microsoft Flow.
+This article will show how to create a PnP provisoning template with a list or library and then apply the template in Microsoft Flow.
 We will use `Provision PnP template to SharePoint  <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumasail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 This action allows you to create different objects such as: pages, lists with custom columns, libraries, subsites, etc.
 
 
-Create a SharePoint list with custom columns
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+First of all, to create a PnP provisioning template you need to connect to the source SharePoint instance using PnP powershel commandlets library.
+This `article`_ shows how to do this and also how to get a PnP provisioning template from the whole site.
 
-Let's say we need to create a Sharepoint list with 3 text columns. PnP script allows creating different list types: 
-GenericList, DocumentLibrary, Survey, etc. To define the list type we need to use tag TemplateType
+The main function Get-PnPProvisioningTemplate has several `options`_, in this case we're interested in option -Handlers. This option allows us to specify a Sharepoint object to get template from.
+For example, it may be a SharePoint list.
 
-<pnp:ListInstance Title="Employees" TemplateType="100" Url="Lists/Employees">
+:code:`Get-PnPProvisioningTemplate -Out template.pnp -Handlers Lists`
 
-TemplateType = 100 means GenericList.
+However, in a real situation we need to save not all existing lists but one specific list. 
+The next PowerShell script helps us to reach the goal:
 
-Also we decided to create 3 text columns. Then we need to use tag Type:
+..code::
 
-<Field Type="Text" DisplayName="Test1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{78698283-db53-488b-8a8b-c097c8a29026}"/>
+$listName = "MyList";
+$outputTemplateFileName = "C:\Temp\template.xml";
+$template = Get-PnPProvisioningTemplate -OutputInstance -Handlers Lists
+$listTemplate = $template.Lists | Where-Object { $_.Title -eq $listName }
+$template.Lists.Clear()
+$template.Lists.Add($listTemplate)
+Save-PnPProvisioningTemplate -InputInstance $template -Out $outputTemplateFileName
 
-The whole script looks like this:
+Let's take a closer look at the script:
 
-.. code:: html
+- We define 2 variables with list name and the PnP template path
+- Then take a template from the whole site
+- Exclude all lists from the initial template and save on the sprcific list.
+- Create new template with  only specified list inside.
 
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema">
-  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.3.1811.0, Culture=neutral, PublicKeyToken=null" />
-  <pnp:Templates ID="CONTAINER-LISTDEMO">
-    <pnp:ProvisioningTemplate ID="LISTDEMO" Version="1" Scope="Undefined">
-      <pnp:Lists>
-        <pnp:ListInstance Title="Employees" TemplateType="100" Url="Lists/Employees">
-          <pnp:Views>
-            <View Name="MainView" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/Employees/AllItems.aspx">
+If you open the resulting xml template you'll see that there is a description for only one list.
 
-              <ViewFields>
-                <FieldRef Name="Test1" />
-                <FieldRef Name="Test2" />
-                <FieldRef Name="Test3" />
-              </ViewFields>
+Then you may apply the resulting xml using Plumsail SharePoint connector `Provision PnP template to SharePoint`_ .
 
-            </View>
-          </pnp:Views>
-
-          <pnp:Fields>
-            <Field Type="Text" DisplayName="Test1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{78698283-db53-488b-8a8b-c097c8a29026}"/>
-            <Field Type="Text" DisplayName="Test2" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{78698283-db53-488b-8a8b-c097c8a29027}"/>
-            <Field Type="Text" DisplayName="Test3" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{78698283-db53-488b-8a8b-c097c8a29028}"/>
-          </pnp:Fields>
-  
-        </pnp:ListInstance>
-      </pnp:Lists>
-    </pnp:ProvisioningTemplate>
-  </pnp:Templates>
-</pnp:Provisioning>
-
-
-To create a library we need to change TemplateType. In this case it'll be TemplateType = 101. 
-You can find all TemplateType codes in `this article <https://msdn.microsoft.com/en-us/library/office/microsoft.sharepoint.client.listtemplatetype.aspx>`_ 
-
-
+|flow|
 
 Conclusion
 ----------
@@ -68,3 +48,9 @@ That is it. These few simple steps can help you to manage your company's project
 .. hint::
   You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_ explaining how to Create SharePoint site by a custom template and grant permissions in Microsoft Flow and Azure Logic Apps.
 
+
+.. _Plumsail SharePoint connector: https://plumsail.com/actions/sharepoint/
+.. _article: https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps#installation
+.. _options: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/get-pnpprovisioningtemplate?view=sharepoint-ps
+
+.. |flow| image:: ../../../_static/img/flow/sharepoint/provision-pnp-template-to-sp.png
