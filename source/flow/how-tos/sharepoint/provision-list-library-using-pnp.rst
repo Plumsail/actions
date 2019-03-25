@@ -15,15 +15,15 @@ For example, it may be a SharePoint list.
 However, in a real situation we need to save not all existing lists but a specific one. 
 The next PowerShell script helps us to reach the goal:
 
-.. code::
+..code::
 
-$listName = "MyList";
-$outputTemplateFileName = "C:\Temp\template.xml";
-$template = Get-PnPProvisioningTemplate -OutputInstance -Handlers Lists
-$listTemplate = $template.Lists | Where-Object { $_.Title -eq $listName }
-$template.Lists.Clear()
-$template.Lists.Add($listTemplate)
-Save-PnPProvisioningTemplate -InputInstance $template -Out $outputTemplateFileName
+  $listName = "MyList";
+  $outputTemplateFileName = "C:\Temp\template.xml";
+  $template = Get-PnPProvisioningTemplate -OutputInstance -Handlers Lists
+  $listTemplate = $template.Lists | Where-Object { $_.Title -eq $listName }
+  $template.Lists.Clear()
+  $template.Lists.Add($listTemplate)
+  Save-PnPProvisioningTemplate -InputInstance $template -Out $outputTemplateFileName
 
 Let's take a closer look at the script:
 
