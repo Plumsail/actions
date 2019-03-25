@@ -13,6 +13,10 @@ The fastest way to do this is to run the command in MS PowerShell console
 
 :code:`Install-Module SharePointPnPPowerShellOnline`
 
+To make sure that all installed correctly and also to check the installed version you can run the command:
+
+:code:`Get-Command -Module *PnP*`
+
 
 After installing the cmdlets you need to connect to your SharePoint site:
 
@@ -34,6 +38,11 @@ can use the file in MS flow and select it in `Provision PnP template to SharePoi
 
 |flow|
 
+Also Plumsail action accepts PnP code. If you have a PnP code, or you modified an existing one and would like to try it you can place the code directly to our action.
+Check it out.
+
+|flow1|
+
 Conclusion
 ----------
 
@@ -41,7 +50,7 @@ Using PnP provisioning technology and Plumsail Actions connector allows you to f
 I also recommend you take alook at another article `How to create SharePoint list from PnP provisioning template in Microsoft Flow`_.
 If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
-|flow1|
+
 
 
 .. _Plumsail SharePoint connector: https://plumsail.com/actions/sharepoint/
@@ -51,7 +60,7 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 .. _Provision PnP template to SharePoint: ../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint
 .. _manually: ../../actions/sharepoint-processing.rst#provision-pnp-template-to-sharepoint
 .. _registering an account: ../../../getting-started/sign-up.html
-.. _How to create SharePoint list from PnP provisioning template in Microsoft Flow: ../../../getting-started/sign-up.html
+.. _How to create SharePoint list from PnP provisioning template in Microsoft Flow: ../../flow/how-tos/sharepoint/provision-list-library-using-pnp.html
 
 .. |flow| image:: ../../../_static/img/flow/sharepoint/provision-pnp-template-to-sp.png
 .. |flow1| image:: ../../../_static/img/flow/sharepoint/PnPProvisionExample.png
