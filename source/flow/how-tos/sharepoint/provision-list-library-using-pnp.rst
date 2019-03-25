@@ -47,7 +47,7 @@ That is it. These few simple steps can help you to manage your company's project
   You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_ explaining how to Create SharePoint site by a custom template and grant permissions in Microsoft Flow and Azure Logic Apps.
 
 
-.. _Plumsail SharePoint connector: https://plumsail.com/actions/sharepoint/
+.. _Plumsail SharePoint connector: https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html
 .. _article: ../../how-tos/sharepoint/get-template-using-power-shell.html
 .. _options: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/get-pnpprovisioningtemplate?view=sharepoint-ps
 
