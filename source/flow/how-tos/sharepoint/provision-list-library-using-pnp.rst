@@ -2,12 +2,12 @@ How to create SharePoint list from PnP provisioning template in Microsoft Flow
 ============================================================================================================================
 
 This article will show how to create a PnP provisoning template with a list and then apply the template in Microsoft Flow.
-We will use `Provision PnP template to SharePoint  <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumasail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+We will use `Provision PnP template to SharePoint  <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
 First of all, to create a PnP provisioning template you need to connect to the source SharePoint instance using PnP powershel commandlets library.
 This `article`_ shows how to do this and also how to get a PnP provisioning template from the whole site.
 
-The main function Get-PnPProvisioningTemplate has several `options`_, in this case we're interested in option -Handlers. This option allows us to specify a Sharepoint object to get template from.
+The main function :code:`Get-PnPProvisioningTemplate` has several `options`_, in this case we're interested in option :code:`-Handlers`. This option allows us to specify a Sharepoint object to get template from.
 For example, it may be a SharePoint list.
 
 :code:`Get-PnPProvisioningTemplate -Out template.pnp -Handlers Lists`
@@ -15,7 +15,7 @@ For example, it may be a SharePoint list.
 However, in a real situation we need to save not all existing lists but a specific one. 
 The next PowerShell script helps us to reach the goal:
 
-..code:
+.. code::
 
 $listName = "MyList";
 $outputTemplateFileName = "C:\Temp\template.xml";
