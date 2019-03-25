@@ -967,6 +967,9 @@ Create a new SharePoint site based on specific template  with the help of Micros
 
 Create Modern SharePoint Site
 ---------------------------------------
+.. warning::
+  This action work only with `SP Custom Credentials key type <../../getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ 
+
 Creates a modern SharePoint Team or Communication site with the help of Microsoft Flow.
 
 "Create Modern SharePoint Site" is a complex action that includes 2 different operations for creating Team's or Communication's sites.
@@ -1021,7 +1024,7 @@ Create Team SharePoint Site
        -  Team site
 
     *  -  Site Design
-       -  The custom site design that will be used.  This parameter may be in use only for `SP Custom Credentials key type. <https://plumsail.com/docs/actions/v1.x/getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ You can select a value from a dropdown list of the available values. If in some reasons you can't see target site design, you can specify it manually by its identifier value.
+       -  The custom site design that will be used.  You can select a value from a dropdown list of the available values. If in some reasons you can't see target site design, you can specify it manually by its identifier value.
        -  ::
 
             Contoso customer tracking
@@ -1084,7 +1087,7 @@ Create Communication SharePoint Site
        -  Site for HR
 
     *  -  Site Design
-       -  The built-in and custom site design to use. If you used `SP Custom Credentials key type <https://plumsail.com/docs/actions/v1.x/getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ you can select a value from a dropdown list of the available values. If in some reasons you can't see target site design, you can specify it manually by its identifier value or name (for built-in values).
+       -  The built-in and custom site design to use. You can select a value from a dropdown list of the available values. If in some reasons you can't see target site design, you can specify it manually by its identifier value or name (for built-in values: Topic, Showcase, Blank).
        -  ::
 
             Topic
