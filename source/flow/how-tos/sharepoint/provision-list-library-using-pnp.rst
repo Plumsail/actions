@@ -58,4 +58,4 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 .. _registering an account: ../../../getting-started/sign-up.html
 
 .. |flow| image:: ../../../_static/img/flow/sharepoint/provision-pnp-template-to-sp.png
-.. |provlist3| image:: ../../../_static/img/flow/sharepoint/provlist3.png.png
+.. |provlist3| image:: ../../../_static/img/flow/sharepoint/provlist3.png
