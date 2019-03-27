@@ -36,7 +36,7 @@ Let's take a closer look at the script:
 - Then we take a template for all list a libraries from the site.
 - Exclude all lists except the one that has name “MyList”.
 - Then remove all lists from the template and replace them by a our single list.
-- •	Save the result template with a single list to a file.
+- Save the result template with a single list to a file.
 
 If you open the resulting xml template you'll see that there is a description of only one list.Then you may apply the resulting xml using the Microsoft Flow action  `Provision PnP template to SharePoint`_ .
 
