@@ -14,9 +14,9 @@ For example, the command below creates a template for all lists and libraries on
 
 However, in a real situation we need to save not all existing lists but a specific one. 
 Standard PnP commandlets do not allow you to grab a template for a single list. That is why you need a workaround. 
-Let's say we crated new list ProvList3 on the source site, the list has some items. Now we need to transfer only this list to the target site.
+Let's say we created new list ProvList3 on the source site, the list has some items. Now we need to transfer only this list to the target site.
 
-|provlist3|
+|listimg|
 
 The next PowerShell script helps us to reach the goal:
 
@@ -58,4 +58,4 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 .. _registering an account: ../../../getting-started/sign-up.html
 
 .. |flow| image:: ../../../_static/img/flow/sharepoint/provision-pnp-template-to-sp.png
-.. |provlist3| image:: ../../../_static/img/flow/sharepoint/provlist3.png
+.. |listimg| image:: ../../../_static/img/flow/sharepoint/provlist3.png
