@@ -14,7 +14,8 @@ For example, the command below creates a template for all lists and libraries on
 
 However, in a real situation we need to save not all existing lists but a specific one. 
 Standard PnP commandlets do not allow you to grab a template for a single list. That is why you need a workaround. 
-Let's say we created new list ProvList3 on the source site, the list has some items. Now we need to transfer only this list to the target site.
+Let's say you have a pnp template and deploy the template once new employee is hired. However, the source site gets a new list and you need to provide the list to all employees.
+Instead of taking a template from the whole site you can take a template, including only specific list.
 
 |listimg|
 
@@ -22,7 +23,7 @@ The next PowerShell script helps us to reach the goal:
 
 ..code::
 
-  $listName = "ProvList3";
+  $listName = "Tasks";
   $outputTemplateFileName = "C:\Temp\template.xml";
   $template = Get-PnPProvisioningTemplate -OutputInstance -Handlers Lists
   $listTemplate = $template.Lists | Where-Object { $_.Title -eq $listName }
@@ -32,9 +33,9 @@ The next PowerShell script helps us to reach the goal:
 
 Let's take a closer look at the script:
 
-- We define 2 variables with list name and the path  where to save PnP template. Just replace “MyList” by the name of your list. If you want to store result template in different location, replace “C:\Temp\template.xml” by different path.
+- We define 2 variables with list name and the path  where to save PnP template. Just replace “Tasks” by the name of your list. If you want to store result template in different location, replace “C:\Temp\template.xml” by different path.
 - Then we take a template for all list a libraries from the site.
-- Exclude all lists except the one that has name “MyList”.
+- Exclude all lists except the one that has name “Tasks”.
 - Then remove all lists from the template and replace them by a our single list.
 - Save the result template with a single list to a file.
 
@@ -58,4 +59,4 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 .. _registering an account: ../../../getting-started/sign-up.html
 
 .. |flow| image:: ../../../_static/img/flow/sharepoint/provision-pnp-template-to-sp.png
-.. |listimg| image:: ../../../_static/img/flow/sharepoint/provlist3.png
+.. |listimg| image:: ../../../_static/img/flow/sharepoint/new-tasks-list.png

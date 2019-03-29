@@ -4,7 +4,7 @@ How to get a PnP provisioning template using PowerShell and then apply it in Mic
 This article will show how to create a PnP template via PowerShell. As a result we'll have an XML file 
 which can be used with Plumsail SharePoint connector `Provision PnP template to SharePoint`_ .
 
-Create a SharePoint list with custom columns
+Connecting to the Sharepoint instance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 First of all you need to install SharePoint PnP library of PowerShell commands.
 Microsoft provides 3 ways to install the cmdlets and you can find them in the `official MS article`_ .
@@ -18,13 +18,22 @@ To make sure that all installed correctly and also to check the installed versio
 :code:`Get-Command -Module *PnP*`
 
 
-After installing the cmdlets you need to connect to your SharePoint site:
+After installing the cmdlets connect to your SharePoint site:
 
 :code:`Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite`
 
 or in case of multi-factor authentication use
 
-:code:`Connect-PnPOnline -Url https://yoursite.sharepoint.com -UseWebLogin`
+:code:`Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite -UseWebLogin`
+
+Getting PnP template by Powershell
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Let's say you need to create a site with certain parameters when some event happens.
+For example, you can keep a template site and deploy it for a new employee when he or she is hired.
+The template already has some default settings and the employee just need to tweak it a bit.
+
+|sourcesite|
 
 Once connected we use next command to take a template from the whole site
 
@@ -32,9 +41,10 @@ Once connected we use next command to take a template from the whole site
 
 For example, :code:`Get-PnPProvisioningTemplate -Out C:\Temp\Template.xml`
 
-This command creates an xml file which has the whole structure of the Sharepoint site and we
+This command creates an xml file which has the whole structure of the Sharepoint site, without content. 
+If you want to store result template in different location, replace “C:\Temp\template.xml” by different path.
 
-can use the file in MS flow and select it in `Provision PnP template to SharePoint`_ .
+Now we need to deploy the template. We can use the resulting xml file in MS flow and select it in `Provision PnP template to SharePoint`_ .
 
 |flow|
 
@@ -64,3 +74,4 @@ If you haven’t used it yet, `registering an account`_ would be the first step.
 
 .. |flow| image:: ../../../_static/img/flow/sharepoint/provision-pnp-template-to-sp.png
 .. |flow1| image:: ../../../_static/img/flow/sharepoint/PnPProvisionExample.png
+.. |sourcesite| image:: ../../../_static/img/flow/sharepoint/pnp-source-site-example.png
