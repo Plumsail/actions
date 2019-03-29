@@ -2870,7 +2870,9 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
 
 Provision PnP template to SharePoint
 -----------------------------------------
-Deploys a PnP template to SharePoint. Using this action you can create different objects such as: pages, lists with custom columns, etc.
+
+The action deploys a SharePoint site from PnP provisioning template.
+
 .. rubric:: Parameters
 
 .. list-table::
