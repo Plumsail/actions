@@ -53,11 +53,12 @@ Plumsail Actions Documentation
     
     REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=SharePoint>  
 
-  .. rst-class:: single-page-nav
-
-    .. toctree::    
-      :caption: Microsoft Flow examples
-      :name: toc-microsoft-flow-examples
-      :maxdepth: 2
-            
-      flow/how-tos/sharepoint/index
+  .. toctree::    
+    :caption: Microsoft Flow examples
+    :name: toc-microsoft-flow-examples
+    :maxdepth: 2
+    
+    flow/how-tos/sharepoint/index-provision
+    flow/how-tos/sharepoint/index-permissions
+    flow/how-tos/sharepoint/index-documents
+    flow/how-tos/sharepoint/index-listitems      
