@@ -1,10 +1,40 @@
-How to create SharePoint list or library from PnP provisioning template in Microsoft Flow
-============================================================================================================================
+How to create SharePoint list or library using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps
+=========================================================================================================================
 
-This article will show how to create a PnP provisoning template for a list and then apply the template to a site by Microsoft Flow. The same approach works for a library.
-We will use `Provision PnP template to SharePoint  <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+This article will show how to create a custom SharePoint list or library using PnP provisoning template. You can use this approach to create sites or lists of any complexity in SharePoint. For example, you may want to create a tasks list with a set of predefined columns for your team. We will do it below. The same approach works for provision of SharePoint document library as well.
 
-First of all, we need to create a PnP provisioning template. Connect to the source SharePoint instance using PnP powershel commandlets library.
+PnP template is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that you want to create. You can create own XML template for your Modern SharePoint list or library. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
+
+If you are new to Plumsail Actions, follow `this getting started instruction <../../getting-started/sign-up>`_.
+
+First of all, we need to create a PnP provisioning template. You can write your template from scratch. In this case you may need to review `PnP provision schema <https://github.com/SharePoint/PnP-Provisioning-Schema/blob/master/ProvisioningSchema-2018-07.md#clientsidepages>`_ first. 
+
+It is much easier to create a PnP template from an existing list. That what we are going to do below. Let us say we have the tasks list:
+
+image:: ../../../_static/img/flow/sharepoint/new-tasks-list.png
+  :alt: Tasks list example
+
+  
+Get a PnP template from an list or library
+------------------------------------------
+
+PnP PowerShell allows you to execute various command for manipulating SharePoint, including grabbing of a template from a SharePoint site.
+
+First of all, you need to install PnP PowerShell. Follow `the installation instruction <https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps#installation>`_. Then connect to your SharePoint site. Execute the command below and specify your own URL for the site where your Modern page is stored:
+
+.. code::
+
+  Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite
+
+Then execute the command below:
+
+.. code::
+
+  Get-PnPProvisioningTemplate -Out template.pnp -Handlers Lists
+
+
+
+Connect to the source SharePoint instance using PnP powershel commandlets library.
 This `article`_ shows how to do this and also how to get a PnP provisioning template from the whole site.
 
 We use :code:`Get-PnPProvisioningTemplate` Powershell function function to get a template. It has several `options`_, In our case we're interested in option :code:`-Handlers`.
