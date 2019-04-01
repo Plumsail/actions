@@ -70,7 +70,6 @@ It has the attribute :code:`WebPartType` - type of a web part. There are a few b
 - People	
 - etc.
 
-
 Thus, you can place different kinds of web parts on your page. However, most of them require tricky JSON configurations. You may research `PnP provision schema <https://github.com/SharePoint/PnP-Provisioning-Schema/blob/master/ProvisioningSchema-2018-07.md#clientsidepages>`_ to find more information about objects supported by available in PnP templates.
 
 Often, if you want to create complex Modern pages, it is easier to create a page in the SharePoint user interface, then grab the PnP template from an existing page using PowerShell. Then you can modify it for your needs in any text editor. 
