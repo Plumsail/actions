@@ -2884,7 +2884,7 @@ The action deploys a SharePoint site from PnP provisioning template.
        -  Example
     *  -  XML Template Content
        -  PnP Provision XML template
-       -  Check out this `example <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/get-template-using-power-shell.html>`_
+       -  Check out this `example <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
