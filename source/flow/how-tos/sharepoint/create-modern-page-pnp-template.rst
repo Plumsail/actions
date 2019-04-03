@@ -3,7 +3,7 @@ How to create a SharePoint Modern page using PnP provision template in Microsoft
 
 This article describes how to create a SharePoint Modern page using a PnP provisioning template. It may be quite useful when you want to automatically post some news to your Modern Communication site or migrate regular pages from one site to another.
 
-`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that have to be created. You can create own XML template for your Modern SharePoint page. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions/>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
+`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your Modern SharePoint page. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions/>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
 
 If you are new to Plumsail Actions, follow this `getting started instruction <../../../getting-started/sign-up.html>`_.
 
@@ -107,7 +107,7 @@ If you want to create your modern page as a news post change :code:`PromoteAsNew
 
 .. note:: The XML PnP template contains the declaration of your page only. If there are any related entities, like pictures, you need to create them before applying the template.
 
-That is all. Now you can save the template file somewhere in your SharePoint and use this file as a template in the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ actions:
+That is all. Now you can save the template file somewhere in your SharePoint and use this file as a template in the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action:
 
 .. image:: ../../../_static/img/flow/how-tos/apply-complex-modern-page-pnp-template.png
    :alt: Apply complex Modern Page PnP template

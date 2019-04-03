@@ -1,77 +1,54 @@
-How to get a PnP provisioning template using PowerShell and then apply it in Microsoft Flow
-============================================================================================================================
+How to create a SharePoint site using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps
+================================================================================================================
 
-This article will show how to create a PnP template via PowerShell. As a result we'll have an XML file 
-which can be used with Plumsail SharePoint connector `Provision PnP template to SharePoint`_ .
+This article will show how to automatically create a Modern SharePoint Team site and apply a PnP template to it. You can use this approach to automate the creation of new SharePoint sites from custom templates. For example, you can create team sites for your projects with a predefined set of lists, libraries, etc.
 
-Connecting to the Sharepoint instance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-First of all you need to install SharePoint PnP library of PowerShell commands.
-Microsoft provides 3 ways to install the cmdlets and you can find them in the `official MS article`_ .
+`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your SharePoint site. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
 
-The fastest way to do this is to run the command in MS PowerShell console
+If you are new to Plumsail Actions, follow `this getting started instruction <../../../getting-started/sign-up.html>`_.
 
-:code:`Install-Module SharePointPnPPowerShellOnline`
+First of all, we need to create a PnP provisioning template for our site. Let us say we have an existing projects site:
 
-To make sure that all installed correctly and also to check the installed version you can run the command:
+.. image:: ../../../_static/img/flow/how-tos/pnp-source-site.png
+  :alt: Project site example
 
-:code:`Get-Command -Module *PnP*`
+You can write a PnP template from scratch or grab it from an existing site using PowerShell.
 
+If you are interested in the first way, review other our documentation articles:
 
-After installing the cmdlets connect to your SharePoint site:
+- `Create lists or libraries from PnP template <create-list-library-pnp.html>`_
+- `Create Modern pages from PnP template <create-modern-page-pnp-template.html>`_
 
-:code:`Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite`
+In this article, we will use PnP PowerShell to get the template from an existing site.
 
-or in case of multi-factor authentication use
+PnP PowerShell allows you to execute various commands for manipulating SharePoint, including grabbing of a template from a SharePoint site.
 
-:code:`Connect-PnPOnline -Url https://mycompany.sharepoint.com/sites/mysite -UseWebLogin`
+First of all, you need to install PnP PowerShell. Follow `the installation instruction <https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps#installation>`_. Then connect to your SharePoint site. Execute the command below and specify your own URL for the site that you want to use for the template:
 
-Getting PnP template by Powershell
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: powershell
 
-Let's say you need to create a site with certain parameters when some event happens.
-For example, you can keep a template site and deploy it for a new employee when he or she is hired.
-The template already has some default settings and the employee just need to tweak it a bit.
+  Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/mysite"
 
-|sourcesite|
+Then execute the command below:
 
-Once connected we use next command to take a template from the whole site
+.. code-block:: powershell
 
-:code:`Get-PnPProvisioningTemplate -Out path`
+  Get-PnPProvisioningTemplate -Out "template.xml"
 
-For example, :code:`Get-PnPProvisioningTemplate -Out C:\Temp\Template.xml`
+This command gets a template of the whole site and saves it to "template.xml" file. You can change this location if you want. 
 
-This command creates an xml file which has the whole structure of the Sharepoint site, without content. 
-If you want to store result template in different location, replace “C:\Temp\template.xml” by different path.
+The :code:`Get-PnPProvisioningTemplate` command has a lot of parameters. For example, you can specify content that you want to grab using :code:`-Handlers` parameter. Review `the official documentation <https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/get-pnpprovisioningtemplate?view=sharepoint-ps>`_ for more information.
 
-Now we need to deploy the template. We can use the resulting xml file in MS flow and select it in `Provision PnP template to SharePoint`_ .
+Once you executed the script, you will have the template for your site. You can modify it in any text editor if you want.
 
-|flow|
+Now you can save the template file somewhere in your SharePoint and use this file as a template in the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action.
 
-Also Plumsail action accepts PnP code. If you have a PnP code, or you modified an existing one and would like to try it you can place the code directly to our action.
-Check it out.
+This action doesn't create a new site. It has to be applied to an existing site. That is why in the Flow below we firstly create a modern site using another action, then apply our template to the site:
 
-|flow1|
+.. image:: ../../../_static/img/flow/how-tos/pnp-site-from-template.png
+   :alt: Apply site PnP template
 
-Conclusion
-----------
+That is all! Now you can create Modern SharePoint sites and apply custom templates to them.
 
-Using PnP provisioning technology and Plumsail Actions connector allows you to flexibly take and deploy a Sharepoint site template.
-I also recommend you take alook at another article `How to create SharePoint list from PnP provisioning template in Microsoft Flow`_.
-If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
-
-
-
-
-.. _Plumsail SharePoint connector: https://plumsail.com/actions/sharepoint/
-.. _official MS article: https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps#installation
-.. _official MIcrosoft documentation: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/add-pnpapp?view=sharepoint-ps
-.. _other PnP functions: https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/add-pnpdatarowstoprovisioningtemplate?view=sharepoint-ps
-.. _Provision PnP template to SharePoint: ../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint
-.. _manually: ../../actions/sharepoint-processing.rst#provision-pnp-template-to-sharepoint
-.. _registering an account: ../../../getting-started/sign-up.html
-.. _How to create SharePoint list from PnP provisioning template in Microsoft Flow: ../../flow/how-tos/sharepoint/provision-list-library-using-pnp.html
-
-.. |flow| image:: ../../../_static/img/flow/sharepoint/provision-pnp-template-to-sp.png
-.. |flow1| image:: ../../../_static/img/flow/sharepoint/PnPProvisionExample.png
-.. |sourcesite| image:: ../../../_static/img/flow/sharepoint/pnp-source-site-example.png
+.. hint::
+  You may also be interested in `this article <create-list-library-pnp.html>`_ explaining how to create SharePoint lists or document libraries using PnP template.

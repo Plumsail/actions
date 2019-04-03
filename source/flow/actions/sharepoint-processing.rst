@@ -815,6 +815,36 @@ Remove unique permissions and restore permission inheritance on a SharePoint doc
 .. image:: ../../_static/img/flow/sharepoint/RestorePermissionsOnDocumentExample.png
    :alt: Restore Permissions Inheritance for SharePoint Document Example
 
+Provision PnP template to SharePoint
+-----------------------------------------
+
+The action provisions a PnP template to an existing SharePoint site. You can use it to create lists, libraries, pages, etc. Read the article `How to create a SharePoint site using PnP provisioning template <../how-tos/sharepoint/create-site-pnp.html>`_ for more information.
+
+.. rubric:: Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 30
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  XML Template Content
+       -  PnP Provision XML template
+       -  Review examples of microsoft Flows:
+          
+          - `Create site from PnP template <../how-tos/sharepoint/create-site-pnp.html>`_
+          - `Create list or library from PnP template <../how-tos/sharepoint/create-list-library-pnp.html>`_
+          - `Create Modern page from PnP template <../how-tos/sharepoint/create-modern-page-pnp-template.html>`_
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/PnPProvisionExample.png
+   :alt: PnP Provision Example
+
 Activate SharePoint Feature
 ----------------------------------
 
@@ -896,7 +926,7 @@ Create SharePoint list by template with the help of Microsoft Flow.
 Create SharePoint Site from Template
 ---------------------------------------
 
-Create a new SharePoint site based on specific template  with the help of Microsoft Flow.
+Create a new SharePoint subsite based on specific template with the help of Microsoft Flow. The article `Create SharePoint subsite by custom template <../how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_ provides an expample of configuration for this action.
 
 .. rubric:: Output Parameters
 
@@ -929,8 +959,21 @@ Create a new SharePoint site based on specific template  with the help of Micros
        -  Sales department's site
        
     *  -  Template
-       -  Title of the site template that will be used for the new site.
-       -  Team Site
+       -  Title of the site template that will be used for the new site. You can use custom templates or standard SharePoint templates.       
+       -  There are a few standard SharePoint templates that you can use:                
+
+          - Team site
+          - Team site (classic experience)
+          - Blog
+          - Project Site
+          - Community Site
+          - Document Center
+          - Records Center
+          - Business Intelligence Center
+          - Enterprise Search Center
+          - Basic Search Center
+          - Visio Process Repository
+          - SAP Workflow Site
 
     *  -  Leaf URL
        -  A string that represents the URL leaf name
@@ -2866,30 +2909,3 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
 
 .. image:: ../../_static/img/flow/sharepoint/StartSharePointListWorkflowExample.png
    :alt: Start SharePoint List Workflow Example
-
-
-Provision PnP template to SharePoint
------------------------------------------
-
-The action deploys a SharePoint site from PnP provisioning template.
-
-.. rubric:: Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 30
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  XML Template Content
-       -  PnP Provision XML template
-       -  Check out this `example <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_
-    *  -  SharePoint Site URL
-       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/PnPProvisionExample.png
-   :alt: PnP Provision Example

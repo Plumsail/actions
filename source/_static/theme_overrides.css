@@ -51,9 +51,3 @@ body{
     vertical-align: top;
     margin-right: 45px;
 }
-
-.pl-right-column{
-    display: inline-block;
-    max-width: 380px;
-    vertical-align: top;
-}

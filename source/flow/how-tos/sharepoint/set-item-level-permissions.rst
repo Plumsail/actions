@@ -85,5 +85,3 @@ After that, I specified value of *‘Item ID‘* field as *‘ID‘* parameter f
 Next, I specified *‘Role type‘* field as *‘Contribute’* and the name of the group *‘Travel Managers’*as the value of *‘User or group’* field. Also, I specified the URL of the site as the value for *‘SharePoint Site URL‘* field.
 
 That is all, the flow is configured.
-
-.. hint:: You are may using actions for setting variables with your site URL and the name of the list and then use it in Plumsail Actions in *‘SharePoint Site URL‘* and *‘List Name‘* fields for more convenient using of actions.

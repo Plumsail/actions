@@ -3,7 +3,7 @@ How to create SharePoint list or library using PnP provisioning template in Micr
 
 This article will show how to create a custom SharePoint list or library using PnP provisioning template. You can use this approach to create lists or libraries of any complexity in SharePoint. For example, you may want to create an employees list with a set of predefined columns for your team. We will do it below.
 
-`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that you want to create. You can create own XML template for your Modern SharePoint list or library. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
+`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your SharePoint list or library. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
 
 If you are new to Plumsail Actions, follow `this getting started instruction <../../../getting-started/sign-up.html>`_.
 
@@ -169,7 +169,7 @@ Once you executed the script, you will have the template for your specific list 
 
 .. note:: This script gets a template of a list without external references like content types, site columns, etc. If you need to include them into the template, you need to modify the PowerShell script or do it manually in the XML.
 
-That is all. Now you can save the template file somewhere in your SharePoint and use this file as a template in the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ actions:
+That is all. Now you can save the template file somewhere in your SharePoint and use this file as a template in the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action:
 
 .. image:: ../../../_static/img/flow/how-tos/provision-pnp-template-to-sp.png
    :alt: Apply list PnP template
