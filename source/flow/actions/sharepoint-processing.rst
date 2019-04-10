@@ -817,6 +817,9 @@ Remove unique permissions and restore permission inheritance on a SharePoint doc
 
 Provision PnP template to SharePoint
 -----------------------------------------
+.. warning::
+  This action correctly work only with `SP Custom Credentials key type <../../getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ or you must preliminarily enable some functions with the help of PowerShell (`See more <../how-tos/sharepoint/enable-custom-scripting.html>`_).
+
 
 The action provisions a PnP template to an existing SharePoint site. You can use it to create lists, libraries, pages, etc. Read the article `How to create a SharePoint site using PnP provisioning template <../how-tos/sharepoint/create-site-pnp.html>`_ for more information.
 

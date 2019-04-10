@@ -1,6 +1,9 @@
 How to create Modern SharePoint Team or Communication site using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps
 ===========================================================================================================================================
 
+.. warning::
+  This work correctly only with `SP Custom Credentials key type <../../../getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ or you must preliminarily enable some functions with the help of PowerShell (`See more <./enable-custom-scripting.html>`_).
+
 This article will show how to automatically create a Modern SharePoint Team site and apply a PnP template to it. You can use this approach to automate the creation of new SharePoint sites from custom templates. For example, you can create team sites for your projects with a predefined set of lists, libraries, etc. The same approach can work for Modern SharePoint Communication site as well.
 
 `PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your SharePoint site. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
