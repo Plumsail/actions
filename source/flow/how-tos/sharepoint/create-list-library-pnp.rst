@@ -1,10 +1,6 @@
 How to create SharePoint list or library using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps
 =========================================================================================================================
 
-.. warning::
-  This work correctly only with `SP Custom Credentials key type <../../../getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ or you must preliminarily enable some functions with the help of PowerShell (`See more <./enable-custom-scripting.html>`_).
-
-
 This article will show how to create a custom SharePoint list or library using PnP provisioning template. You can use this approach to create lists or libraries of any complexity in SharePoint. For example, you may want to create an employees list with a set of predefined columns for your team. We will do it below.
 
 `PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your SharePoint list or library. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
