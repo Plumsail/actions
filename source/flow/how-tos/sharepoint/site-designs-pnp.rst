@@ -22,6 +22,8 @@ Create a flow from blank and add When an HTTP request is received trigger
 
 Then add this JSON to the request body
 
+.. code-block:: XML
+
 {
     "type": "object",
     "properties": {
