@@ -42,7 +42,7 @@ Then add this JSON to the request body
             }
         }
     }
-}
+    }
 
 
 
