@@ -24,7 +24,7 @@ Then add this JSON to the request body
 
 .. code-block:: XML
 
-{
+  {
     "type": "object",
     "properties": {
         "webUrl": {
@@ -43,6 +43,8 @@ Then add this JSON to the request body
         }
     }
 }
+
+
 
 
 HTTP POST URL will be empty until you save the flow; We'll need the URL when creating our site script.
