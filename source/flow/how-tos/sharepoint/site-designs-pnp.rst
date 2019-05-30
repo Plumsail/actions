@@ -12,17 +12,21 @@ and also check out the `PnP provisioning scheme <https://github.com/SharePoint/P
 Creating a PnP provisioning template
 ---------------------------------------------------------
 Our plan is to start a Microsoft flow from site design and deploy a PnP provisioning template.
-In the example, we will create a SharePoint Modern page using PnP provision template and to reaach the goal we need to prepare the PnP template.
+In the example, we will create a SharePoint Modern page using PnP provision template and to reach the goal we need to prepare the PnP template.
 
 There are 2 ways for creating a PnP template: you can write it manually and specify all the entities,
-or create the template in Powershell. Please find the examples in `This article <create-modern-page-pnp-template.html.html>`_ .
+or create the template in PowerShell. Please check out the following articles. We're using an example from the first one in the list.
+
+- `How to create a SharePoint Modern page using PnP provision template in Microsoft Flow, Azure Logic Apps, or PowerApps <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-modern-page-pnp-template.html>`_ .
+- `How to create a SharePoint list or library using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-list-library-pnp.html>`_ .
+- `How to create a Modern SharePoint Team or Communication site using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-pnp.html>`_ .
 
 Create the PnP file, we'll need it on the next steps.
 
 Creating a flow
 ---------------------------------------------------------
 We'll start our Flow when a specific site design is selected. Site design contains a site script which has a link to the created Microsoft Flow.
-We can notify the Micrsoft flow that the site design is selected using trigger When an HTTP request is received.
+We can notify the Micrsoft flow that the site design is applied using trigger When an HTTP request is received.
 
 .. image:: ../../../_static/img/flow/how-tos/when-http-request.png
 
@@ -59,7 +63,7 @@ Then we get the created PnP template and place it to Plumsail action.
 
 .. image:: ../../../_static/img/flow/how-tos/apply-modern-page-site-design.png
 
-As you can see  we  select WebURL value in Sharepoint site URL field. It is a dynamic value and provides the newly created site URL. 
+As you can see  we  select WebURL value in SharePoint site URL field. It is a dynamic value and provides the newly created site URL. 
 We pass the parameter to Plumsail action so it will know where to apply the PnP template.
 
 On the next steps we need to start the Flow automatically once the site is created. 
@@ -96,7 +100,7 @@ the URL parameter I took from When HTTP request is received trigger
 .. image:: ../../../_static/img/flow/how-tos/http-post-url-value.png
 
 
-After that we need to add the site script to our site design using some Powershell commands:
+After that we need to add the site script to our site design using some PowerShell commands:
 
 - Select the JSON again and copy it.
 
