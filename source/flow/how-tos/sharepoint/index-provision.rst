@@ -10,4 +10,4 @@ Provisioning
     Create Modern page using PnP template <create-modern-page-pnp-template>    
     Create list or library using PnP template <create-list-library-pnp>
     Create subsite using custom template and grant permissions <create-site-by-custom-template-and-grant-permissions>
-    Starting a Microsoft flow with PnP provision from a site design <site-designs-pnp>
+    Starting Microsoft flow with PnP provision from a site design <site-designs-pnp>
