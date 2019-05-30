@@ -21,7 +21,7 @@ Create the PnP file, we'll need it on the next steps.
 
 Creating a flow
 ---------------------------------------------------------
-We'll start our Flow when a specific site design is selected. Site design contaons a site script which has a link to the created Microsoft Flow.
+We'll start our Flow when a specific site design is selected. Site design contains a site script which has a link to the created Microsoft Flow.
 We can notify the Micrsoft flow that the site design is selected using trigger When an HTTP request is received.
 
 .. image:: ../../../_static/img/flow/how-tos/when-http-request.png
@@ -98,9 +98,9 @@ the URL parameter I took from When HTTP request is received trigger
 
 After that we need to add the site script to our site design using some Powershell commands:
 
-- Select the JSON again and copy it again to your clipboard.
+- Select the JSON again and copy it.
 
-- Open PowerShell and enter the following to copy the script into a variable and create the site script:
+- Open PowerShell and enter the following commands to copy the script into a variable and create the site script:
 
 .. code-block::
 
@@ -108,14 +108,14 @@ After that we need to add the site script to our site design using some Powershe
     Add-SPOSiteScript -Title "Apply PnP Provisioning Template" -Content $script
     Get-SPOSiteScript
 
-- Select the ID of the site script that you created and copy it to the clipboard.
+- Select the ID of the site script that you created and copy it.
 - Use the following command to create the site design:
 
 .. code-block::
 
     Add-SPOSiteDesign -Title "Site Design example" -SiteScripts [Paste the ID of the Site Script here] -WebTemplate "64"
 
-You can find the detailed instruction and some other things in the oficial `Microsoft article <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-pnp-provisioning#create-the-site-design>`_.
+You can find the detailed instruction and some other related to the subject things in the oficial `Microsoft article <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-pnp-provisioning#create-the-site-design>`_.
 
 Starting MS Flow from site design
 ---------------------------------------------------------
