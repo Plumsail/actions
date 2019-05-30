@@ -1,4 +1,4 @@
-How to start a Micrisoft flow with PnP provision from a site design
+How to start Microsoft flow with PnP provision from a site design
 ===========================================================================================================================================
 
 This article will show how to automatically start a Microsoft flow with PnP provision action from site design.
