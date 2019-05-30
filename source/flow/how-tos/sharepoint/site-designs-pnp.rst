@@ -102,16 +102,17 @@ After that we need to add the site script to our site design using some Powershe
 
 - Open PowerShell and enter the following to copy the script into a variable and create the site script:
 
-.. code-block:: XML
-$script = Get-Clipboard -Raw
-Add-SPOSiteScript -Title "Apply PnP Provisioning Template" -Content $script
-Get-SPOSiteScript
+.. code-block::
+
+    $script = Get-Clipboard -Raw
+    Add-SPOSiteScript -Title "Apply PnP Provisioning Template" -Content $script
+    Get-SPOSiteScript
 
 - Select the ID of the site script that you created and copy it to the clipboard.
 - Use the following command to create the site design:
 
-.. code-block:: XML
-Add-SPOSiteDesign -Title "Site Design example" -SiteScripts [Paste the ID of the Site Script here] -WebTemplate "64"
+.. code-block::
+    Add-SPOSiteDesign -Title "Site Design example" -SiteScripts [Paste the ID of the Site Script here] -WebTemplate "64"
 
 You can find the detailed instruction and some other things in the oficial `Microsoft article <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-pnp-provisioning#create-the-site-design>`_.
 
