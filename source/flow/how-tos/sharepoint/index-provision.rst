@@ -10,3 +10,4 @@ Provisioning
     Create Modern page using PnP template <create-modern-page-pnp-template>    
     Create list or library using PnP template <create-list-library-pnp>
     Create subsite using custom template and grant permissions <create-site-by-custom-template-and-grant-permissions>
+    Starting a Micrisoft flow with PnP provision from a site design <site-designs-pnp>
