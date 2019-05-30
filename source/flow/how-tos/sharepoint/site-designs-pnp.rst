@@ -1,22 +1,28 @@
 How to start a flow with PnP provision from a site design
 ===========================================================================================================================================
 
-This article will show how to automatically start a MS flow with PnP provision action from a site design.
+This article will show how to automatically start a Microsoft flow with PnP provision action from site design.
+The feature could be helpfull when you need to deploy some elements which are not supported by the site design itself.
+For example, if you need to set up some solution in multiple different tenants, in that case, deploying site designs and site scripts via a PnP provisioning template might be a good option.
 
-Site design allows starting a MS flow where you can deploy PnP provisioning template and add some extra features to your site.
-In this article we'll review a case where a site design triggers MS flow which create a modern page using PnP provisioning template.
+As an example we'll create a SharePoint Modern page using PnP provision template, started from site design.
+If you are new to Plumsail Actions, follow this `getting started instruction <../../../getting-started/sign-up.html>`_.
+and also check out the `PnP provisioning scheme <https://github.com/SharePoint/PnP-Provisioning-Schema>`_.
 
 Creating a PnP provisioning template
 ---------------------------------------------------------
 Our plan is to start a Microsoft flow from site design and deploy a PnP provisioning template.
-In the example, we will create a SharePoint Modern page using PnP provision template and for this we need to prepare the PnP template.
-`This article <create-modern-page-pnp-template.html.html>`_ explains how to create this template using Powershell commands. As a result we will have an XML file;
-keep it handy, we'll need it on the next step.
+In the example, we will create a SharePoint Modern page using PnP provision template and to reaach the goal we need to prepare the PnP template.
 
+There are 2 ways for creating a PnP template: you can write it manually and specify all the entities,
+or create the template in Powershell. Please find the examples in `This article <create-modern-page-pnp-template.html.html>`_ .
+
+Create the PnP file, we'll need it on the next steps.
 
 Creating a flow
 ---------------------------------------------------------
-Create a flow from blank and add When an HTTP request is received trigger
+We'll start our Flow when a specific site design is selected. Site design contaons a site script which has a link to the created Microsoft Flow.
+We can notify the Micrsoft flow that the site design is selected using trigger When an HTTP request is received.
 
 .. image:: ../../../_static/img/flow/how-tos/when-http-request.png
 
@@ -62,10 +68,52 @@ On the next steps we need to start the Flow automatically once the site is creat
 Creating a site design and site script
 ---------------------------------------------------------
 
-Site design is a container which includes one or more site scripts. This `Microsoft article <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-pnp-provisioning#create-the-site-design>`_ explains how to add
+Site design is a container which includes one or more site scripts. 
+You can either make the site script manually or use an `online costructor <https://www.sitedesigner.io>`_.
+Let's take this simple site script as an example:
 
-site design. When you select the site design it triggers our Microsoft Flow. You can add as many site designs as you would like and each site design will start its own MS Flow depending on the situation and requirements.
+.. code-block:: XML
 
+  {
+    "$schema": "schema.json",
+    "actions": [
+    {
+            "verb": "triggerFlow",
+            "url": "https://prod-103.westeurope.logic.azure.com:443/workflows/650287c069f94a1899e124147ec30a3a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=yyCX8RGjZNT61gvJ8euoGpCrNiRhELR8YULI2ptpBX0",
+            "name": "Apply Template",
+            "parameters": {
+                "event":"",
+                "product":""
+            }
+    }
+    ],
+    "bindata": {},
+    "version": 1
+  }
+
+the URL parameter I took from When HTTP request is received trigger
+
+.. image:: ../../../_static/img/flow/how-tos/http-post-url-value.png
+
+
+After that we need to add the site script to our site design using some Powershell commands:
+
+- Select the JSON again and copy it again to your clipboard.
+
+- Open PowerShell and enter the following to copy the script into a variable and create the site script:
+
+.. code-block:: XML
+$script = Get-Clipboard -Raw
+Add-SPOSiteScript -Title "Apply PnP Provisioning Template" -Content $script
+Get-SPOSiteScript
+
+- Select the ID of the site script that you created and copy it to the clipboard.
+- Use the following command to create the site design:
+
+.. code-block:: XML
+Add-SPOSiteDesign -Title "Site Design example" -SiteScripts [Paste the ID of the Site Script here] -WebTemplate "64"
+
+You can find the detailed instruction and some other things in the oficial `Microsoft article <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-pnp-provisioning#create-the-site-design>`_.
 
 Starting MS Flow from site design
 ---------------------------------------------------------
