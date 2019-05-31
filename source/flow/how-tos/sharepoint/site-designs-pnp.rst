@@ -17,9 +17,9 @@ In the example, we will create a SharePoint Modern page using PnP provision temp
 There are 2 ways for creating a PnP template: you can write it manually and specify all the entities,
 or create the template in PowerShell. Please check out the following articles. We're using an example from the first one in the list.
 
-- `How to create a SharePoint Modern page using PnP provision template in Microsoft Flow, Azure Logic Apps, or PowerApps <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-modern-page-pnp-template.html>`_ .
-- `How to create a SharePoint list or library using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-list-library-pnp.html>`_ .
-- `How to create a Modern SharePoint Team or Communication site using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-pnp.html>`_ .
+- `How to create a SharePoint Modern page using PnP provision template <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-modern-page-pnp-template.html>`_ .
+- `How to create a SharePoint list or library using PnP provisioning template <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-list-library-pnp.html>`_ .
+- `How to create a Modern SharePoint Team or Communication site using PnP provisioning template <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-pnp.html>`_ .
 
 Create the PnP file, we'll need it on the next steps.
 
@@ -132,4 +132,4 @@ That is all! Using Site designs and Plumsail action Provision PnP template to sh
 significantly expands the possibilities and automates creating unique site structures.
 
 .. hint::
-  You may also be interested in `this article <create-modern-page-pnp-template.html.html>`_ explaining how to create SharePoint lists or document libraries using PnP template.
+  You may also be interested in `this article <create-modern-page-pnp-template.html>`_ explaining how to create SharePoint lists or document libraries using PnP template.
