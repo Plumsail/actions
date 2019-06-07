@@ -1491,7 +1491,7 @@ Invites external users to an specific SharePoint group with the help of Microsof
 Set Default SharePoint Site Group
 ----------------------------------
 
-Configure default groups for a site with the help of Microsoft Flow. It is alternative of the permsetup.aspx page in SharePoint UI.
+Configure default groups for a site with the help of Microsoft Flow. It is alternative of the :code:`<site URL>/_layouts/15/permsetup.aspx` page in SharePoint UI.
 
 .. rubric:: Input Parameters
 
