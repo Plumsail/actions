@@ -926,7 +926,7 @@ Create SharePoint list by template with the help of Microsoft Flow.
 .. image:: ../../_static/img/flow/sharepoint/CreateListOrLibraryExample.png
    :alt: Create SharePoint List or Library Example
 
-Create SharePoint Site from Template
+Create SharePoint Subsite from Template
 ---------------------------------------
 
 Create a new SharePoint subsite based on specific template with the help of Microsoft Flow. The article `Create SharePoint subsite by custom template <../how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_ provides an expample of configuration for this action.
@@ -1009,7 +1009,7 @@ Create a new SharePoint subsite based on specific template with the help of Micr
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/CreateSiteFromTemplateExample.png
-   :alt: Create SharePoint Site from Template Example
+   :alt: Create SharePoint Subsite from Template Example
 
 Create Modern SharePoint Site
 ---------------------------------------

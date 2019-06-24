@@ -3,7 +3,7 @@ Create SharePoint subsite by custom template and grant permissions in Microsoft 
 
 This article will show how to use Microsoft Flow to create a new subsite by the custom template and then grant permissions to this site for specific SharePoint group. As an example, I configured the Flow for SharePoint list to automatically create new sites.
 
-In this case, I'm using *‘Create Site from Template’* and *‘Change Permissions’* actions from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+In this case, I'm using *‘Create Subsite from Template’* and *‘Change Permissions’* actions from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
 This example will show a simple case of project management system when an administrator can create a new list item for a project in SharePoint list, specify project participants and URL for a new project workspace. Once it is done, the Flow has to create the project workspace (SharePoint site). It will automatically break permissions inheritance for the new site and include the site to the top navigation. Then you can grant permissions to sensitive information in the project for any SharePoint group. To simplify this use case I have one SharePoint group and contributors role only.
 
@@ -92,10 +92,10 @@ When an item is created
 
 Here we specified values for *‘Site Address’* and *‘List Name’* fields to bind the Flow to the *‘Project‘* list.
 
-Create Site from Template
+Create Subsite from Template
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`Create Site from Template <../../actions/sharepoint-processing.html#create-sharepoint-site-from-template>`_ action. I used *‘Title’* field of current list item as the title for SharePoint site.
+`Create Subsite from Template <../../actions/sharepoint-processing.html#create-sharepoint-subsite-from-template>`_ action. I used *‘Title’* field of current list item as the title for SharePoint site.
 
 I used *‘Site partial URL’* field of current list item as the partial URL for the new site (*‘Leaf URL’* field). As I mentioned at the beginning of this article *‘Site partial URL’*  field is the partial URL for the new site. For example, if the current site has URL :code:`http://yourdomain/projects`  and you specified *‘Site partial URL’*  as *‘project1′* , then the new site will have such URL: code:`http://yourdomain/projects/project1`.
 
