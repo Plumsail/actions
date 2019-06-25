@@ -2962,6 +2962,7 @@ Adds a menu item to either the quicklaunch or top navigation.
 Remove SharePoint site navigation node
 -----------------------------------------
 Removes a menu item from either the quicklaunch or top navigation.
+
 .. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Input Parameters
