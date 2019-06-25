@@ -2912,3 +2912,81 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
 
 .. image:: ../../_static/img/flow/sharepoint/StartSharePointListWorkflowExample.png
    :alt: Start SharePoint List Workflow Example
+
+Add SharePoint site navigation node
+-----------------------------------------
+Adds a menu item to either the quicklaunch or top navigation
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Location
+       -  Mandatory parameter. The location of the node to add. Two options: Top navigation bar, Quick launch
+       -  Quick launch
+
+    *  -  Title
+       -  Mandatory parameter. Title of navigation node
+       -  Text
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  URL
+       -  Optional parameter. Target URL. If the URL is empty, then the top-level navigation item will be created.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  Prepend
+       -  Optional parameter. Yes or No. The default value is No.
+       -  Yes
+
+    *  -  Parent
+       -  Optional parameter. It is the title of a parent navigation item. If there are multiple top-level items with the same title, we will pick only the first.
+       -  Text
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/AddSharePointSiteNavigationNodeExample.png
+   :alt: Add SharePoint Site Navigation Node Example
+
+
+Remove SharePoint site navigation node
+-----------------------------------------
+Removes a menu item from either the quicklaunch or top navigation
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Location
+       -  Mandatory parameter. The location of the node to add. Two options: Top navigation bar, Quick launch
+       -  Quick launch
+
+    *  -  Title
+       -  Mandatory parameter. Title of navigation node
+       -  Text
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  Parent
+       -  Optional parameter. It is the title of a parent navigation item. If there are multiple top-level items with the same title, we will pick only the first.
+       -  Text
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemoveSharePointSiteNavigationNodeExample.png
+   :alt: Remove SharePoint site navigation node Example
