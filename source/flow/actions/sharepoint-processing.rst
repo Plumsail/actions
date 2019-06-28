@@ -817,10 +817,6 @@ Remove unique permissions and restore permission inheritance on a SharePoint doc
 
 Provision PnP template to SharePoint
 -----------------------------------------
-.. note::
-  All Modern and Communication sites are created with `disabled scripting <https://docs.microsoft.com/en-us/sharepoint/allow-or-prevent-custom-script>`_ by default. PnP templates can't work with disabled scripting. That is why it is required to enable it. You can do it manually using `this instruction <../how-tos/sharepoint/enable-custom-scripting.html>`_ or we will do it for you while applying the PnP template. For the last option use API key with type `SharePoint - Custom Credentials <../../getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_.
-
-
 The action provisions a PnP template to an existing SharePoint site. You can use it to create lists, libraries, pages, etc. Read the article `How to create a SharePoint site using PnP provisioning template <../how-tos/sharepoint/create-site-pnp.html>`_ for more information.
 
 .. rubric:: Parameters
