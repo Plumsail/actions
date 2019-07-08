@@ -1159,6 +1159,35 @@ Create Communication SharePoint Site
 .. image:: ../../_static/img/flow/sharepoint/CreateCommunicationSiteExample.png
    :alt: Create Communication SharePoint Site Example 
 
+Apply SharePoint site design
+---------------------------------------
+Applies the selected site design to the specified SharePoint site. See more information `here <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-overview>`_. You can get a list of available site design by PowerShell cmdlet `Get-SPOSiteDesign <https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Get-SPOSiteDesign?view=sharepoint-ps>`_
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  URL
+       -  The fully qualified SharePoint site url.
+       -  :code:`https://contoso.sharepoint.com/sites/subsite`
+
+    *  -  Site Design
+       -  You can specify both the name and the identifier
+       -
+        :code:`contoso site design`
+        :code:`bb6b6e04-88fe-4824-bd70-b813681c0360`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/ApplySiteDesignAction.png
+   :alt: Apply selected design to SharePoint Site
+
+
 Get SharePoint Site Option Value  
 ----------------------------------
 Reads a value from SharePoint Site Options (Property Bag) with the help of Microsoft Flow.
