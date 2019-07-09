@@ -1018,11 +1018,11 @@ Create Modern SharePoint Site
 
 Creates a modern SharePoint Team or Communication site with the help of Microsoft Flow.
 
-"Create Modern SharePoint Site" is a complex action that includes 2 different operations for creating Team's or Communication's sites.
+"Create Modern SharePoint Site" is a complex action that includes 3 different operations for creating Team's or Communication's sites.
 
 Once you added this action to your Flow, you need to specify the initial parameter:
 
-* Site type - the type of the site for create: TeamSite, CommunicationSite
+* Site type - the type of the site for create: TeamSite, CommunicationSite or TeamSiteWithNoGroup
 
 .. image:: ../../_static/img/flow/sharepoint/CreateModernSiteExample.png
    :alt: Create Modern SharePoint Site Example
@@ -1033,6 +1033,7 @@ You can find the documentation for all operations included in "Create Modern Sha
 
 - :ref:`create-team-site`
 - :ref:`create-communication-site`
+- :ref:`create-team-site-with-no-group`
 
 
 .. _create-team-site:
@@ -1158,6 +1159,68 @@ Create Communication SharePoint Site
 
 .. image:: ../../_static/img/flow/sharepoint/CreateCommunicationSiteExample.png
    :alt: Create Communication SharePoint Site Example 
+
+.. _create-team-site-with-no-group:
+
+Create Team SharePoint Site with No Group
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Web URL
+       -  The URL of a new site.
+       -  :code:`https://contoso.sharepoint.com/sites/team-site`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  URL
+       -  The full qualified URL (e.g. :code:`https://yourtenant.sharepoint.com/sites/team-site`).
+       -  :code:`https://contoso.sharepoint.com/sites/team-site`
+       
+    *  -  Title
+       -  The title of the site to create.
+       -  Team site
+
+    *  -  Description
+       -  The description to use for the site.
+       -  Site for HR
+
+    *  -  LCID
+       -  The language to use for the site. If not specified will default to the language setting of the clientcontext.
+       -  1033
+
+    *  -  Site Owner Login
+       -  The login of the user that will be a site administrator.
+       -  admin@contoso.onmicrosoft.com
+    
+    *  -  Time Zone ID
+       -  Time zone for the site. For more information about time zone check `this <https://gist.github.com/mj1856/9542228>`_.
+       -  93
+
+    *  -  Site Design
+       -  The custom site design that will be used.  You can select a value from a dropdown list of the available values. If in some reasons you can't see target site design, you can specify it manually by its identifier value.
+       -  ::
+
+            Contoso customer tracking
+            a317d0e7-a13d-4427-a302-2875c628a46e
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CreateTeamSharePointSiteWithNoGroupExample.png
+   :alt: Create Team SharePoint Site With No Group Example
 
 Get SharePoint Site Option Value  
 ----------------------------------
