@@ -827,13 +827,14 @@ The action provisions a PnP template to an existing SharePoint site. You can use
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 30 30
+    :widths: 10 30 20
 
     *  -  Parameter
        -  Description
        -  Example
+
     *  -  XML Template Content
-       -  PnP Provision XML template
+       -  PnP Provision template as xml text or .pnp file
        -  Review examples of microsoft Flows:
           
           - `Create site from PnP template <../how-tos/sharepoint/create-site-pnp.html>`_
@@ -842,6 +843,34 @@ The action provisions a PnP template to an existing SharePoint site. You can use
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    * - Overwrite System PropertyBag Values
+      - Specify this parameter if you want to overwrite and/or create properties that are known to be system entries (starting with vti_, dlc_, etc.)
+      - Yes
+
+    *  - Ignore Duplicate Data Row Errors
+       - Ignore duplicate data row errors when the data row in the template already exists.
+       - Yes
+    
+    *  - Clear Navigation
+       - If you specify this value the navigation nodes will always be removed before adding the nodes in the template
+       - Yes
+
+    *  - Provision Content Types To SubWebs
+       - If set content types will be provisioned if the target web is a subweb.
+       - Yes
+
+    *  - Provision Fields To SubWebs
+       - If set fields will be provisioned if the target web is a subweb.
+       - No
+
+    *  - Handlers
+       - If set allows you to only process a specific part of the template. Notice that this might fail, as some of the handlers require other artifacts in place if they are not part of what your applying. Check `this link <https://docs.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers>`_ for possible values.
+       - Lists, Files
+    
+    *  - Parameters
+       - It will populate the parameter in the template the values as specified and in the template you can refer to those values with the {parameter:} token.
+       - "ListTitle"="Projects";"parameter2"="a second value"
 
 .. rubric:: Example
 
