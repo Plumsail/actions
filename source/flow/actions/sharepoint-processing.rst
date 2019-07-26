@@ -817,23 +817,20 @@ Remove unique permissions and restore permission inheritance on a SharePoint doc
 
 Provision PnP template to SharePoint
 -----------------------------------------
-.. note::
-  All Modern and Communication sites are created with `disabled scripting <https://docs.microsoft.com/en-us/sharepoint/allow-or-prevent-custom-script>`_ by default. PnP templates can't work with disabled scripting. That is why it is required to enable it. You can do it manually using `this instruction <../how-tos/sharepoint/enable-custom-scripting.html>`_ or we will do it for you while applying the PnP template. For the last option use API key with type `SharePoint - Custom Credentials <../../getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_.
-
-
 The action provisions a PnP template to an existing SharePoint site. You can use it to create lists, libraries, pages, etc. Read the article `How to create a SharePoint site using PnP provisioning template <../how-tos/sharepoint/create-site-pnp.html>`_ for more information.
 
 .. rubric:: Parameters
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 30 30
+    :widths: 10 30 20
 
     *  -  Parameter
        -  Description
        -  Example
+
     *  -  XML Template Content
-       -  PnP Provision XML template
+       -  PnP Provision template as xml text or .pnp file
        -  Review examples of microsoft Flows:
           
           - `Create site from PnP template <../how-tos/sharepoint/create-site-pnp.html>`_
@@ -842,6 +839,34 @@ The action provisions a PnP template to an existing SharePoint site. You can use
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    * - Overwrite System PropertyBag Values
+      - Specify this parameter if you want to overwrite and/or create properties that are known to be system entries (starting with vti_, dlc_, etc.)
+      - Yes
+
+    *  - Ignore Duplicate Data Row Errors
+       - Ignore duplicate data row errors when the data row in the template already exists.
+       - Yes
+    
+    *  - Clear Navigation
+       - If you specify this value the navigation nodes will always be removed before adding the nodes in the template
+       - Yes
+
+    *  - Provision Content Types To SubWebs
+       - If set content types will be provisioned if the target web is a subweb.
+       - Yes
+
+    *  - Provision Fields To SubWebs
+       - If set fields will be provisioned if the target web is a subweb.
+       - No
+
+    *  - Handlers
+       - If set allows you to only process a specific part of the template. Notice that this might fail, as some of the handlers require other artifacts in place if they are not part of what your applying. Check `this link <https://docs.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers>`_ for possible values.
+       - Lists, Files
+    
+    *  - Parameters
+       - It will populate the parameter in the template the values as specified and in the template you can refer to those values with the {parameter:} token.
+       - "ListTitle"="Projects";"parameter2"="a second value"
 
 .. rubric:: Example
 
@@ -1018,11 +1043,11 @@ Create Modern SharePoint Site
 
 Creates a modern SharePoint Team or Communication site with the help of Microsoft Flow.
 
-"Create Modern SharePoint Site" is a complex action that includes 2 different operations for creating Team's or Communication's sites.
+"Create Modern SharePoint Site" is a complex action that includes 3 different operations for creating Team's or Communication's sites.
 
 Once you added this action to your Flow, you need to specify the initial parameter:
 
-* Site type - the type of the site for create: TeamSite, CommunicationSite
+* Site type - the type of the site for create: TeamSite, CommunicationSite or TeamSiteWithNoGroup
 
 .. image:: ../../_static/img/flow/sharepoint/CreateModernSiteExample.png
    :alt: Create Modern SharePoint Site Example
@@ -1033,6 +1058,7 @@ You can find the documentation for all operations included in "Create Modern Sha
 
 - :ref:`create-team-site`
 - :ref:`create-communication-site`
+- :ref:`create-team-site-with-no-group`
 
 
 .. _create-team-site:
@@ -2991,6 +3017,7 @@ Adds a menu item to either the quicklaunch or top navigation.
 Remove SharePoint site navigation node
 -----------------------------------------
 Removes a menu item from either the quicklaunch or top navigation.
+
 .. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
 .. rubric:: Input Parameters
