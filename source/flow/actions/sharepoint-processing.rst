@@ -875,7 +875,7 @@ The action provisions a PnP template to an existing SharePoint site. You can use
 
 Provision PnP Tenant template to SharePoint
 -----------------------------------------
-The action provisions a PnP tenant template to an existing SharePoint tenant.
+The action provisions a PnP tenant template to an existing SharePoint tenant. You can use both xml and pnp templates. Xml templates are better to use for simple templates with schema only. If you want to use resource and content files - better to use PnP templates.
 
 .. rubric:: Parameters
 
@@ -889,11 +889,8 @@ The action provisions a PnP tenant template to an existing SharePoint tenant.
 
     *  -  Template Content
        -  PnP Provision template as xml text or .pnp file
-       -  Review examples of microsoft Flows:
+       -  Review examples of microsoft templates `here <https://provisioning.sharepointpnp.com/>`_
           
-          - `Create site from PnP template <../how-tos/sharepoint/create-site-pnp.html>`_
-          - `Create list or library from PnP template <../how-tos/sharepoint/create-list-library-pnp.html>`_
-          - `Create Modern page from PnP template <../how-tos/sharepoint/create-modern-page-pnp-template.html>`_
     *  -  SharePoint Site URL
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
