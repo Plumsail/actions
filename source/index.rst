@@ -54,7 +54,6 @@ Plumsail Actions Documentation
     general/architecture
     general/security-policy
     general/sla
-    general/manage-email-notifications
 
   .. toctree::
     :caption: REST API
