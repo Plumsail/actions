@@ -1,6 +1,7 @@
-Manage email notifications
+License and notifications
 =========================
 
+License page provides information about you current license and available executions.
 You can manage email notifications about reaching limit of executions for Plumsail Actions in the `personal account <https://account.plumsail.com/>`_.
 
 There are 3 options:

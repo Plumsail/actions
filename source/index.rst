@@ -23,6 +23,15 @@ Plumsail Actions Documentation
     getting-started/use-as-rest-api
     getting-started/license-activation   
 
+  .. toctree::
+    :caption: User guide
+    :name: toc-user-guide
+    :maxdepth: 1
+    
+    user-guide/api-keys
+    user-guide/reports
+    user-guide/manage-email-notifications
+
   .. rst-class:: single-page-nav
 
     .. toctree::     
