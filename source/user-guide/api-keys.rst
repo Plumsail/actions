@@ -6,7 +6,7 @@ API key is needed to authenticate your  `REST <https://plumsail.com/docs/documen
 
 
 .. image:: ../_static/img/general/actions-api-keys.png
-   :alt: Actions email notifications
+   :alt: Actions API keys
 
 You can create as many keys as you need, for example, for using with different MS Flow accounts. 
 All the keys are tied to you plumsail account.
