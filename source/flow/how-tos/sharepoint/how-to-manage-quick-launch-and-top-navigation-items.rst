@@ -11,7 +11,7 @@ You can add/remove a navigation node to/from 2 places: Top navigation bar or Qui
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/place-selection.png
 
-
+Let's take first example: adding a nvigation node
 For example, we have a situation where during a day people work with documents in SharePoint Document library. To work with some document a user takes it to work and mark it as check-out, but at the end of the day, every document should be checked-in back.
 
 For this case, I will use *‘Get files (properties only)‘* from SharePoint Connector for getting properties of documents that need to be checked-in. I will also use `Check In SharePoint Document <../../actions/sharepoint-processing.html#check-in-sharepoint-document>`_ from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_ for each document that will be found on the first step.
