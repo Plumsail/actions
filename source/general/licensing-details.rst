@@ -15,7 +15,7 @@ If none of the plans satisfies your requirements, drop us a message to sales@plu
 What are executions?
 ---------------------
 
-We consider an execution each time an action is exectued in Microsoft Flow, Azure Logic Apps, PowerApps or called from REST API.
+We consider an execution each time an action is executed in Microsoft Flow, Azure Logic Apps, PowerApps or called from REST API.
 
 What happens when credits are spent?
 --------------------------------------
