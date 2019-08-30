@@ -5,7 +5,7 @@ In this article, we will demonstrate how to create a Modern SharePoint site and 
 
 Let us imagine the following use case: we create a new project site and need to provide access to customers (external users) to it. 
 
-We will use `Create Modern SharePoint Site <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#create-modern-sharepoint-site>`_ and `Invite External User to SharePoint <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#invite-external-user-to-sharepoint>`_ actions from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+We will use `Create Modern SharePoint Site <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#create-modern-sharepoint-site>`_ and `Invite External User to SharePoint <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#invite-external-user-to-sharepoint>`_ actions from Plumsail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
 This is how our complete flow will look like:
 

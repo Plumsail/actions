@@ -5,7 +5,7 @@ In this article, we will demonstrate how to archive SharePoint list items with h
 
 Let us imagine the following use case: We have a list of tasks with attachments. There is another list in another site collection to archive tasks. We want to move all tasks older than 30 days to this archive list.
 
-I will show how to use `Move List Item to SharePoint List action <../../../flow/actions/sharepoint-processing.html#move-list-item-to-sharepoint-list>`_, but it works the same way for `Copy List Item to SharePoint List action <../../../flow/actions/sharepoint-processing.html#copy-list-item-to-sharepoint-list>`_. These actions are from `Plumasail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+I will show how to use `Move List Item to SharePoint List action <../../../flow/actions/sharepoint-processing.html#move-list-item-to-sharepoint-list>`_, but it works the same way for `Copy List Item to SharePoint List action <../../../flow/actions/sharepoint-processing.html#copy-list-item-to-sharepoint-list>`_. These actions are from `Plumsail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
 This is how our complete flow will look like:
 
@@ -39,7 +39,7 @@ As the output, we only have items that are more than 30 days old.
 Move the queried items in a loop
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We proceed to the last step and simply add to the flow `Move List Item to SharePoint List action <../../../flow/actions/sharepoint-processing.html#move-list-item-to-sharepoint-list>`_ actions from `Plumasail SP connector <https://plumsail.com/actions/sharepoint/>`_.
+We proceed to the last step and simply add to the flow `Move List Item to SharePoint List action <../../../flow/actions/sharepoint-processing.html#move-list-item-to-sharepoint-list>`_ actions from `Plumsail SP connector <https://plumsail.com/actions/sharepoint/>`_.
 
 We click **Item ID** field and add there item **ID** from a menu on the right. This will automatically transform this action into repeating one which will be performed for each file from the source folder.
 

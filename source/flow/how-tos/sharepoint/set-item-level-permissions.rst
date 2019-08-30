@@ -3,7 +3,7 @@ Set SharePoint item level permissions (break role inheritance and assign permiss
 
 This article will show how to use Microsoft Flow to break role inheritance and grant permissions on the list item for the user and for specific SharePoint group.
 
-In this case, I'm using a few variant of the *‘Change Permissions’* action from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+In this case, I'm using a few variant of the *‘Change Permissions’* action from Plumsail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
 This example will show a simple case of business traveling system when a user can create a new request on the business travel as the item in SharePoint list (*‘Business Travel Requests‘*), specify the requester of the business trip the locations of his business trip, the date of departure and the date of return. 
 Once it is done, the flow breaks the permissions inheritance for the new item and grant permissions for the user that was specified as the requester and for *‘Travel Managers‘* SharePoint group that contains managers who response for business trips.

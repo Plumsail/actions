@@ -20,7 +20,7 @@ Then we pick **Complete a custom action for the selected item** template in the 
 .. image:: ../../../_static/img/flow/how-tos/Complete-a-custom-action-for-the-selected-item.jpg
     :alt: Choosing a template
 
-We proceed to **Compling a custom action for the selected item** and simply add to the flow *Invite External User to SharePoint* actions from `Plumasail SP <https://plumsail.com/actions/sharepoint/>`_ connector:
+We proceed to **Compling a custom action for the selected item** and simply add to the flow *Invite External User to SharePoint* actions from `Plumsail SP <https://plumsail.com/actions/sharepoint/>`_ connector:
 
 .. image:: ../../../_static/img/flow/how-tos/invite-user-to-an-item.jpg
     :alt: Completed flow
