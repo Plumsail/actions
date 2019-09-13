@@ -868,6 +868,7 @@ The action provisions a PnP template to an existing SharePoint site. You can use
        - It will populate the parameter in the template the values as specified and in the template you can refer to those values with the {parameter:} token.
        - "ListTitle"="Projects";"parameter2"="a second value"
 
+
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/PnPProvisionExample.png
@@ -918,7 +919,7 @@ The action provisions a PnP tenant template to an existing SharePoint tenant. Yo
     *  - Provision Fields To SubWebs
        - If set fields will be provisioned if the target web is a subweb.
        - No
-
+ 
     *  - Handlers
        - If set allows you to only process a specific part of the template. Notice that this might fail, as some of the handlers require other artifacts in place if they are not part of what your applying. Check `this link <https://docs.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers>`_ for possible values.
        - Lists, Files
@@ -930,6 +931,7 @@ The action provisions a PnP tenant template to an existing SharePoint tenant. Yo
     *  - Parameters
        - It will populate the parameter in the template the values as specified and in the template you can refer to those values with the {parameter:} token.
        - "ListTitle"="Projects";"parameter2"="a second value"
+
 
 .. rubric:: Example
 
@@ -2985,6 +2987,43 @@ You may find an example how to copy or move SharePoint list items with attachmen
 
 .. image:: ../../_static/img/flow/sharepoint/MoveListItemSharePointListExample.png
    :alt: Move List Item to SharePoint List Example
+
+Update SharePoint List Item
+-----------------------------------------
+Updates list Item`s values by passed JSON array.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  List
+       -  List name, URL or Guid.
+       -  Issues
+
+    *  -  ID, URL or Name
+       -  The ID of the source item or name of the document in library or path to it.
+       -  10
+          :code:`https://contoso.sharepoint.com/sites/site01/docLib/document.docx`
+
+    *  -  Field values
+       -  JSON array of the List Item fields with values.
+       -  :code:`{ 'RequiredField01': '123', 'DateTiemField02': '01/03/1995' }`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/UpdateSharePointListItem.png
+   :alt: Update SharePoint List Item Example
+
 
 Start SharePoint Site Workflow (2013)
 -----------------------------------------
