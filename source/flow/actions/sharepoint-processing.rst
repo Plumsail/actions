@@ -3213,3 +3213,64 @@ Removes a menu item from either the quicklaunch or top navigation.
 
 .. image:: ../../_static/img/flow/sharepoint/RemoveSharePointSiteNavigationNodeExample.png
    :alt: Remove SharePoint site navigation node Example
+
+
+Declare SharePoint Document as Record
+-----------------------------------------
+Declares a document from the specified library as a record.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Name
+       -  Mandatory parameter. Title or Url of a list
+       -  DocumentLibrary
+
+    *  -  Item ID or URL
+       -  Mandatory parameter. Library's item id or full URL to document
+       -  1
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/DeclareSharepointDocumentAsRecord.png
+   :alt: Declare SharePoint Document as Record
+
+Undeclare SharePoint Document as Record
+-----------------------------------------
+Uneclares a document from the specified library as a record.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Name
+       -  Mandatory parameter. Title or Url of a list
+       -  DocumentLibrary
+
+    *  -  Item ID or URL
+       -  Mandatory parameter. Library's item id or full URL to document
+       -  1
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/UndeclareSharepointDocumentAsRecord.png
+   :alt: Undeclare SharePoint Document as Record
