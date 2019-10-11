@@ -1,17 +1,17 @@
 How to manage quick launch and top navigation items for a SharePoint site using Microsoft Flow or Azure Logic Apps
 ====================================================================================
 
-This article will show how to manage quick launch and top navigation items for a SharePoint site using 2 Plumsail actions:
+This article will show how to manage quick launch and top navigation items for a SharePoint site using these Plumsail actions:
 
 - Add SharePoint site navigation node
 - Remove SharePoint site navigation node
 
 
-You can add/remove a navigation node to/from 2 places: Top navigation bar or Quick launch 
+You can add/remove a navigation node to/from two places: Top navigation bar or Quick launch 
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/place-selection.png
 
-Let's say you need to add a Quick launch navigation node each time when an item is created in a specific list.
+Let's say you need to add a Quick launch navigation node each time an item is created in a specific list.
 
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/add-remove-nodes-site-example.png
@@ -28,7 +28,10 @@ Also we can add navigation nodes to the top menu. For example, there could be th
 
 When you create a subsite the flow adds navigation node to the top menu of the parent site.
 
-The same way you can program Microsoft flows which remove navigation nodes when an item or subsite is removed.
+The same way you can program Microsoft flows to remove navigation nodes when an item or subsite is removed.
+
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/remove-example.png
+
 
 Conclusion
 ----------
