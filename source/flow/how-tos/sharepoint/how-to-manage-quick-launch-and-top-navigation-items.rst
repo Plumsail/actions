@@ -23,7 +23,7 @@ We can use this simple flow which is triggered when an item is created.
 
 Also we can add navigation nodes to the top menu. For example, there could be this flow
 
-.. image:: ../../../_static/img/flow/how-tos/sharepoint/top-menu-navigation-node-example
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/top-menu-navigation-node-example.png
 
 When you create a subsite the flow adds navigation node to the top menu of the parent site.
 
