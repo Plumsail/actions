@@ -36,4 +36,4 @@ The same way you can program Microsoft flows to remove navigation nodes when an 
 Conclusion
 ----------
 
-That's all! You can manage your SharePoint site navigation very effectively using Plumsail Add/Remove navigation node action.
+That's all! It's possible to manage your SharePoint site navigation very effectively using Plumsail Add/Remove navigation node action.
