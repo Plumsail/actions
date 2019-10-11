@@ -13,6 +13,7 @@ You can add/remove a navigation node to/from 2 places: Top navigation bar or Qui
 
 Let's say you need to add a Quick launch navigation node each time when an item is created in a specific list.
 
+
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/add-remove-nodes-site-example.png
 
 
