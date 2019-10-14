@@ -3,8 +3,8 @@ How to manage quick launch and top navigation items for a SharePoint site using 
 
 This article will show how to manage quick launch and top navigation items for a SharePoint site using these Plumsail actions:
 
-- Add SharePoint site navigation node
-- Remove SharePoint site navigation node
+- `Add SharePoint site navigation node <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#add-sharepoint-site-navigation-node>`_ .
+- `Remove SharePoint site navigation node <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#remove-sharepoint-site-navigation-node>`_ .
 
 
 You can add/remove a navigation node to/from two places: Top navigation bar or Quick launch 
