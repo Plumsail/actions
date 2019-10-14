@@ -1,5 +1,5 @@
 Register account and get API key
-=======================================
+================================
 
 Register account
 ----------------
@@ -27,7 +27,8 @@ This type of key authenticates Actions as an app in your SharePoint tennant. You
 .. image:: ../_static/img/getting-started/add-app-auth-api-key.png
    :alt: API keys
 
-|
+.. note::
+  Though this type of the API key doesn't depand on users' permission level and multi-factor authentication enabled for them, it can't be used with a `Create Modern SharePoint Site`_ action. 
 
 SharePoint - Custom credentials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,6 +37,9 @@ This type of key allows SharePoint actions to work under account of specific use
 
 .. image:: ../_static/img/getting-started/add-sp-credentials-api-key.png
    :alt: API keys
+
+.. note::
+  To use this type of the API key, it is necessary to disable `multi-factor authentication`_ (MFA) for a user under whose account the key is generated. Actions using the key will have the same level of permissions as the user.
 
 Copy and use API key
 --------------------
@@ -51,3 +55,6 @@ Now you can copy and use it in:
 
 - `Microsoft Flow <use-from-flow.html>`_
 - `REST API calls <use-as-rest-api.html>`_
+
+.. _multi-factor authentication: https://docs.microsoft.com/en-gb/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide
+.. _Create Modern SharePoint Site: https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#create-modern-sharepoint-site

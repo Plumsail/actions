@@ -11,7 +11,7 @@ For the first folder, I will use `Create SharePoint Folder by URL <../../actions
 
 For the second folder, I will use `Create SharePoint Folder in List <../../actions/sharepoint-processing.html#create-sharepoint-folder-in-list>`_ for creating it. Then instead of moving it with a single action, I will copy this folder to another site by `Copy SharePoint Folder from Library <../../actions/sharepoint-processing.html#copy-sharepoint-folder-from-library>`_ action and then remove the source folder by `Remove SharePoint Folder by URL <../../actions/sharepoint-processing.html#remove-sharepoint-folder-by-url>`_ action.
 
-All these actions are from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
+All these actions are from Plumsail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
 This article is divided into cases:
 

@@ -823,13 +823,14 @@ The action provisions a PnP template to an existing SharePoint site. You can use
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 30 30
+    :widths: 10 30 20
 
     *  -  Parameter
        -  Description
        -  Example
-    *  -  XML Template Content
-       -  PnP Provision XML template
+
+    *  -  Template Content
+       -  PnP Provision template as xml text or .pnp file
        -  Review examples of microsoft Flows:
           
           - `Create site from PnP template <../how-tos/sharepoint/create-site-pnp.html>`_
@@ -839,10 +840,103 @@ The action provisions a PnP template to an existing SharePoint site. You can use
        -  This property defines the context of the action. The action will be executed on specified SharePoint site.
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
+    * - Overwrite System PropertyBag Values
+      - Specify this parameter if you want to overwrite and/or create properties that are known to be system entries (starting with vti_, dlc_, etc.)
+      - Yes
+
+    *  - Ignore Duplicate Data Row Errors
+       - Ignore duplicate data row errors when the data row in the template already exists.
+       - Yes
+    
+    *  - Clear Navigation
+       - If you specify this value the navigation nodes will always be removed before adding the nodes in the template
+       - Yes
+
+    *  - Provision Content Types To SubWebs
+       - If set content types will be provisioned if the target web is a subweb.
+       - Yes
+
+    *  - Provision Fields To SubWebs
+       - If set fields will be provisioned if the target web is a subweb.
+       - No
+
+    *  - Handlers
+       - If set allows you to only process a specific part of the template. Notice that this might fail, as some of the handlers require other artifacts in place if they are not part of what your applying. Check `this link <https://docs.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers>`_ for possible values.
+       - Lists, Files
+    
+    *  - Parameters
+       - It will populate the parameter in the template the values as specified and in the template you can refer to those values with the {parameter:} token.
+       - "ListTitle"="Projects";"parameter2"="a second value"
+
+
 .. rubric:: Example
 
 .. image:: ../../_static/img/flow/sharepoint/PnPProvisionExample.png
    :alt: PnP Provision Example
+
+Provision PnP Tenant template to SharePoint
+-----------------------------------------
+The action provisions a PnP tenant template to an existing SharePoint tenant. You can use both xml and pnp templates. Xml templates are better to use for simple templates with schema only. If you want to use resource and content files - better to use PnP templates.
+
+.. rubric:: Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  Template Content
+       -  PnP Provision template as xml text or .pnp file
+       -  Review examples of microsoft templates `here <https://provisioning.sharepointpnp.com/>`_
+          
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    * - SequenceId
+      - You can specify sequence in the template.
+      - tenantSequence
+
+    * - Overwrite System PropertyBag Values
+      - Specify this parameter if you want to overwrite and/or create properties that are known to be system entries (starting with vti_, dlc_, etc.)
+      - Yes
+
+    *  - Ignore Duplicate Data Row Errors
+       - Ignore duplicate data row errors when the data row in the template already exists.
+       - Yes
+    
+    *  - Clear Navigation
+       - If you specify this value the navigation nodes will always be removed before adding the nodes in the template
+       - Yes
+
+    *  - Provision Content Types To SubWebs
+       - If set content types will be provisioned if the target web is a subweb.
+       - Yes
+
+    *  - Provision Fields To SubWebs
+       - If set fields will be provisioned if the target web is a subweb.
+       - No
+ 
+    *  - Handlers
+       - If set allows you to only process a specific part of the template. Notice that this might fail, as some of the handlers require other artifacts in place if they are not part of what your applying. Check `this link <https://docs.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers>`_ for possible values.
+       - Lists, Files
+
+    *  - Exclude Handlers
+       - If set allows you to run all handlers, excluding the ones specified.. Check `this link <https://docs.microsoft.com/dotnet/api/officedevpnp.core.framework.provisioning.model.handlers>`_ for possible values.
+       - Lists, Files
+    
+    *  - Parameters
+       - It will populate the parameter in the template the values as specified and in the template you can refer to those values with the {parameter:} token.
+       - "ListTitle"="Projects";"parameter2"="a second value"
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/PnPTenantProvisionExample.png
+   :alt: PnP Tenant Provision Example
 
 Activate SharePoint Feature
 ----------------------------------
@@ -1014,11 +1108,11 @@ Create Modern SharePoint Site
 
 Creates a modern SharePoint Team or Communication site with the help of Microsoft Flow.
 
-"Create Modern SharePoint Site" is a complex action that includes 2 different operations for creating Team's or Communication's sites.
+"Create Modern SharePoint Site" is a complex action that includes 3 different operations for creating Team's or Communication's sites.
 
 Once you added this action to your Flow, you need to specify the initial parameter:
 
-* Site type - the type of the site for create: TeamSite, CommunicationSite
+* Site type - the type of the site for create: TeamSite, CommunicationSite or TeamSiteWithNoGroup
 
 .. image:: ../../_static/img/flow/sharepoint/CreateModernSiteExample.png
    :alt: Create Modern SharePoint Site Example
@@ -1029,6 +1123,7 @@ You can find the documentation for all operations included in "Create Modern Sha
 
 - :ref:`create-team-site`
 - :ref:`create-communication-site`
+- :ref:`create-team-site-with-no-group`
 
 
 .. _create-team-site:
@@ -1154,6 +1249,97 @@ Create Communication SharePoint Site
 
 .. image:: ../../_static/img/flow/sharepoint/CreateCommunicationSiteExample.png
    :alt: Create Communication SharePoint Site Example 
+
+.. _create-team-site-with-no-group:
+
+Create Team SharePoint Site with No Group
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Web URL
+       -  The URL of a new site.
+       -  :code:`https://contoso.sharepoint.com/sites/team-site`
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  URL
+       -  The full qualified URL (e.g. :code:`https://yourtenant.sharepoint.com/sites/team-site`).
+       -  :code:`https://contoso.sharepoint.com/sites/team-site`
+       
+    *  -  Title
+       -  The title of the site to create.
+       -  Team site
+
+    *  -  Description
+       -  The description to use for the site.
+       -  Site for HR
+
+    *  -  LCID
+       -  The language to use for the site. If not specified will default to the language setting of the clientcontext.
+       -  1033
+
+    *  -  Site Owner Login
+       -  The login of the user that will be a site administrator.
+       -  admin@contoso.onmicrosoft.com
+    
+    *  -  Time Zone ID
+       -  Time zone for the site. For more information about time zone check `this <https://gist.github.com/mj1856/9542228>`_.
+       -  93
+
+    *  -  Site Design
+       -  The custom site design that will be used.  You can select a value from a dropdown list of the available values. If in some reasons you can't see target site design, you can specify it manually by its identifier value.
+       -  ::
+
+            Contoso customer tracking
+            a317d0e7-a13d-4427-a302-2875c628a46e
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/CreateTeamSharePointSiteWithNoGroupExample.png
+   :alt: Create Team SharePoint Site With No Group Example
+
+Apply SharePoint site design
+---------------------------------------
+Applies the selected site design to the specified SharePoint site. See more information `here <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-overview>`_. You can get a list of available site design by PowerShell cmdlet `Get-SPOSiteDesign <https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Get-SPOSiteDesign?view=sharepoint-ps>`_
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  URL
+       -  The fully qualified SharePoint site url.
+       -  :code:`https://contoso.sharepoint.com/sites/subsite`
+
+    *  -  Site Design
+       -  You can specify both the name and the identifier
+       -
+        :code:`contoso site design`
+        :code:`bb6b6e04-88fe-4824-bd70-b813681c0360`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/ApplySiteDesignAction.png
+   :alt: Apply selected design to SharePoint Site
+
 
 Get SharePoint Site Option Value  
 ----------------------------------
@@ -2802,6 +2988,43 @@ You may find an example how to copy or move SharePoint list items with attachmen
 .. image:: ../../_static/img/flow/sharepoint/MoveListItemSharePointListExample.png
    :alt: Move List Item to SharePoint List Example
 
+Update SharePoint List Item
+-----------------------------------------
+Updates list Item`s values by passed JSON array.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  List
+       -  List name, URL or Guid.
+       -  Issues
+
+    *  -  ID, URL or Name
+       -  The ID of the source item or name of the document in library or path to it.
+       -  10
+          :code:`https://contoso.sharepoint.com/sites/site01/docLib/document.docx`
+
+    *  -  Field values
+       -  JSON array of the List Item fields with values.
+       -  :code:`{ 'RequiredField01': '123', 'DateTiemField02': '01/03/1995' }`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/UpdateSharePointListItem.png
+   :alt: Update SharePoint List Item Example
+
+
 Start SharePoint Site Workflow (2013)
 -----------------------------------------
 Starts a SharePoint site level workflow and pass input parameters, if they were specified. The action can run only 2013 workflows with the help of Microsoft Flow.
@@ -2990,3 +3213,64 @@ Removes a menu item from either the quicklaunch or top navigation.
 
 .. image:: ../../_static/img/flow/sharepoint/RemoveSharePointSiteNavigationNodeExample.png
    :alt: Remove SharePoint site navigation node Example
+
+
+Declare SharePoint Document as Record
+-----------------------------------------
+Declares a document from the specified library as a record.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Name
+       -  Mandatory parameter. Title or Url of a list
+       -  DocumentLibrary
+
+    *  -  Item ID or URL
+       -  Mandatory parameter. Library's item id or full URL to document
+       -  1
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/DeclareSharepointDocumentAsRecord.png
+   :alt: Declare SharePoint Document as Record
+
+Undeclare SharePoint Document as Record
+-----------------------------------------
+Uneclares a document from the specified library as a record.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Name
+       -  Mandatory parameter. Title or Url of a list
+       -  DocumentLibrary
+
+    *  -  Item ID or URL
+       -  Mandatory parameter. Library's item id or full URL to document
+       -  1
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/UndeclareSharepointDocumentAsRecord.png
+   :alt: Undeclare SharePoint Document as Record

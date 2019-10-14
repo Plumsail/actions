@@ -5,7 +5,7 @@ This article will show how to move documents using Microsoft Flow. As a proof of
 
 It will show how to set up the periodical archival process that will start every day, query all documents older than 30 days and move them to the document library called "Archive" that is located on another site.
 
-I will use *‘Get files (properties only)‘* from SharePoint Connector for getting properties of documents that have to be moved in the archive and `Move SharePoint Document from Library <../../actions/sharepoint-processing.html#move-sharepoint-document-from-library>`_ from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. I will apply it to each document that will be found on the first step for moving it to "Archive" folder to a different site.
+I will use *‘Get files (properties only)‘* from SharePoint Connector for getting properties of documents that have to be moved in the archive and `Move SharePoint Document from Library <../../actions/sharepoint-processing.html#move-sharepoint-document-from-library>`_ from Plumsail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. I will apply it to each document that will be found on the first step for moving it to "Archive" folder to a different site.
 This flow will be scheduled with "Recurrence" trigger from "Schedule" connector to run every day.
 
 The complete flow is below. You can find step by step description next to the picture.

@@ -7,7 +7,7 @@ For example, we consider the following business case:
 We have a small company. The company uses SharePoint Online to automate business processes. SharePoint site has a list of matters, each matter it is a document set with some metadata. An employee creates a new Contract using a predefined template (as of an example contract for a sale of real estate), fills in all metadata and prepares all document for a matter.
 Then he needs to get approval from some approver and then copy this document set to the special library ("Matters" on this example) on the site. 
 
-For this case, I will use `Send approval email <https://docs.microsoft.com/en-us/connectors/office365connector/#Send_approval_email>`_ from Office 365 Outlook Connector for sending the approval message. I will also use `Copy SharePoint document set <../../actions/sharepoint-processing.html#copy-sharepoint-document-set>`_ from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_ for copying approved document set to the "Matters" library on the site.
+For this case, I will use `Send approval email <https://docs.microsoft.com/en-us/connectors/office365connector/#Send_approval_email>`_ from Office 365 Outlook Connector for sending the approval message. I will also use `Copy SharePoint document set <../../actions/sharepoint-processing.html#copy-sharepoint-document-set>`_ from Plumsail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_ for copying approved document set to the "Matters" library on the site.
 
 The complete flow is below. You can find step by step description of the flow next to the picture.
 

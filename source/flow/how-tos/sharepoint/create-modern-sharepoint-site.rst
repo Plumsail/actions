@@ -3,7 +3,7 @@ How to create a modern team or communication SharePoint site in Microsoft Flow o
 
 In this article, we will demonstrate how to configure a Microsoft Flow that will automatically create a new site in SharePoint on an item creation. This approach works in SharePoint Online (Office 365).
 
-In this flow, we are using `Create Modern SharePoint site <../../actions/sharepoint-processing.html#create-modern-sharepoint-site>`_ action from `Plumasail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action allows you to create modern team and communication sites.
+In this flow, we are using `Create Modern SharePoint site <../../actions/sharepoint-processing.html#create-modern-sharepoint-site>`_ action from `Plumsail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action allows you to create modern team and communication sites.
 
 When you create a modern team site there is automatically created an Office 365 group. With Office 365 Groups your team can collaborate and communicate easier using all or any of the following:
 
