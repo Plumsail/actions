@@ -3135,6 +3135,7 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
 Add SharePoint site navigation node
 -----------------------------------------
 Adds a menu item to either the quicklaunch or top navigation.
+You may find an example how to manage quick launch and top navigation items for a SharePoint site `in this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-manage-quick-launch-and-top-navigation-items.html>`_ .
 
 .. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
@@ -3181,6 +3182,7 @@ Adds a menu item to either the quicklaunch or top navigation.
 Remove SharePoint site navigation node
 -----------------------------------------
 Removes a menu item from either the quicklaunch or top navigation.
+You may find an example how to manage quick launch and top navigation items for a SharePoint site `in this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-manage-quick-launch-and-top-navigation-items.html>`_ .
 
 .. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
 
