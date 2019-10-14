@@ -1,62 +1,39 @@
 How to manage quick launch and top navigation items for a SharePoint site using Microsoft Flow or Azure Logic Apps
 ====================================================================================
 
-This article will show how to manage quick launch and top navigation items for a SharePoint site using 2 Plumsail actions:
+This article will show how to manage quick launch and top navigation items for a SharePoint site using these Plumsail actions:
 
-- Add SharePoint site navigation node
-- Remove SharePoint site navigation node
+- `Add SharePoint site navigation node <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#add-sharepoint-site-navigation-node>`_ .
+- `Remove SharePoint site navigation node <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#remove-sharepoint-site-navigation-node>`_ .
 
 
-You can add/remove a navigation node to/from 2 places: Top navigation bar or Quick launch 
+You can add/remove a navigation node to/from two places: Top navigation bar or Quick launch 
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/place-selection.png
 
-Let's take first example: adding a nvigation node
-For example, we have a situation where during a day people work with documents in SharePoint Document library. To work with some document a user takes it to work and mark it as check-out, but at the end of the day, every document should be checked-in back.
+Let's say you need to add a Quick launch navigation node each time an item is created in a specific list.
 
-For this case, I will use *‘Get files (properties only)‘* from SharePoint Connector for getting properties of documents that need to be checked-in. I will also use `Check In SharePoint Document <../../actions/sharepoint-processing.html#check-in-sharepoint-document>`_ from Plumasail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_ for each document that will be found on the first step.
 
-Below you can find an example of the small flow that gets all documents in check-out status and does check-in for each one:
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/add-remove-nodes-site-example.png
 
-.. image:: ../../../_static/img/flow/how-tos/sharepoint/check-in-multiple-documents.png
-   :alt: Check-in Multiple Documents
 
-Manually trigger a flow
-------------------------
+We can use this simple flow which is triggered when an item is created.
 
-For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Microsoft Flow.
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/flow-example.png
 
-.. _getFilesProperties:
 
-Get files (properties only)
----------------------------
+Also we can add navigation nodes to the top menu. For example, there could be this flow
 
-.. image:: ../../../_static/img/flow/how-tos/sharepoint/get-files-preporties-check-in.png
-   :alt: Get Files Properties
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/top-menu-navigation-node-example.png
 
-On this step, I get all documents in check-out status:
+When you create a subsite the flow adds navigation node to the top menu of the parent site.
 
-*‘Site Address‘* as :code:`https://contoso.sharepoint.com/sites/subSite` - The URL of the site. 
+The same way you can program Microsoft flows to remove navigation nodes when an item or subsite is removed.
 
-*‘Library Name‘* as :code:`"Documents"` - The name of the source folder.
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/remove-example.png
 
-The action is using `OData filter <http://www.odata.org/documentation/odata-version-3-0/url-conventions/>`_ as a value of *‘Filter Query‘* field. I compare "CheckOutUser" field from document's properties with the null value. If the value of this field is not equal null then that is mean this file has check-out status.
-
-Check In SharePoint Document
------------------------------
-
-The action `Check In SharePoint Document <../../actions/sharepoint-processing.html#check-in-sharepoint-document>`_ is used in "each" cycle that based on results of :ref:`getFilesProperties` action.
-
-As value for *Document URL‘* I'm using the value of *‘Link to item‘* parameter from *‘Get files (properties only)‘* response:
-
-.. image:: ../../../_static/img/flow/how-tos/sharepoint/check-in-document.png
-   :alt: Check-in Document
-
-*‘SharePoint Site URL‘* I specified as :code:`"https://contoso.sharepoint.com/sites/subSite"` - The URL of the site.
-
-*‘Comment‘* as :code:`"Comment"` - The comment to accompany document check in.
 
 Conclusion
 ----------
 
-That's all! These few simple steps can help ease the work with documents for users.
+That's all! It's possible to manage your SharePoint site navigation very effectively using Plumsail Add/Remove navigation node action.
