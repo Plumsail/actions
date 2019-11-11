@@ -1680,7 +1680,7 @@ Invites external users with specific permission to an item in a SharePoint list 
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Employees
     
     *  -  Item ID
@@ -2773,7 +2773,7 @@ Executes a CAML query on a list or on a document library and returns the collect
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Documents
 
     *  -  Folder URL
@@ -2828,7 +2828,7 @@ Updates list Item values by a passed JSON object. It supports updating of any Sh
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
     *  -  List
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  ID, URL or Name
@@ -2894,7 +2894,7 @@ Returns the changes history for the specific field from the SharePoint list item
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Documents
 
     *  -  Item ID
@@ -2947,7 +2947,7 @@ Copies attachments from the SharePoint list item to the library using the specif
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  Item ID
@@ -3004,7 +3004,7 @@ Moves attachments from the SharePoint list item to the library using the specifi
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  Item ID
@@ -3043,7 +3043,7 @@ Adds the specified content type to a SharePoint list with the help of Microsoft 
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Employees
 
     *  -  Content Type Name
@@ -3093,7 +3093,7 @@ You may find an example how to copy or move SharePoint list items with attachmen
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  Item ID
@@ -3148,7 +3148,7 @@ You may find an example how to copy or move SharePoint list items with attachmen
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  Item ID
@@ -3250,7 +3250,7 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Notifications
 
     *  -  Item ID
