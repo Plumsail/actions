@@ -1340,6 +1340,89 @@ Applies the selected site design to the specified SharePoint site. See more info
 .. image:: ../../_static/img/flow/sharepoint/ApplySiteDesignAction.png
    :alt: Apply selected design to SharePoint Site
 
+Add SharePoint site navigation node
+-----------------------------------------
+Adds a menu item to either the quicklaunch or top navigation.
+You may find an example how to manage quick launch and top navigation items for a SharePoint site `in this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-manage-quick-launch-and-top-navigation-items.html>`_ .
+
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Location
+       -  Mandatory parameter. The location of the node to add. Two options: Top navigation bar, Quick launch
+       -  Quick launch
+
+    *  -  Title
+       -  Mandatory parameter. Title of navigation node
+       -  Text
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  URL
+       -  Optional parameter. Target URL. If the URL is empty, then the top-level navigation item will be created.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  Prepend
+       -  Optional parameter. Yes or No. The default value is No.
+       -  Yes
+
+    *  -  Parent
+       -  Optional parameter. It is the title of a parent navigation item. If there are multiple top-level items with the same title, we will pick only the first.
+       -  Text
+
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/AddSharePointSiteNavigationNodeExample.png
+   :alt: Add SharePoint Site Navigation Node Example
+
+
+Remove SharePoint site navigation node
+-----------------------------------------
+Removes a menu item from either the quicklaunch or top navigation.
+You may find an example how to manage quick launch and top navigation items for a SharePoint site `in this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-manage-quick-launch-and-top-navigation-items.html>`_ .
+
+.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Location
+       -  Mandatory parameter. The location of the node to add. Two options: Top navigation bar, Quick launch
+       -  Quick launch
+
+    *  -  Title
+       -  Mandatory parameter. Title of navigation node
+       -  Text
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  Parent
+       -  Optional parameter. It is the title of a parent navigation item. If there are multiple top-level items with the same title, we will pick only the first.
+       -  Text
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/RemoveSharePointSiteNavigationNodeExample.png
+   :alt: Remove SharePoint site navigation node Example
 
 Get SharePoint Site Option Value  
 ----------------------------------
@@ -2220,6 +2303,66 @@ Moves a SharePoint folder from the document library to the specified URL with th
 .. image:: ../../_static/img/flow/sharepoint/MoveFolderFromLibraryExample.png
    :alt: Move SharePoint Folder from Library Example
 
+Declare SharePoint Document as Record
+-----------------------------------------
+Declares a document from the specified library as a record.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Name
+       -  Mandatory parameter. Title or Url of a list
+       -  DocumentLibrary
+
+    *  -  Item ID or URL
+       -  Mandatory parameter. Library's item id or full URL to document
+       -  1
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/DeclareSharepointDocumentAsRecord.png
+   :alt: Declare SharePoint Document as Record
+
+Undeclare SharePoint Document as Record
+-----------------------------------------
+Uneclares a document from the specified library as a record.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Name
+       -  Mandatory parameter. Title or Url of a list
+       -  DocumentLibrary
+
+    *  -  Item ID or URL
+       -  Mandatory parameter. Library's item id or full URL to document
+       -  1
+
+    *  -  SharePoint Site URL
+       -  Mandatory parameter. URL of the target SharePoint site
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/UndeclareSharepointDocumentAsRecord.png
+   :alt: Undeclare SharePoint Document as Record
+
 Check In SharePoint Document
 -----------------------------------------
 Check-in a SharePoint document at the specified URL with the specified comment with the help of Microsoft Flow.
@@ -2666,6 +2809,48 @@ Executes a CAML query on a list or on a document library and returns the collect
 .. image:: ../../_static/img/flow/sharepoint/GetSharePointItemsCAMLQueryExample.png
    :alt: Get SharePoint Items By CAML Query Example
 
+Update SharePoint List Item
+---------------------------
+Updates list Item values by a passed JSON object. It supports updating of any SharePoint list column type and doesn't require specifying mandatory field values. You can update single or multiple column values at a time.
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  SharePoint Site URL
+       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
+       -  :code:`https://contoso.sharepoint.com/sites/subSite`
+
+    *  -  List
+       -  List name, URL or Guid.
+       -  Issues
+
+    *  -  ID, URL or Name
+       -  The ID of the source item or name of the document in library or path to it.
+       -  10
+          :code:`https://contoso.sharepoint.com/sites/site01/docLib/document.docx`
+
+    *  -  Field values
+       -  JSON object of the List Item fields with values. The property name in the JSON object is an internal name of a list field. Value in JSON object is a string representation of the field value.
+       -  ::
+
+            { 
+              "StringFieldName": "Some text", 
+              "DateTimeFieldName": "01/03/1995", 
+              "LookupFieldName": 54 
+            }       
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/UpdateSharePointListItem.png
+   :alt: Update SharePoint List Item Example
+
 Get SharePoint Item Versions History
 -----------------------------------------
 Returns the changes history for the specific field from the SharePoint list item with the help of Microsoft Flow.
@@ -2988,43 +3173,6 @@ You may find an example how to copy or move SharePoint list items with attachmen
 .. image:: ../../_static/img/flow/sharepoint/MoveListItemSharePointListExample.png
    :alt: Move List Item to SharePoint List Example
 
-Update SharePoint List Item
------------------------------------------
-Updates list Item`s values by passed JSON array.
-
-.. rubric:: Input Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-
-    *  -  SharePoint Site URL
-       -  This property defines the context of the action. The action will be executed on specified SharePoint site.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-    *  -  List
-       -  List name, URL or Guid.
-       -  Issues
-
-    *  -  ID, URL or Name
-       -  The ID of the source item or name of the document in library or path to it.
-       -  10
-          :code:`https://contoso.sharepoint.com/sites/site01/docLib/document.docx`
-
-    *  -  Field values
-       -  JSON array of the List Item fields with values.
-       -  :code:`{ 'RequiredField01': '123', 'DateTiemField02': '01/03/1995' }`
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/UpdateSharePointListItem.png
-   :alt: Update SharePoint List Item Example
-
-
 Start SharePoint Site Workflow (2013)
 -----------------------------------------
 Starts a SharePoint site level workflow and pass input parameters, if they were specified. The action can run only 2013 workflows with the help of Microsoft Flow.
@@ -3131,148 +3279,3 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
 
 .. image:: ../../_static/img/flow/sharepoint/StartSharePointListWorkflowExample.png
    :alt: Start SharePoint List Workflow Example
-
-Add SharePoint site navigation node
------------------------------------------
-Adds a menu item to either the quicklaunch or top navigation.
-You may find an example how to manage quick launch and top navigation items for a SharePoint site `in this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-manage-quick-launch-and-top-navigation-items.html>`_ .
-
-.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
-
-.. rubric:: Input Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  Location
-       -  Mandatory parameter. The location of the node to add. Two options: Top navigation bar, Quick launch
-       -  Quick launch
-
-    *  -  Title
-       -  Mandatory parameter. Title of navigation node
-       -  Text
-
-    *  -  SharePoint Site URL
-       -  Mandatory parameter. URL of the target SharePoint site
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-    *  -  URL
-       -  Optional parameter. Target URL. If the URL is empty, then the top-level navigation item will be created.
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-    *  -  Prepend
-       -  Optional parameter. Yes or No. The default value is No.
-       -  Yes
-
-    *  -  Parent
-       -  Optional parameter. It is the title of a parent navigation item. If there are multiple top-level items with the same title, we will pick only the first.
-       -  Text
-
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/AddSharePointSiteNavigationNodeExample.png
-   :alt: Add SharePoint Site Navigation Node Example
-
-
-Remove SharePoint site navigation node
------------------------------------------
-Removes a menu item from either the quicklaunch or top navigation.
-You may find an example how to manage quick launch and top navigation items for a SharePoint site `in this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-manage-quick-launch-and-top-navigation-items.html>`_ .
-
-.. note:: At this moment the action is only available in custom connector. Please read `here <../create-custom-connector.html>`_ how to create one.
-
-.. rubric:: Input Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  Location
-       -  Mandatory parameter. The location of the node to add. Two options: Top navigation bar, Quick launch
-       -  Quick launch
-
-    *  -  Title
-       -  Mandatory parameter. Title of navigation node
-       -  Text
-
-    *  -  SharePoint Site URL
-       -  Mandatory parameter. URL of the target SharePoint site
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-    *  -  Parent
-       -  Optional parameter. It is the title of a parent navigation item. If there are multiple top-level items with the same title, we will pick only the first.
-       -  Text
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/RemoveSharePointSiteNavigationNodeExample.png
-   :alt: Remove SharePoint site navigation node Example
-
-
-Declare SharePoint Document as Record
------------------------------------------
-Declares a document from the specified library as a record.
-
-.. rubric:: Input Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  List Name
-       -  Mandatory parameter. Title or Url of a list
-       -  DocumentLibrary
-
-    *  -  Item ID or URL
-       -  Mandatory parameter. Library's item id or full URL to document
-       -  1
-
-    *  -  SharePoint Site URL
-       -  Mandatory parameter. URL of the target SharePoint site
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/DeclareSharepointDocumentAsRecord.png
-   :alt: Declare SharePoint Document as Record
-
-Undeclare SharePoint Document as Record
------------------------------------------
-Uneclares a document from the specified library as a record.
-
-.. rubric:: Input Parameters
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  List Name
-       -  Mandatory parameter. Title or Url of a list
-       -  DocumentLibrary
-
-    *  -  Item ID or URL
-       -  Mandatory parameter. Library's item id or full URL to document
-       -  1
-
-    *  -  SharePoint Site URL
-       -  Mandatory parameter. URL of the target SharePoint site
-       -  :code:`https://contoso.sharepoint.com/sites/subSite`
-
-.. rubric:: Example
-
-.. image:: ../../_static/img/flow/sharepoint/UndeclareSharepointDocumentAsRecord.png
-   :alt: Undeclare SharePoint Document as Record
