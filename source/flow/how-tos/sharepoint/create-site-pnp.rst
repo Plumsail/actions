@@ -33,7 +33,10 @@ Then execute the command below:
 
 .. code-block:: powershell
 
-  Get-PnPProvisioningTemplate -Out "template.xml"
+  Get-PnPProvisioningTemplate -Out "template.xml" -Schema V202002
+
+.. note::
+  You should specify the schema version explicitly to ensure that it is supported by our service (:code:`V202002` or older).
 
 This command gets a template of the whole site and saves it to "template.xml" file. You can change this location if you want. 
 

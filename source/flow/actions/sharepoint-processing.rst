@@ -819,6 +819,10 @@ Provision PnP template to SharePoint
 -----------------------------------------
 The action provisions a PnP template to an existing SharePoint site. You can use it to create lists, libraries, pages, etc. Read the article `How to create a SharePoint site using PnP provisioning template <../how-tos/sharepoint/create-site-pnp.html>`_ for more information.
 
+.. note::
+  The supported version of PnP schema is :code:`V202002` (or older).
+  You should specify it in the accordant `parameter <https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/get-pnpprovisioningtemplate?view=sharepoint-ps#parameters>`_ explicitly when getting a template.
+
 .. rubric:: Parameters
 
 .. list-table::
@@ -877,6 +881,9 @@ The action provisions a PnP template to an existing SharePoint site. You can use
 Provision PnP Tenant template to SharePoint
 -----------------------------------------
 The action provisions a PnP tenant template to an existing SharePoint tenant. You can use both xml and pnp templates. Xml templates are better to use for simple templates with schema only. If you want to use resource and content files - better to use PnP templates.
+
+.. note::
+  The supported version of PnP schema is :code:`V202002` (or older).
 
 .. rubric:: Parameters
 
