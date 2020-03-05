@@ -13,7 +13,7 @@ Go to Site settings - Site collection features and enable "In place records mana
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/in-place-records-management.png
 
-Then if you go to the site settings again you'll se option "Record Declaration Settings",
+Then if you go to the site settings again you'll see option "Record Declaration Settings",
 
 These are the default settings. You can change it if it's needed
 
