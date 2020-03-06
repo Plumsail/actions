@@ -820,8 +820,12 @@ Provision PnP template to SharePoint
 The action provisions a PnP template to an existing SharePoint site. You can use it to create lists, libraries, pages, etc. Read the article `How to create a SharePoint site using PnP provisioning template <../how-tos/sharepoint/create-site-pnp.html>`_ for more information.
 
 .. note::
-  The supported version of PnP schema is :code:`V202002` (or older).
-  You should specify it in the accordant `parameter <https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/get-pnpprovisioningtemplate?view=sharepoint-ps#parameters>`_ explicitly when getting a template.
+  The supported version of PnP schema is :code:`V202002` (or earlier).
+  You should specify it in the accordant `parameter <https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/get-pnpprovisioningtemplate?view=sharepoint-ps#parameters>`_ explicitly when getting a template:
+  
+  .. code-block:: powershell
+  
+    Get-PnPProvisioningTemplate -Out template.xml -Schema V202002
 
 .. rubric:: Parameters
 

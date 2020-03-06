@@ -25,7 +25,7 @@ Write a PnP template manually and provision a simple list
 ---------------------------------------------------------
 
 .. note::
-  Our action supports a PnP template schema of February 2020 or older.
+  Our action supports the PnP template schema :code:`V202002` (or earlier).
 
 This approach is useful for creation of simple lists or document libraries without custom content types, site columns, etc. Below you can see example of a template for simple employees list:
 
@@ -149,7 +149,7 @@ Unfortunately, there are no PnP PowerShell commands for getting a template from 
   Get-PnPProvisioningTemplate -Out "template.xml" -Handlers Lists -Schema V202002
 
 .. note::
-  You should specify the schema version explicitly to ensure that it is supported by our service (:code:`V202002` or older).
+  You should specify the schema version explicitly to ensure that it is supported by our service (:code:`V202002` or earlier).
 
 But this command creates a template for all lists and libraries on your site. If it is your case, you can use the code above. Otherwise, you need a workaround.
 
