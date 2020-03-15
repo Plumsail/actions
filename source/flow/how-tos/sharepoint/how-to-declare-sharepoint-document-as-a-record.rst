@@ -47,7 +47,7 @@ If I try to delete it I see this notification
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/notification.png
 
-You can also Undeclare document using `Undeclare action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#undeclare-sharepoint-document-as-record>`_
+.. note:: You can also Undeclare document using `Undeclare action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#undeclare-sharepoint-document-as-record>`_
 
 
 Conclusion

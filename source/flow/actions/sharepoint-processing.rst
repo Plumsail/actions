@@ -2314,6 +2314,8 @@ Declare SharePoint Document as Record
 -----------------------------------------
 Declares a document from the specified library as a record.
 
+Check out the example How to declare SharePoint documents as a record in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-declare-sharepoint-document-as-a-record.html>`_ .
+
 .. rubric:: Input Parameters
 
 .. list-table::
