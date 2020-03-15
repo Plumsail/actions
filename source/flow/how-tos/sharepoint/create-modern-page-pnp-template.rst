@@ -22,7 +22,7 @@ Write a PnP template manually and provision news page
 ------------------------------------------------------
 
 .. note::
-  Our action supports a PnP template schema of February 2020 or older.
+  Our action supports the PnP template schema :code:`V202002` (or earlier).
 
 This approach is useful for creation of simple text pages. Below you can see example template for a simple news page with the title "Breaking news!", content "We can create modern pages from Microsoft Flow!" and file name "news-page.aspx".
 
