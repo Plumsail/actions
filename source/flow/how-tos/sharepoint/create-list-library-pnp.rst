@@ -24,6 +24,9 @@ You will find the description of both approaches below. Pick the one that you li
 Write a PnP template manually and provision a simple list
 ---------------------------------------------------------
 
+.. note::
+  Our action supports the PnP template schema :code:`V202002` (or earlier).
+
 This approach is useful for creation of simple lists or document libraries without custom content types, site columns, etc. Below you can see example of a template for simple employees list:
 
 .. code-block:: XML
@@ -143,7 +146,10 @@ Unfortunately, there are no PnP PowerShell commands for getting a template from 
 
 .. code-block:: powershell
 
-  Get-PnPProvisioningTemplate -Out "template.xml" -Handlers Lists
+  Get-PnPProvisioningTemplate -Out "template.xml" -Handlers Lists -Schema V202002
+
+.. note::
+  You should specify the schema version explicitly to ensure that it is supported by our service (:code:`V202002` or earlier).
 
 But this command creates a template for all lists and libraries on your site. If it is your case, you can use the code above. Otherwise, you need a workaround.
 
@@ -153,7 +159,7 @@ The script below is the workaround. It will help you to get a template from a si
 
   $listName = "Employees";
   $outputTemplateFileName = "template.xml";
-  $template = Get-PnPProvisioningTemplate -OutputInstance -Handlers Lists
+  $template = Get-PnPProvisioningTemplate -OutputInstance -Handlers Lists -Schema V202002
   $listTemplate = $template.Lists | Where-Object { $_.Title -eq $listName }
   $template.Lists.Clear()
   $template.Lists.Add($listTemplate)

@@ -819,6 +819,14 @@ Provision PnP template to SharePoint
 -----------------------------------------
 The action provisions a PnP template to an existing SharePoint site. You can use it to create lists, libraries, pages, etc. Read the article `How to create a SharePoint site using PnP provisioning template <../how-tos/sharepoint/create-site-pnp.html>`_ for more information.
 
+.. note::
+  The supported version of PnP schema is :code:`V202002` (or earlier).
+  You should specify it in the accordant `parameter <https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/get-pnpprovisioningtemplate?view=sharepoint-ps#parameters>`_ explicitly when getting a template:
+  
+  .. code-block:: powershell
+  
+    Get-PnPProvisioningTemplate -Out template.xml -Schema V202002
+
 .. rubric:: Parameters
 
 .. list-table::
@@ -877,6 +885,9 @@ The action provisions a PnP template to an existing SharePoint site. You can use
 Provision PnP Tenant template to SharePoint
 -----------------------------------------
 The action provisions a PnP tenant template to an existing SharePoint tenant. You can use both xml and pnp templates. Xml templates are better to use for simple templates with schema only. If you want to use resource and content files - better to use PnP templates.
+
+.. note::
+  The supported version of PnP schema is :code:`V202002` (or older).
 
 .. rubric:: Parameters
 
@@ -1680,7 +1691,7 @@ Invites external users with specific permission to an item in a SharePoint list 
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Employees
     
     *  -  Item ID
@@ -2307,6 +2318,8 @@ Declare SharePoint Document as Record
 -----------------------------------------
 Declares a document from the specified library as a record.
 
+Check out the example How to declare SharePoint documents as a record in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-declare-sharepoint-document-as-a-record.html>`_ .
+
 .. rubric:: Input Parameters
 
 .. list-table::
@@ -2773,7 +2786,7 @@ Executes a CAML query on a list or on a document library and returns the collect
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Documents
 
     *  -  Folder URL
@@ -2828,7 +2841,7 @@ Updates list Item values by a passed JSON object. It supports updating of any Sh
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
     *  -  List
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  ID, URL or Name
@@ -2894,7 +2907,7 @@ Returns the changes history for the specific field from the SharePoint list item
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Documents
 
     *  -  Item ID
@@ -2947,7 +2960,7 @@ Copies attachments from the SharePoint list item to the library using the specif
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  Item ID
@@ -3004,7 +3017,7 @@ Moves attachments from the SharePoint list item to the library using the specifi
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  Item ID
@@ -3043,7 +3056,7 @@ Adds the specified content type to a SharePoint list with the help of Microsoft 
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Employees
 
     *  -  Content Type Name
@@ -3093,7 +3106,7 @@ You may find an example how to copy or move SharePoint list items with attachmen
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  Item ID
@@ -3148,7 +3161,7 @@ You may find an example how to copy or move SharePoint list items with attachmen
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Issues
 
     *  -  Item ID
@@ -3250,7 +3263,7 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
        -  Description
        -  Example
     *  -  List URL
-       -  List name, URL or Guid.
+       -  The name or the URL of the list. You can use full URL as well as domain relative URL.
        -  Notifications
 
     *  -  Item ID
