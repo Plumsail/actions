@@ -3292,3 +3292,77 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
 
 .. image:: ../../_static/img/flow/sharepoint/StartSharePointListWorkflowExample.png
    :alt: Start SharePoint List Workflow Example
+
+Parse CSV
+-------------------
+
+Parses a CSV file into an array of objects with properties in Microsoft Flow.
+Review `How to read a CSV file in Microsoft Flow and bulk generate documents <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Items
+       -  The collection of objects. Each object represents a CSV row and has properties corresponding to the CSV headers.
+       -  Each CSV header is represented by an output parameter. You can refer to a single item selecting it in MS Flow.
+          
+           .. code-block:: html
+
+             [
+               {
+                 "Id": "12345",
+                 "PurchaseDate": "2019-05-01",
+                 "ExpirationDate": "2020-05-01",
+                 "ProductName": "Product1",
+                }
+              ]
+
+          .. image:: ../../_static/img/flow/sharepoint/actions-parse-csv-output.png                 
+
+        
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source CSV file
+       -  The raw content of the source .csv file.. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System          
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+
+       -  It is content of the source file.
+
+    *  -  Headers
+       -  Comma separated list of columns.
+       -  You need to specify the headers in the same order as in the CSV file. Ex.: Id, PurchaseDate, ExpirationDate, ProductName
+
+    *  -  Delimiter
+       -  Delimiter of columns. By default it's a comma.
+       -  You can select from the following default values: Comma, Semicolon, Tab or specify a custom value.
+
+
+                  
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/actions-parse-csv-example.png
+   :alt: Parse CSV file
