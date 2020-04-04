@@ -87,5 +87,5 @@ Conclusion
 
 That is all, the flow is configured. These few simple steps can help to ease the work with documents.
 
-.. hint::
+.. note::
   Plumsail Documents connector also has similar action. You can find description `here <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_ .

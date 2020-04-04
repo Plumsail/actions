@@ -116,7 +116,7 @@ Conclusion
 Now you should have an idea how to work with `Regular Expression Match` action in `Plumsail Actions connector for Microsoft Power automate`_. 
 If you haven’t used it yet, registering an account would be the first step, you can learn about it `here`_. It is quite easy to get started.
 
-.. hint::
+.. note::
   Plumsail Documents connector also has similar action. You can find description `here <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_ .
 
 .. _Regular Expression Match: ../../../flow/actions/sharepoint-processing.html#regular-expression-match
