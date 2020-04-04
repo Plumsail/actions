@@ -34,7 +34,7 @@ These are links to download the demo files
 
 This is how our flow looks:
 
-.. image:: ../../../_static/img/flow/sharepoint/how-tos/parse-csv.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/parse-csv.png
    :alt: Parse CSV flow
 
 Below is a step by step description of the flow.
@@ -65,10 +65,10 @@ In the **Headers** field, specify the CSV file headers, then you'll be able to s
 In our example, we're going to use the customer first name, last name and the company name.
 You can find more detailed information about Parse CSV action `here <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#parse-csv>`_.
 
-.. image:: ../../../_static/img/flow/sharepoint/how-tos/parse-csv-action.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/parse-csv-action.png
    :alt: Parse CSV action
 
-.. image:: ../../../_static/img/flow/sharepoint/how-tos/parse-csv-dynamic-content.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/parse-csv-dynamic-content.png
    :alt: Parse CSV dynamic content
 
 On the next steps we use the action *Create DOCX document from template*. This is an action from `Plumsail Documents connector <https://plumsail.com/documents/>`_.
@@ -76,7 +76,7 @@ Template Data is an object, that will be applied to our DOCX template and in our
 You can read more about creating documents from templates `here <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-docx-document-from-template>`_.
 After creating a DOCX invitation we convert it to PDF using *company name* item and save it to the OneDrive folder. 
 
-.. image:: ../../../_static/img/flow/sharepoint/how-tos/create-invitation.png
+.. image:: ../../../_static/img/flow/how-tos/sharepoint/create-invitation.png
    :alt: Create docx, convert and save
 
 You can find more detailed information about *Parse CSV* action `here <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#parse-csv>`_.
