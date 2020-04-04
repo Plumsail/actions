@@ -1,4 +1,4 @@
-How to use regular expression match to extract values from text in Microsoft power automate and Azure Logic Apps
+How to use regular expression match to extract values from text in Microsoft Power Automate and Azure Logic Apps
 ######################################################################################################
 In this article we will be talking about using `Regular Expression Match`_ action `Plumsail Actions connector <https://plumsail.com/actions/>`_ for `Microsoft power automate`_ and `Azure Logic Apps`_.
 
@@ -113,19 +113,19 @@ Then we are using these keys values to create an item in our SharePoint 'Orders'
 
 Conclusion
 ~~~~~~~~~~
-Now you should have an idea how to work with `Regular Expression Match` action in `Plumsail Actions connector for Microsoft Power automate`_. 
+Now you should have an idea how to work with `Regular Expression Match` action in `Plumsail Actions connector for Microsoft Power Automate`_. 
 If you haven’t used it yet, registering an account would be the first step, you can learn about it `here`_. It is quite easy to get started.
 
 .. note::
-  Plumsail Documents connector also has similar action. You can find description `here <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_ .
+  Plumsail Documents connector also has similar action. Please check out `the description <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_ .
 
 .. _Regular Expression Match: ../../../flow/actions/sharepoint-processing.html#regular-expression-match
 .. _Actions: ../../../index.html
-.. _Microsoft Flow: https://flow.microsoft.com
+.. _Microsoft Power Automate: https://flow.microsoft.com
 .. _Azure Logic Apps: https://azure.microsoft.com/en-us/services/logic-apps/
 .. _named groups: https://www.regular-expressions.info/named.html
 .. _Plumsail Actions connector for Microsoft Power automate: https://plumsail.com/actions/
-.. _here: ../../../getting-started/sign-up.html
+.. _here: https://plumsail.com/docs/actions/v1.x/getting-started/sign-up.html
 .. _on this page: https://www.regular-expressions.info/named.html
 
 .. |regex-match-flow| image:: ../../../_static/img/flow/sharepoint/regex-match-flow.png
