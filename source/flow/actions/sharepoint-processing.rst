@@ -3292,3 +3292,213 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
 
 .. image:: ../../_static/img/flow/sharepoint/StartSharePointListWorkflowExample.png
    :alt: Start SharePoint List Workflow Example
+
+Parse CSV
+-------------------
+
+Parses a CSV file into an array of objects with properties in Microsoft Flow.
+Review `How to read a CSV file in Microsoft Flow and bulk generate documents <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Items
+       -  The collection of objects. Each object represents a CSV row and has properties corresponding to the CSV headers.
+       -  Each CSV header is represented by an output parameter. You can refer to a single item selecting it in MS Flow.
+          
+           .. code-block:: html
+
+             [
+               {
+                 "Id": "12345",
+                 "PurchaseDate": "2019-05-01",
+                 "ExpirationDate": "2020-05-01",
+                 "ProductName": "Product1",
+                }
+              ]
+
+          .. image:: ../../_static/img/flow/sharepoint/actions-parse-csv-output.png                 
+
+        
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Source CSV file
+       -  The raw content of the source .csv file.. You can extract file content from other connectors like:
+
+          - SharePoint
+          - Salesforce
+          - Box
+          - OneDrive
+          - Google Drive
+          - Dropbox
+          - SFTP
+          - File System          
+
+          `List of Microsoft Flow connectors <https://flow.microsoft.com/en-us/connectors/>`_          
+
+       -  It is content of the source file.
+
+    *  -  Headers
+       -  Comma separated list of columns.
+       -  You need to specify the headers in the same order as in the CSV file. Ex.: Id, PurchaseDate, ExpirationDate, ProductName
+
+    *  -  Delimiter
+       -  Delimiter of columns. By default it's a comma.
+       -  You can select from the following default values: Comma, Semicolon, Tab or specify a custom value.
+
+
+                  
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/sharepoint/actions-parse-csv-example.png
+   :alt: Parse CSV file
+
+
+Regular Expression Match
+----------------------------
+
+Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Microsoft Flow. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
+
+You can find more examples in `this article <../how-tos/documents/use-regex-match-to-extract-values.html>`_.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Is Success
+       -  True if the input string has at least one occurrences of a regular expression, otherwise false.
+       -  true
+
+    *  -  Matches
+       -  The dynamic response based on a pattern that is used in this action. Contains all matches groups that included in the pattern (named or unnamed).
+       -  Match0, TaskId, status
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Pattern
+       -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity.   
+          You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.
+          Also you can find an example in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/use-regex-match-to-extract-values.html>`_.
+       -  ``Task (?<TaskId>\d+):(?<status>Approve|Reject)``
+
+    *  -  Text
+       -  String to search for matches.
+       -  ``Task 5:Approve\nTask 53:Reject\nTask 52:Approve``    
+
+.. rubric:: Example
+
+.. image:: ../../../_static/img/flow/sharepoint/regexp-match-example.png
+   :alt: Regular Expression Match Example     
+
+Regular Expression Replace
+--------------------------
+
+In a specified input string, replaces all strings that match a regular expression pattern with a specified replacement string. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Result
+       -  Result string with replaced substrings that match a regular expression pattern.
+       -  ``sd-df-f-ddd-dff-fff``
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Pattern
+       -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity.   
+          You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.     
+       -  ``\s+``
+
+    *  -  Text
+       -  String to search for matches.
+       -  ``sd    df f     ddd    dff   fff``   
+
+    *  -  Replacement
+       -  Replacement string.
+       -  ``-`` 
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/regexp-replace-example.png
+   :alt: Regular Expression Replace Example
+
+Regular Expression Test
+----------------------------
+
+Indicates whether the regular expression specified in the Regex constructor finds a match in a specified input string. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
+
+.. rubric:: Output Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+
+    *  -  Is Success
+       -  True if the input string has at least one occurrences of a regular expression, otherwise false.
+       -  true
+
+.. rubric:: Input Parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Pattern
+       -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity.   
+          You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.     
+       -  ``(?<TestGroup1>\d4) (\d5)``
+
+    *  -  Text
+       -  String to search for matches.
+       -  ``24 45\n435 64 85``    
+
+.. rubric:: Example
+
+.. image:: ../../_static/img/flow/documents/regexp-test-example.png
+   :alt: Regular Expression Test Example
