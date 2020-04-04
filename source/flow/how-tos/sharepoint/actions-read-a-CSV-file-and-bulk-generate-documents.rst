@@ -68,7 +68,7 @@ You can find more detailed information about Parse CSV action `here <https://plu
 .. image:: ../../../_static/img/flow/sharepoint/parse-csv-action.png
    :alt: Parse CSV action
 
-.. image:: ../../../_static/img/flow/how-tos/sharepoint/parse-csv-dynamic-content.png
+.. image:: ../../../_static/img/flow/sharepoint/parse-csv-dynamic-content.png
    :alt: Parse CSV dynamic content
 
 On the next steps we use the action *Create DOCX document from template*. This is an action from `Plumsail Documents connector <https://plumsail.com/documents/>`_.
