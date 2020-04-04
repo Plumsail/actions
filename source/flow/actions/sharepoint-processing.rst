@@ -3297,7 +3297,7 @@ Parse CSV
 -------------------
 
 Parses a CSV file into an array of objects with properties in Microsoft Flow.
-Review `How to read a CSV file in Microsoft Flow and bulk generate documents <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
+Review `How to read a CSV file in Microsoft Flow and bulk generate documents <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/actions-read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
 
 .. rubric:: Output Parameters
 
@@ -3373,7 +3373,7 @@ Regular Expression Match
 
 Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Microsoft Flow. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
-You can find more examples in `this article <../how-tos/documents/use-regex-match-to-extract-values.html>`_.
+You can find more examples in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/actions-use-regex-match-to-extract-values.html>`_.
 
 .. rubric:: Output Parameters
 
@@ -3404,7 +3404,7 @@ You can find more examples in `this article <../how-tos/documents/use-regex-matc
     *  -  Pattern
        -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity.   
           You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.
-          Also you can find an example in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/use-regex-match-to-extract-values.html>`_.
+          Also you can find an example in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/actions-use-regex-match-to-extract-values.html>`_.
        -  ``Task (?<TaskId>\d+):(?<status>Approve|Reject)``
 
     *  -  Text
@@ -3458,7 +3458,7 @@ In a specified input string, replaces all strings that match a regular expressio
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/documents/regexp-replace-example.png
+.. image:: ../../_static/img/flow/sharepoint/regexp-replace-example.png
    :alt: Regular Expression Replace Example
 
 Regular Expression Test
@@ -3500,5 +3500,5 @@ Indicates whether the regular expression specified in the Regex constructor find
 
 .. rubric:: Example
 
-.. image:: ../../_static/img/flow/documents/regexp-test-example.png
+.. image:: ../../_static/img/flow/sharepoint/regexp-test-example.png
    :alt: Regular Expression Test Example
