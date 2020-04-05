@@ -42,7 +42,9 @@ To achieve this we will be using `Regular Expression Match`_ action.
 
 So your flow might look like this:
 
-|regex-match-flow|
+.. image:: ../../../_static/img/flow/sharepoint/regex-match-flow.png
+   :alt: Regex Match Flow
+
 
 For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Microsoft Flow.
 
@@ -128,7 +130,6 @@ If you haven’t used it yet, registering an account would be the first step, yo
 .. _here: https://plumsail.com/docs/actions/v1.x/getting-started/sign-up.html
 .. _on this page: https://www.regular-expressions.info/named.html
 
-.. |regex-match-flow| image:: ../../../_static/img/flow/sharepoint/regex-match-flow.png
 .. |regex-match-receive-email| image:: ../../../_static/img/flow/sharepoint/regex-match-flow-receive-email.png
 .. |regex-match-action| image:: ../../../_static/img/flow/sharepoint/regex-match-flow-action.png
 .. |regex-match-create-item| image:: ../../../_static/img/flow/sharepoint/regex-match-flow-create-item.png

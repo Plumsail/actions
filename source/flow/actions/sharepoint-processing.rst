@@ -3413,7 +3413,7 @@ You can find more examples in `this article <https://plumsail.com/docs/actions/v
 
 .. rubric:: Example
 
-.. image:: ../../../_static/img/flow/sharepoint/regexp-match-example.png
+.. image:: ../../_static/img/flow/sharepoint/regexp-match-example.png
    :alt: Regular Expression Match Example     
 
 Regular Expression Replace
