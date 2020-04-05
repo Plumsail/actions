@@ -42,7 +42,7 @@ To achieve this we will be using `Regular Expression Match`_ action.
 
 So your flow might look like this:
 
-.. image:: ../../_static/img/flow/sharepoint/regex-match-flow.png
+.. image:: ../../../_static/img/flow/sharepoint/regex-match-flow.png
    :alt: Regex Match Flow
 
 
