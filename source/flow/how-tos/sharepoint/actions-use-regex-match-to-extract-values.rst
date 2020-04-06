@@ -42,7 +42,7 @@ To achieve this we will be using `Regular Expression Match`_ action.
 
 So your flow might look like this:
 
-.. image:: ../../../_static/img/flow/sharepoint/regex-match-flow.png
+.. image:: ../../../_static/img/flow/sharepoint/actions-regex-match-flow.png
    :alt: Regex Match Flow
 
 
@@ -130,7 +130,7 @@ If you haven’t used it yet, registering an account would be the first step, yo
 .. _here: https://plumsail.com/docs/actions/v1.x/getting-started/sign-up.html
 .. _on this page: https://www.regular-expressions.info/named.html
 
-.. |regex-match-receive-email| image:: ../../../_static/img/flow/sharepoint/regex-match-flow-receive-email.png
-.. |regex-match-action| image:: ../../../_static/img/flow/sharepoint/regex-match-flow-action.png
-.. |regex-match-create-item| image:: ../../../_static/img/flow/sharepoint/regex-match-flow-create-item.png
-.. |regex-match-flow-matches| image:: ../../../_static/img/flow/sharepoint/regex-match-flow-match.png
+.. |regex-match-receive-email| image:: ../../../_static/img/flow/sharepoint/actions-regex-match-flow-receive-email.png
+.. |regex-match-action| image:: ../../../_static/img/flow/sharepoint/actions-regex-match-flow-action.png
+.. |regex-match-create-item| image:: ../../../_static/img/flow/sharepoint/actions-regex-match-flow-create-item.png
+.. |regex-match-flow-matches| image:: ../../../_static/img/flow/sharepoint/actions-regex-match-flow-match.png
