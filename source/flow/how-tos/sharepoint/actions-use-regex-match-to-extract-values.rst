@@ -119,7 +119,7 @@ Now you should have an idea how to work with `Regular Expression Match` action i
 If you haven’t used it yet, registering an account would be the first step, you can learn about it `here`_. It is quite easy to get started.
 
 .. note::
-  Plumsail Documents connector also has similar action. Please check out `the description <https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#parse-csv>`_ .
+  Plumsail Documents connector also has similar action. Please check out `the description <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/use-regex-match-to-extract-values.html>`_ .
 
 .. _Regular Expression Match: ../../../flow/actions/sharepoint-processing.html#regular-expression-match
 .. _Actions: ../../../index.html
