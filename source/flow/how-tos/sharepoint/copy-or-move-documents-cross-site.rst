@@ -1,7 +1,7 @@
-Copy or move SharePoint documents cross-site in Microsoft Flow and Azure Logic Apps
+Copy or move SharePoint documents cross-site in Power Automate (Microsoft Flow) and Azure Logic Apps
 ===================================================================================
 
-This article will show how to move documents using Microsoft Flow. As a proof of concept, I will implement the logic of the flow for archiving documents. It moves documents from one document library to another, but you can modify it a little and use to copy documents or folders cross-site.
+This article will show how to move documents using Power Automate (Microsoft Flow). As a proof of concept, I will implement the logic of the flow for archiving documents. It moves documents from one document library to another, but you can modify it a little and use to copy documents or folders cross-site.
 
 It will show how to set up the periodical archival process that will start every day, query all documents older than 30 days and move them to the document library called "Archive" that is located on another site.
 

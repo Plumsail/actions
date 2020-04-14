@@ -1,7 +1,7 @@
 Licensing details
 #################
 
-You can choose your billing cycle — purchase for one year or pay month-to-month. The subscription is linked to an email address. It includes a set of actions for Microsoft Flow or Logic apps and access to REST API.
+You can choose your billing cycle — purchase for one year or pay month-to-month. The subscription is linked to an email address. It includes a set of actions for Power Automate (Microsoft Flow) or Logic apps and access to REST API.
 
 There are three plans available:
 
@@ -15,7 +15,7 @@ If none of the plans satisfies your requirements, drop us a message to sales@plu
 What are executions?
 ---------------------
 
-We consider an execution each time an action is exectued in Microsoft Flow, Azure Logic Apps, PowerApps or called from REST API.
+We consider an execution each time an action is exectued in Power Automate (Microsoft Flow), Azure Logic Apps, PowerApps or called from REST API.
 
 What happens when credits are spent?
 --------------------------------------

@@ -1,7 +1,7 @@
-Create SharePoint subsite by custom template and grant permissions in Microsoft Flow and Azure Logic Apps
+Create SharePoint subsite by custom template and grant permissions in Power Automate (Microsoft Flow) and Azure Logic Apps
 ================================================================================================================
 
-This article will show how to use Microsoft Flow to create a new subsite by the custom template and then grant permissions to this site for specific SharePoint group. As an example, I configured the Flow for SharePoint list to automatically create new sites.
+This article will show how to use Power Automate (Microsoft Flow) to create a new subsite by the custom template and then grant permissions to this site for specific SharePoint group. As an example, I configured the Flow for SharePoint list to automatically create new sites.
 
 In this case, I'm using *‘Create Subsite from Template’* and *‘Change Permissions’* actions from Plumsail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
@@ -74,7 +74,7 @@ Our template is called *‘ProjectSite’*. I will use this template in the Flow
 
 .. _configureMicrosoftFlow:
 
-Configure Microsoft Flow
+Configure Power Automate (Microsoft Flow)
 ------------------------
 Here we created the Flow and configured it to start on list item creation for *‘Projects’* list. Thus, new SharePoint sites will be created automatically after creation of a list item.
 
@@ -83,7 +83,7 @@ You can find more information about the specific parameters of the Flow actions 
 The complete Flow is below:
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/create-site-from-template-flow.png
-   :alt: Microsoft Flow
+   :alt: Power Automate (Microsoft Flow)
 
 As you can see I used *‘When an item is created’* trigger from *‘SharePoint’* connector and two actions: *‘Create Site from Template’* and *‘Change Permissions’*
 
@@ -120,4 +120,4 @@ That is all, the Flow is configured.
 
 .. hint::
 
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-modern-sharepoint-site.html>`_ explaining how to create a modern team or communication SharePoint site in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-modern-sharepoint-site.html>`_ explaining how to create a modern team or communication SharePoint site in Power Automate (Microsoft Flow) and Azure Logic Apps.

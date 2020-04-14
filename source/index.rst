@@ -26,7 +26,7 @@ Plumsail Actions Documentation
   .. rst-class:: single-page-nav
 
     .. toctree::     
-      :caption: Microsoft Flow actions
+      :caption: Power Automate (Microsoft Flow) actions
       :name: toc-microsoft-flow-actions
       :maxdepth: 2
           
@@ -55,7 +55,7 @@ Plumsail Actions Documentation
     REST API Reference <https://api.plumsail.com/swagger/index.html?urls.primaryName=SharePoint>  
 
   .. toctree::    
-    :caption: Microsoft Flow examples
+    :caption: Power Automate (Microsoft Flow) examples
     :name: toc-microsoft-flow-examples
     :maxdepth: 2
     

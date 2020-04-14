@@ -1,7 +1,7 @@
-How to start Microsoft flow with PnP provision from a site design
+How to start Power Automate (Microsoft Flow) with PnP provision from a site design
 ===========================================================================================================================================
 
-This article will show how to automatically start a Microsoft flow with PnP provision action from site design.
+This article will show how to automatically start a Power Automate (Microsoft Flow) with PnP provision action from site design.
 The feature could be helpfull when you need to deploy some elements which are not supported by the site design itself.
 For example, if you need to set up some solution in multiple different tenants, in that case, deploying site designs and site scripts via a PnP provisioning template might be a good option.
 
@@ -11,7 +11,7 @@ and also check out the `PnP provisioning scheme <https://github.com/SharePoint/P
 
 Creating a PnP provisioning template
 ---------------------------------------------------------
-Our plan is to start a Microsoft flow from site design and deploy a PnP provisioning template.
+Our plan is to start a Power Automate (Microsoft Flow) from site design and deploy a PnP provisioning template.
 In the example, we will create a SharePoint Modern page using PnP provision template and to reach the goal we need to prepare the PnP template.
 
 There are 2 ways for creating a PnP template: you can write it manually and specify all the entities,
@@ -25,7 +25,7 @@ Create the PnP file, we'll need it on the next steps.
 
 Creating a flow
 ---------------------------------------------------------
-We'll start our Flow when a specific site design is selected. Site design contains a site script which has a link to the created Microsoft Flow.
+We'll start our Flow when a specific site design is selected. Site design contains a site script which has a link to the created Power Automate (Microsoft Flow).
 We can notify the Micrsoft flow that the site design is applied using trigger When an HTTP request is received.
 
 .. image:: ../../../_static/img/flow/how-tos/when-http-request.png

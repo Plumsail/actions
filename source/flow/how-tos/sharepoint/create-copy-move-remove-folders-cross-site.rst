@@ -1,7 +1,7 @@
-Create, copy, move and remove SharePoint folders cross-site in Microsoft Flow and Azure Logic Apps
+Create, copy, move and remove SharePoint folders cross-site in Power Automate (Microsoft Flow) and Azure Logic Apps
 ==================================================================================================
 
-This article will show how to use Microsoft Flow to create SharePoint folders in two ways, copy, move these folders to another site and remove the source folder after copying.
+This article will show how to use Power Automate (Microsoft Flow) to create SharePoint folders in two ways, copy, move these folders to another site and remove the source folder after copying.
 
 For example, we consider the following case:
 
@@ -34,7 +34,7 @@ The complete flow is below:
 Manually trigger a flow
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-For this case, I used the trigger to manually start the flow. You can use any other triggers available in Microsoft Flow.
+For this case, I used the trigger to manually start the flow. You can use any other triggers available in Power Automate (Microsoft Flow).
 
 Create SharePoint Folder by URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,7 +79,7 @@ The complete flow is below. You can find step by step description next to the pi
 Manually trigger a flow
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-For this case, I used the trigger for manually start the flow. You can use any other triggers availalbe in Microsoft Flow.
+For this case, I used the trigger for manually start the flow. You can use any other triggers availalbe in Power Automate (Microsoft Flow).
 
 Create SharePoint Folder in List
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -119,4 +119,4 @@ In this action, I also used the value of *‘Folder URL‘* parameter from *‘C
 
 *‘SharePoint Site URL‘* as :code:`"https://contoso.sharepoint.com/sites/firstSubSite"` - The URL of the site for the source folder.
 
-.. hint:: You can put your URLs into variables in Microsoft Flow. Then put those variables into actions.
+.. hint:: You can put your URLs into variables in Power Automate (Microsoft Flow). Then put those variables into actions.

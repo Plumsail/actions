@@ -1,7 +1,7 @@
-How to share a SharePoint site with external users in Microsoft Flow and Azure Logic Apps
+How to share a SharePoint site with external users in Power Automate (Microsoft Flow) and Azure Logic Apps
 =========================================================================================
 
-In this article, we will demonstrate how to create a Modern SharePoint site and share it with external users with help of Microsoft Flow. This approach works in SharePoint Online (Office 365).
+In this article, we will demonstrate how to create a Modern SharePoint site and share it with external users with help of Power Automate (Microsoft Flow). This approach works in SharePoint Online (Office 365).
 
 Let us imagine the following use case: we create a new project site and need to provide access to customers (external users) to it. 
 
@@ -47,5 +47,5 @@ Conclusion
 That is it. These few simple steps can help you to ease communication with your clients.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-sharepoint-documents.html>`_ explaining how to share SharePoint documents with external users in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-share-sharepoint-documents.html>`_ explaining how to share SharePoint documents with external users in Power Automate (Microsoft Flow) and Azure Logic Apps.
 

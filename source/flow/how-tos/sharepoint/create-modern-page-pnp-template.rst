@@ -1,9 +1,9 @@
-How to create a SharePoint Modern page using PnP provision template in Microsoft Flow, Azure Logic Apps, or PowerApps
+How to create a SharePoint Modern page using PnP provision template in Power Automate (Microsoft Flow), Azure Logic Apps, or PowerApps
 ==========================================================================================================
 
 This article describes how to create a SharePoint Modern page using a PnP provisioning template. It may be quite useful when you want to automatically post some news to your Modern Communication site or migrate regular pages from one site to another.
 
-`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your Modern SharePoint page. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions/>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
+`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your Modern SharePoint page. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions/>`_ to apply PnP templates to your SharePoint sites using Power Automate (Microsoft Flow) or Azure Logic Apps.
 
 If you are new to Plumsail Actions, follow this `getting started instruction <../../../getting-started/sign-up.html>`_.
 
@@ -24,7 +24,7 @@ Write a PnP template manually and provision news page
 .. note::
   Our action supports the PnP template schema :code:`V202002` (or earlier).
 
-This approach is useful for creation of simple text pages. Below you can see example template for a simple news page with the title "Breaking news!", content "We can create modern pages from Microsoft Flow!" and file name "news-page.aspx".
+This approach is useful for creation of simple text pages. Below you can see example template for a simple news page with the title "Breaking news!", content "We can create modern pages from Power Automate (Microsoft Flow)!" and file name "news-page.aspx".
 
 .. code-block:: XML
 
@@ -39,7 +39,7 @@ This approach is useful for creation of simple text pages. Below you can see exa
                 <pnp:Controls>
                   <pnp:CanvasControl WebPartType="Text" ControlId="c506a7aa-95e7-455b-af3e-3666b2529e9a" Order="1" Column="1">
                     <pnp:CanvasControlProperties>
-                      <pnp:CanvasControlProperty Key="Text" Value="We can create modern pages from Microsoft Flow!" />
+                      <pnp:CanvasControlProperty Key="Text" Value="We can create modern pages from Power Automate (Microsoft Flow)!" />
                     </pnp:CanvasControlProperties>
                   </pnp:CanvasControl>
                 </pnp:Controls>
