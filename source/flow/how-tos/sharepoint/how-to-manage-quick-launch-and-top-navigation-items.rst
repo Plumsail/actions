@@ -1,4 +1,4 @@
-How to manage quick launch and top navigation items for a SharePoint site using Microsoft Flow or Azure Logic Apps
+How to manage quick launch and top navigation items for a SharePoint site using Power Automate (Microsoft Flow) or Azure Logic Apps
 ====================================================================================
 
 This article will show how to manage quick launch and top navigation items for a SharePoint site using these Plumsail actions:
@@ -28,7 +28,7 @@ Also we can add navigation nodes to the top menu. For example, there could be th
 
 When you create a subsite the flow adds navigation node to the top menu of the parent site.
 
-The same way you can program Microsoft flows to remove navigation nodes when an item or subsite is removed.
+The same way you can program Power Automate (Microsoft Flow)s to remove navigation nodes when an item or subsite is removed.
 
 .. image:: ../../../_static/img/flow/how-tos/sharepoint/remove-example.png
 

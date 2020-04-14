@@ -1,9 +1,9 @@
-How to create SharePoint list or library using PnP provisioning template in Microsoft Flow, Azure Logic Apps or PowerApps
+How to create SharePoint list or library using PnP provisioning template in Power Automate (Microsoft Flow), Azure Logic Apps or PowerApps
 =========================================================================================================================
 
 This article will show how to create a custom SharePoint list or library using PnP provisioning template. You can use this approach to create lists or libraries of any complexity in SharePoint. For example, you may want to create an employees list with a set of predefined columns for your team. We will do it below.
 
-`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your SharePoint list or library. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions>`_ to apply PnP templates to your SharePoint sites using Microsoft Flow or Azure Logic Apps.
+`PnP template <https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/pnp-provisioning-schema>`_ is an XML file that contains a description of SharePoint entities (lists, libraries, pages, etc.) that will be created. You can create own XML template for your SharePoint list or library. Then use the `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action from `Plumsail Actions <https://plumsail.com/actions>`_ to apply PnP templates to your SharePoint sites using Power Automate (Microsoft Flow) or Azure Logic Apps.
 
 If you are new to Plumsail Actions, follow `this getting started instruction <../../../getting-started/sign-up.html>`_.
 
@@ -101,7 +101,7 @@ You can find all the available template types in `the official Microsoft documen
 - :code:`DisplayName` is a display name of the field.
 - :code:`Name` is an internal name of the field.
 - :code:`Type` represents a type of the field. You can find all the available types in `this article <https://docs.microsoft.com/en-us/previous-versions/office/sharepoint-server/ms428806(v%3Doffice.15)>`_.
-- :code:`ID` is a unique ID of the field. You can put here unique GUID or fill it dynamically in your Microsoft Flow. See the example below.
+- :code:`ID` is a unique ID of the field. You can put here unique GUID or fill it dynamically in your Power Automate (Microsoft Flow). See the example below.
 
 <FieldRef> tag under <ViewFields>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,7 +117,7 @@ You can find all the available template types in `the official Microsoft documen
 
 For more information about tags available in PnP templates review `PnP provisioning schema <https://github.com/SharePoint/PnP-Provisioning-Schema/blob/master/ProvisioningSchema-2018-07.md>`_.
 
-Example of Microsoft Flow
+Example of Power Automate (Microsoft Flow)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Copy and paste your template into `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action in your Flow:
@@ -125,7 +125,7 @@ Copy and paste your template into `Provision PnP template to SharePoint <../../a
 .. image:: ../../../_static/img/flow/how-tos/create-simple-list-pnp-flow-example.png
   :alt: Create a simple list from PnP template Flow
 
-You need to replace all values for Field IDs using Microsoft Flow expressions like on the screenshot above. It will ensure that your fields will always have unique IDs.
+You need to replace all values for Field IDs using Power Automate (Microsoft Flow) expressions like on the screenshot above. It will ensure that your fields will always have unique IDs.
 
 This approach is useful when you want to create simple SharePoint lists or document libraries. If you have a complex list with many views you may consider another option with creating your template from an existing list using PowerShell. For more information read below.
 

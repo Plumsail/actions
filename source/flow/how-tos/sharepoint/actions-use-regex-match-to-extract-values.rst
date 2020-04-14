@@ -46,7 +46,7 @@ So your flow might look like this:
    :alt: Regex Match Flow
 
 
-For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Microsoft Flow.
+For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Power Automate (Microsoft Flow).
 
 Receive email
 ~~~~~~~~~~~~~
@@ -74,7 +74,7 @@ You may notice that Regular expression match in this regular expression has a fe
 
 There is "Match0" is a full match for the whole regular expression. There are also separate output values for each named regular expression group: Price, Quantity, Title.
 
-You can learn more about named groups `on this page`_. The action is smart enough to create separate output value in Microsoft Flow for each named regular expression group that is used in it. 
+You can learn more about named groups `on this page`_. The action is smart enough to create separate output value in Power Automate (Microsoft Flow) for each named regular expression group that is used in it. 
 It dramatically simplifies extraction of values from text strings. You just write a regular expression with named groups and then use them across your flow.
 
 You can easily put match regex into a named group like this:  ``(?<Title>.+|)``. The name of this group will be "Title", everything that matches regular expression ``.+|`` will be returned as a separate output of the action.

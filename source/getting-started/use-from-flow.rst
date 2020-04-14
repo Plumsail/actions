@@ -1,7 +1,7 @@
-Use in Microsoft Flow
+Use in Power Automate (Microsoft Flow)
 =====================
 
-Find `Plumsail SP <https://emea.flow.microsoft.com/en-us/connectors/shared_plumsailsp/plumsail-sp/>`_ in the list of available Microsoft Flow connectors. Then you can search for "Plumsail" in you Flow and add appropriate action:
+Find `Plumsail SP <https://emea.flow.microsoft.com/en-us/connectors/shared_plumsailsp/plumsail-sp/>`_ in the list of available Power Automate (Microsoft Flow) connectors. Then you can search for "Plumsail" in you Flow and add appropriate action:
 
 .. image:: ../_static/img/getting-started/sp-actions-list.png
    :alt: Screen of Plumsail Actions
@@ -16,7 +16,7 @@ Then `create an API key in your Plumsail Account page <sign-up.html>`_ and paste
 Examples of Flows
 -----------------
 
-Once you clicked *'Create'* you can use Plumsail Actions in your Microsoft Flows. Review *'Microsoft Flow examples'* to learn how to use them:
+Once you clicked *'Create'* you can use Plumsail Actions in your Power Automate (Microsoft Flow)s. Review *'Power Automate (Microsoft Flow) examples'* to learn how to use them:
 
 .. toctree::      
       :name: toc-microsoft-flow-examples

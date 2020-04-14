@@ -1,7 +1,7 @@
-How to copy or move SharePoint list items with attachments cross-site in Microsoft Flow or Azure Logic Apps
+How to copy or move SharePoint list items with attachments cross-site in Power Automate (Microsoft Flow) or Azure Logic Apps
 ===========================================================================================================
 
-In this article, we will demonstrate how to archive SharePoint list items with help of Microsoft Flow. This approach works in SharePoint Online (Office 365).
+In this article, we will demonstrate how to archive SharePoint list items with help of Power Automate (Microsoft Flow). This approach works in SharePoint Online (Office 365).
 
 Let us imagine the following use case: We have a list of tasks with attachments. There is another list in another site collection to archive tasks. We want to move all tasks older than 30 days to this archive list.
 
@@ -12,7 +12,7 @@ This is how our complete flow will look like:
 .. image:: ../../../_static/img/flow/how-tos/move-list-item.png
     :alt: Archive items flow
 
-Configure Microsoft Flow:
+Configure Power Automate (Microsoft Flow):
 -------------------------
 
 Below, we will guide you step by step through creating the flow.

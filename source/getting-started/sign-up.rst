@@ -53,7 +53,7 @@ Once you created an API key, you can see your key right in the "Secret" column. 
 
 Now you can copy and use it in:
 
-- `Microsoft Flow <use-from-flow.html>`_
+- `Power Automate (Microsoft Flow) <use-from-flow.html>`_
 - `REST API calls <use-as-rest-api.html>`_
 
 .. _multi-factor authentication: https://docs.microsoft.com/en-gb/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide

@@ -1,7 +1,7 @@
-How to check-in multiple SharePoint documents in Microsoft Flow and Azure Logic Apps
+How to check-in multiple SharePoint documents in Power Automate (Microsoft Flow) and Azure Logic Apps
 ====================================================================================
 
-This article will show how to check-in multiple documents using Microsoft Flow. 
+This article will show how to check-in multiple documents using Power Automate (Microsoft Flow). 
 
 For example, we have a situation where during a day people work with documents in SharePoint Document library. To work with some document a user takes it to work and mark it as check-out, but at the end of the day, every document should be checked-in back.
 
@@ -15,7 +15,7 @@ Below you can find an example of the small flow that gets all documents in check
 Manually trigger a flow
 ------------------------
 
-For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Microsoft Flow.
+For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Power Automate (Microsoft Flow).
 
 .. _getFilesProperties:
 

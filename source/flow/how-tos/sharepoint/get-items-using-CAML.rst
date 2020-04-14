@@ -1,7 +1,7 @@
-How to get items from SharePoint lists and libraries using CAML query in Microsoft Flow
+How to get items from SharePoint lists and libraries using CAML query in Power Automate (Microsoft Flow)
 =======================================================================================
 In this article, you will learn how to get documents from a SharePoint document library. 
-In this example, we will archive documents that were created for the past 30 days once a month in your SharePoint using Microsoft Flow. 
+In this example, we will archive documents that were created for the past 30 days once a month in your SharePoint using Power Automate (Microsoft Flow). 
 We will use `Get SharePoint Items By CAML Query`_ action from `Plumsail SharePoint connector`_.
 
 Let us suppose that we have a folder in SharePoint with documents and we want to archive only those that were created for the past 30 days, we also want to schedule this flow to run every month. 
@@ -13,7 +13,7 @@ You might have seen this error in MS Flow: “The field ‘FieldName’ is not s
 There are also other restrictions on reading some fields with the help of standard MS flow action that uses REST. 
 In this case, our action that allows you to get items by CAML query works better.
 
-Create Microsoft Flow
+Create Power Automate (Microsoft Flow)
 ~~~~~~~~~~~~~~~~~~~~~
 Now let us review the flow and learn how it is implemented:
 
@@ -67,7 +67,7 @@ Please notice how we are using “FileRef” variable, it specifies the relative
 
 Conclusion
 ~~~~~~~~~~
-Now you should have an idea how to use `Get SharePoint Items By CAML Query`_ action from `Plumsail SharePoint connector`_ for Microsoft Flow. 
+Now you should have an idea how to use `Get SharePoint Items By CAML Query`_ action from `Plumsail SharePoint connector`_ for Power Automate (Microsoft Flow). 
 If you haven’t used it yet, `registering an account`_ would be the first step. It is quite easy to get started.
 
 

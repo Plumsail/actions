@@ -1,7 +1,7 @@
-How to create a modern team or communication SharePoint site in Microsoft Flow or Azure Logic Apps
+How to create a modern team or communication SharePoint site in Power Automate (Microsoft Flow) or Azure Logic Apps
 ==================================================================================================
 
-In this article, we will demonstrate how to configure a Microsoft Flow that will automatically create a new site in SharePoint on an item creation. This approach works in SharePoint Online (Office 365).
+In this article, we will demonstrate how to configure a Power Automate (Microsoft Flow) that will automatically create a new site in SharePoint on an item creation. This approach works in SharePoint Online (Office 365).
 
 In this flow, we are using `Create Modern SharePoint site <../../actions/sharepoint-processing.html#create-modern-sharepoint-site>`_ action from `Plumsail SP connector <https://plumsail.com/actions/sharepoint/>`_, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_. This action allows you to create modern team and communication sites.
 
@@ -67,5 +67,5 @@ Conclusion
 That is it. These few simple steps can help you to manage your company's projects more effectively.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_ explaining how to Create SharePoint site by a custom template and grant permissions in Microsoft Flow and Azure Logic Apps.
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/create-site-by-custom-template-and-grant-permissions.html>`_ explaining how to Create SharePoint site by a custom template and grant permissions in Power Automate (Microsoft Flow) and Azure Logic Apps.
 
