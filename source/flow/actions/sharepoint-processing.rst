@@ -2824,7 +2824,10 @@ Executes a CAML query on a list or on a document library and returns the collect
 
 Update SharePoint List Item
 ---------------------------
-Updates list Item values by a passed JSON object. It supports updating of any SharePoint list column type and doesn't require specifying mandatory field values. You can update single or multiple column values at a time.
+Updates list Item values by a passed JSON object.
+It supports updating of any SharePoint list column type and doesn't require specifying mandatory field values.
+You can update single or multiple column values at a time.
+More details on the action features are in `this article <../how-tos/sharepoint/update-sp-item.html>`_.
 
 .. rubric:: Input Parameters
 
