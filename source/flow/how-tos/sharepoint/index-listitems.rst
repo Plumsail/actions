@@ -7,4 +7,4 @@ List items management
    
     Get items from lists and libraries using CAML query<get-items-using-CAML>   
     Copy or move list items with attachments cross-site <move-sharepoint-list-items-with-attachments-cross-site>
-    Update SharePoint list item <update-sp-item>
+    Advanced update SharePoint item <update-sp-item>
