@@ -53,12 +53,12 @@ But instead of a string, you should pass to the field an array of strings:
 
 |MultipleTerms|
 
-Update hyperlink columns with an alternative text
-+++++++++++++++++++++++++++++++++++++++++++++++++
+Update hyperlink and picture columns with an alternative text
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-The standard action allows you to update only a “Url” property of a hyperlink column.
-Updating an “Description” one (displayed text) would require using of an HTTP request.
-The Plumsail action can receive an object and update both properties without complicating of a flow:
+The standard action allows you updating a “Url” property of a column formatted as hyperlink only.
+Updating a “Description” one (displayed text) or a picture column would require using an HTTP request.
+The Plumsail action can receive an object and update both properties and both formats without complicating a flow:
 
 |Link|
 
