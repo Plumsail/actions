@@ -5,7 +5,7 @@ Automation of updating SharePoint list items in Microsoft Power Automate (MS Flo
 
 * HTTP request to SharePoint (REST API)
 * SharePoint Update Item action
-* `Update SharePoint list item`_ action from `Plumsail Actions`_
+* `Update SharePoint List Item`_ action from `Plumsail Actions`_
 
 The first way is very powerful and at the same time is quite complex since it requires knowledge of the REST API.
 The second one is more user-friendly but it has own disadvantage: it’s not so flexible as you may need.
@@ -80,7 +80,7 @@ To update a lookup column with multiple values, pass to an accordant JSON proper
 
 |MultipleLookup|
 
-.. _Update SharePoint list item: ../../actions/sharepoint-processing.html#update-sharepoint-list-item
+.. _Update SharePoint List Item: ../../actions/sharepoint-processing.html#update-sharepoint-list-item
 
 .. _Plumsail Actions: https://plumsail.com/actions
 
