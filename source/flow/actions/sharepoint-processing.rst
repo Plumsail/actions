@@ -2822,7 +2822,7 @@ Executes a CAML query on a list or on a document library and returns the collect
 .. image:: ../../_static/img/flow/sharepoint/GetSharePointItemsCAMLQueryExample.png
    :alt: Get SharePoint Items By CAML Query Example
 
-Update SharePoint list item
+Update SharePoint List Item
 ---------------------------
 Updates list item values by a passed JSON object.
 It supports updating of any SharePoint list column type and doesn't require specifying mandatory field values.
