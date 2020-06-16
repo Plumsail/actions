@@ -1,5 +1,5 @@
 How to read a CSV file and update SharePoint list in Power Automate
-=========================================================================================
+===================================================================
 
 In this article, we'll demonstrate how to read CSV files in Power Automate (Microsoft Flow) using `Parse CSV action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#parse-csv>`_ action from Plumsail Documents connector.
 
