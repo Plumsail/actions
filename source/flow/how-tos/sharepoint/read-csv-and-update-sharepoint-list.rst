@@ -57,7 +57,7 @@ After running the flow we have two new employees in the Employees list
 Update a SharePoint list
 -------------------------
 The same approach could be used to update a SharePoint list. However, in that case, you need to check if the item already exists.
-To filter the existing items you can use **Get Items** actions from **SharePoint connector**.
+To filter the existing items you can use **Get Items** action from **SharePoint connector**.
 
 .. image:: ../../../_static/img/flow/how-tos/get-items-action.png
     :alt: Get items
