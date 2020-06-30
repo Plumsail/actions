@@ -1,7 +1,7 @@
-How to read a CSV file and update SharePoint list in Power Automate
+How to read a CSV file and add an item to SharePoint list in Power Automate
 ===================================================================
 
-In this article, we'll demonstrate how to read CSV files in Power Automate (Microsoft Flow) using `Parse CSV action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#parse-csv>`_ action from Plumsail Documents connector.
+In this article, we'll demonstrate how to read CSV files in Power Automate (Microsoft Flow) using `Parse CSV action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#parse-csv>`_ from Plumsail Documents connector.
 
 Let's say we have a SharePoint list 'Employees' and we need to add information there from a CSV file.
 
@@ -42,12 +42,25 @@ Here are just a few of them:
 
 You can store your files anywhere. In this example, we will store our source CSV file in OneDrive folder, but you can get data from any other sources.
 
+I add new item using Create Item action from SharePoint connector and Apply to each action since we have 2 items to add.
+
+.. image:: ../../../_static/img/flow/how-tos/add-new-employees-action.png
+    :alt: Create item action
+
 
 After running the flow we have two new employees in the Employees list
 
 .. image:: ../../../_static/img/flow/how-tos/new-employees-result.png
     :alt: New employees
 
+
+Update a SharePoint list
+-------------------------
+The same approach could be used to update a SharePoint list. However, in that case, you need to check if the item already exists.
+To filter the existing items you can use **Get Items** actions from **SharePoint connector**.
+
+.. image:: ../../../_static/img/flow/how-tos/get-items-action.png
+    :alt: Get items
 
 Conclusion
 ----------
