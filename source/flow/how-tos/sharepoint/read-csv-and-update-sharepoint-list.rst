@@ -57,7 +57,7 @@ After running the flow we have two new employees in the Employees list
 Update a SharePoint list
 -------------------------
 The same approach could be used to update a SharePoint list. However, in that case, you need to check if the item already exists.
-To filter the existing items you can use **Get Items** actions from **SharePoint connector**.
+To filter the existing items you can use **Get Items** action from **SharePoint connector**.
 
 .. image:: ../../../_static/img/flow/how-tos/get-items-action.png
     :alt: Get items
@@ -68,5 +68,5 @@ Conclusion
 That is it. These few simple steps can help you to update any SharePoint list using CSV file as the data source.
 
 .. hint::
-  You may also be interested in `this article <https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/read-a-CSV-file-and-bulk-generate-documents.html>`_ explaining how to read a CSV file in Power Automate (Microsoft Flow) and bulk generate documents.
+  You may also be interested in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/actions-read-a-CSV-file-and-bulk-generate-documents.html>`_ explaining how to read a CSV file in Power Automate (Microsoft Flow) and bulk generate documents.
 
