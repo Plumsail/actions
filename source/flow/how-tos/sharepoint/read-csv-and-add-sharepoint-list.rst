@@ -1,5 +1,5 @@
-How to read a CSV file and add an item to SharePoint list in Power Automate
-===================================================================
+How to read a CSV file and add an item to SharePoint list in Power Automate and Azure Logic Apps
+=================================================================================================
 
 In this article, we'll demonstrate how to read CSV files in Power Automate (Microsoft Flow) using `Parse CSV action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#parse-csv>`_ from Plumsail Documents connector.
 
@@ -12,9 +12,6 @@ The CSV file contains the same headers as the Employees list columns: Title, Job
 
 .. image:: ../../../_static/img/flow/how-tos/source-csv.png
     :alt: Source CSV
-
-We will use `Parse CSV action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#parse-csv>`_ 
-from Plumsail SP connector, which is a part of `Plumsail Actions <https://plumsail.com/actions>`_.
 
 This is how our complete flow will look like:
 
