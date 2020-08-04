@@ -16,4 +16,13 @@ Then `create an API key in your Plumsail Account page <sign-up.html>`_ and paste
 Examples of Flows
 -----------------
 
-Once you clicked *'Create'* you can use Plumsail Actions in your Power Automate (Microsoft Flow)s. Review  `Power Automate (Microsoft Flow) examples <https://plumsail.com/docs/actions/v1.x/>`_ to learn how to use them.
+Once you clicked *'Create'* you can use Plumsail Actions in your Power Automate (Microsoft Flow)s. Review *'Power Automate (Microsoft Flow) examples'* to learn how to use them:
+
+.. toctree::      
+      :name: toc-microsoft-flow-examples
+      :maxdepth: 2
+
+      ../flow/how-tos/sharepoint/index-provision
+      ../flow/how-tos/sharepoint/index-permissions
+      ../flow/how-tos/sharepoint/index-documents
+      ../flow/how-tos/sharepoint/index-listitems
