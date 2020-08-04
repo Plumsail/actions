@@ -2,12 +2,12 @@ License and notifications
 =========================
 
 License page provides information about you current license and available executions.
-You can manage email notifications about reaching limit of executions for Plumsail Actions in the `personal account <https://account.plumsail.com/>`_.
+You can manage email notifications about reaching limit of executions for Plumsail Actions in the `personal account <https://account.plumsail.com/actions/subscription>`_.
 
 There are 3 options:
 
-- Less than 70% of documents are left 
-- Less than 90% of documents are left
+- Less than 30% of executions are left 
+- Less than 10% of executions are left
 - All documents were exhausted 
 
 .. image:: ../_static/img/general/actions-email-notifications.png
