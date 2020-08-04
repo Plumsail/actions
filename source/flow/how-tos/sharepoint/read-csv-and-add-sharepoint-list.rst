@@ -50,6 +50,7 @@ After running the flow we have two new employees in the Employees list
 .. image:: ../../../_static/img/flow/how-tos/new-employees-result.png
     :alt: New employees
 
+You can download the sample csv `here <../../../_static/files/document-generation/demos/employees.csv>`_ .
 
 Update a SharePoint list
 -------------------------
