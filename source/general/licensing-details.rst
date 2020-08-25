@@ -24,8 +24,8 @@ You can see usage stats in your Plumsail Documents account. If you see that you 
 
 The executions amount will be reset at 1st day in a month according to your current plan.
 
-Trial license
---------------
+Trial subscription
+------------------
 
 Likely you start using Plumsail Actions with a trial. The trial version gives you an opportunity to try our product on "Orca" plan. The trial period lasts for 30 days. If you choose not to purchase the license, the product will stop working.
 
