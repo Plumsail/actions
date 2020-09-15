@@ -1,5 +1,5 @@
 How to provision Microsoft Team using PnP tenant template
-===================================================================================
+=========================================================
 
 Plumsail Actions have action for provisioning PnP Tenant templates. 
 Those templates are basically the same PnP templates, 
@@ -8,7 +8,7 @@ you can create entities of a higher level. For example, you can provision Micros
 
 
 Automating provisioning of a new Microsoft Team for new projects.
-===================================================================================
+=================================================================
 
 Let's say, you have a SharePoint list called "Projects". This list has only two fields:
 

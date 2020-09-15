@@ -1,5 +1,5 @@
 How to create a modern team or communication SharePoint site in Power Automate (Microsoft Flow) or Azure Logic Apps
-==================================================================================================
+===================================================================================================================
 
 In this article, we will demonstrate how to configure a Power Automate (Microsoft Flow) that will automatically create a new site in SharePoint on an item creation. This approach works in SharePoint Online (Office 365).
 

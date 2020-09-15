@@ -1,5 +1,5 @@
 How to create SharePoint group and add users in Power Automate (Microsoft Flow) and Azure Logic Apps
-===================================================================================
+====================================================================================================
 
 In this article, you will learn how to create a SharePoint group and add users there. 
 Let us suppose that you have created a new site and now you want to create a group and add users there. 
@@ -18,7 +18,7 @@ There are a few other actions to manage SharePoint groups which you can use in y
 You can find all the actions and their description on `this page`_.
 
 Create Power Automate (Microsoft Flow)
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Now let us review the flow and learn how it is implemented:
 
 |flow|
@@ -26,7 +26,7 @@ Now let us review the flow and learn how it is implemented:
 You can actually pick any trigger. For example, you can start a flow when a new email arrives. We are using "Manually trigger a flow" trigger here to simplify the flow.
 
 Create SharePoint Group
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 `Create SharePoint Group`_ is the action from `Plumsail SharePoint connector`_. You can use it to create groups in your SharePoint.
 
 |create-sp-group-action|

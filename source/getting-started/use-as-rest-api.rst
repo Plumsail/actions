@@ -1,5 +1,5 @@
 Use as REST API
-=======================================
+===============
 
 This tutorial shows how to use Plumsail Actions API. There are just a few steps to get started:
 
@@ -25,7 +25,7 @@ You can find API reference on `this page <https://api.plumsail.com/swagger/index
 .. _use-own-language:
 
 Use API from your programming language
----------------------------------------------
+--------------------------------------
 
 Our API is REST based. Thus, you can use any programming language that is able to execute web requests. For example, you would use C#, PowerShell, node.js, Python, PHP.
 
@@ -40,7 +40,7 @@ There are a lot of ready to use helper REST API clients for those languages. Her
 .. _two-ways-to-call-api:
 
 Learn two ways to call API
-----------------------------
+--------------------------
 
 There are two ways to work with API:
 

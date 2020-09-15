@@ -1,5 +1,5 @@
 How to manage quick launch and top navigation items for a SharePoint site using Power Automate (Microsoft Flow) or Azure Logic Apps
-====================================================================================
+===================================================================================================================================
 
 This article will show how to manage quick launch and top navigation items for a SharePoint site using these Plumsail actions:
 

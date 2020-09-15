@@ -20,7 +20,7 @@ You need to navigate to the "API Keys" section and click "Add new". Then select 
 
 
 SharePoint - App auth
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 This type of key authenticates Actions as an app in your SharePoint tennant. You need to fill domain of your SharePoint Online, click "Submit" and then click "Accept" in the opened window. You may need to allow your browser to open popup windows.
 

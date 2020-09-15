@@ -1,5 +1,5 @@
 How to get items from SharePoint lists and libraries using CAML query in Power Automate (Microsoft Flow)
-=======================================================================================
+========================================================================================================
 In this article, you will learn how to get documents from a SharePoint document library. 
 In this example, we will archive documents that were created for the past 30 days once a month in your SharePoint using Power Automate (Microsoft Flow). 
 We will use `Get SharePoint Items By CAML Query`_ action from `Plumsail SharePoint connector`_.
@@ -14,7 +14,7 @@ There are also other restrictions on reading some fields with the help of standa
 In this case, our action that allows you to get items by CAML query works better.
 
 Create Power Automate (Microsoft Flow)
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Now let us review the flow and learn how it is implemented:
 
 |flow|

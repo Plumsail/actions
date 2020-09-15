@@ -1,5 +1,5 @@
 How to check-in multiple SharePoint documents in Power Automate (Microsoft Flow) and Azure Logic Apps
-====================================================================================
+=====================================================================================================
 
 This article will show how to check-in multiple documents using Power Automate (Microsoft Flow). 
 
@@ -13,7 +13,7 @@ Below you can find an example of the small flow that gets all documents in check
    :alt: Check-in Multiple Documents
 
 Manually trigger a flow
-------------------------
+-----------------------
 
 For this case, I'm using the trigger to manual start of the flow. You can use any other trigger available in Power Automate (Microsoft Flow).
 
@@ -34,7 +34,7 @@ On this step, I get all documents in check-out status:
 The action is using `OData filter <http://www.odata.org/documentation/odata-version-3-0/url-conventions/>`_ as a value of *‘Filter Query‘* field. I compare "CheckOutUser" field from document's properties with the null value. If the value of this field is not equal null then that is mean this file has check-out status.
 
 Check In SharePoint Document
------------------------------
+----------------------------
 
 The action `Check In SharePoint Document <../../actions/sharepoint-processing.html#check-in-sharepoint-document>`_ is used in "each" cycle that based on results of :ref:`getFilesProperties` action.
 

@@ -1,5 +1,5 @@
 How to create SharePoint list or library using PnP provisioning template in Power Automate (Microsoft Flow), Azure Logic Apps or PowerApps
-=========================================================================================================================
+==========================================================================================================================================
 
 This article will show how to create a custom SharePoint list or library using PnP provisioning template. You can use this approach to create lists or libraries of any complexity in SharePoint. For example, you may want to create an employees list with a set of predefined columns for your team. We will do it below.
 
@@ -104,7 +104,7 @@ You can find all the available template types in `the official Microsoft documen
 - :code:`ID` is a unique ID of the field. You can put here unique GUID or fill it dynamically in your Power Automate (Microsoft Flow). See the example below.
 
 <FieldRef> tag under <ViewFields>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :code:`<FieldRef>` tag under :code:`<ViewFields>` represents a field in a list view. If you want to add your new field in the list view, create the :code:`<FieldRef>` tag for it:
 
@@ -118,7 +118,7 @@ You can find all the available template types in `the official Microsoft documen
 For more information about tags available in PnP templates review `PnP provisioning schema <https://github.com/SharePoint/PnP-Provisioning-Schema/blob/master/ProvisioningSchema-2018-07.md>`_.
 
 Example of Power Automate (Microsoft Flow)
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Copy and paste your template into `Provision PnP template to SharePoint <../../actions/sharepoint-processing.html#provision-pnp-template-to-sharepoint>`_ action in your Flow:
 

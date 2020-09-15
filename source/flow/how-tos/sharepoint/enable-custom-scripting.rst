@@ -4,7 +4,7 @@ Enable custom scripting on site
 For correct operation of the provisioning functional, you must enable custom scripting feature. You can do it in 2 ways:
 
 By the help of the PowerShell
--------------------------
+-----------------------------
 
 First of all, you need to install SharePoint PowerShell. Follow `the installation instruction <https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps>`_.
 
@@ -16,7 +16,7 @@ First of all, you need to install SharePoint PowerShell. Follow `the installatio
 
 
 By the help of the PnP PowerShell
------------------------------
+---------------------------------
 
 First of all, you need to install PnP PowerShell. Follow `the installation instruction <https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps#installation>`_.
 

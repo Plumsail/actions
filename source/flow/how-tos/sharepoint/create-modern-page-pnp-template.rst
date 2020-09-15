@@ -1,5 +1,5 @@
 How to create a SharePoint Modern page using PnP provision template in Power Automate (Microsoft Flow), Azure Logic Apps, or PowerApps
-==========================================================================================================
+======================================================================================================================================
 
 This article describes how to create a SharePoint Modern page using a PnP provisioning template. It may be quite useful when you want to automatically post some news to your Modern Communication site or migrate regular pages from one site to another.
 
@@ -19,7 +19,7 @@ At the end of this article you will be able to create complex pages with heading
 
 
 Write a PnP template manually and provision news page
-------------------------------------------------------
+-----------------------------------------------------
 
 .. note::
   Our action supports the PnP template schema :code:`V202002` (or earlier).

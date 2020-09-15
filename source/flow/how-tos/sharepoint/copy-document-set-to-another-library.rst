@@ -1,5 +1,5 @@
 Copy SharePoint document set to another library in Power Automate (Microsoft Flow) and Azure Logic Apps
-======================================================================================
+=======================================================================================================
 
 This article will show how to copy a document set to another library on a SharePoint site using Power Automate (Microsoft Flow).
 
@@ -15,7 +15,7 @@ The complete flow is below. You can find step by step description of the flow ne
    :alt: Copy Document Set With Approve
 
 Manually trigger a flow
-------------------------
+-----------------------
 For this case, I'm using the trigger to manual start of the flow, you can use any other trigger available in Power Automate (Microsoft Flow).
 
 Initialization of variables

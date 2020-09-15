@@ -1,5 +1,5 @@
 Create SharePoint subsite by custom template and grant permissions in Power Automate (Microsoft Flow) and Azure Logic Apps
-================================================================================================================
+==========================================================================================================================
 
 This article will show how to use Power Automate (Microsoft Flow) to create a new subsite by the custom template and then grant permissions to this site for specific SharePoint group. As an example, I configured the Flow for SharePoint list to automatically create new sites.
 
@@ -75,7 +75,7 @@ Our template is called *‘ProjectSite’*. I will use this template in the Flow
 .. _configureMicrosoftFlow:
 
 Configure Power Automate (Microsoft Flow)
-------------------------
+-----------------------------------------
 Here we created the Flow and configured it to start on list item creation for *‘Projects’* list. Thus, new SharePoint sites will be created automatically after creation of a list item.
 
 You can find more information about the specific parameters of the Flow actions in `the documentation <../../actions/sharepoint-processing.html>`_ .
@@ -93,7 +93,7 @@ When an item is created
 Here we specified values for *‘Site Address’* and *‘List Name’* fields to bind the Flow to the *‘Project‘* list.
 
 Create Subsite from Template
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `Create Subsite from Template <../../actions/sharepoint-processing.html#create-sharepoint-subsite-from-template>`_ action. I used *‘Title’* field of current list item as the title for SharePoint site.
 

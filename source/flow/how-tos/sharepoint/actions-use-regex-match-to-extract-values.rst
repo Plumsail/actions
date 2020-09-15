@@ -1,5 +1,5 @@
 How to use regular expression match to extract values from text in Microsoft Power Automate and Azure Logic Apps
-######################################################################################################
+################################################################################################################
 In this article we will be talking about using `Regular Expression Match`_ action `Plumsail Actions connector <https://plumsail.com/actions/>`_ for `Microsoft power automate`_ and `Azure Logic Apps`_.
 
 Let’s suppose you are getting a new email after someone made a purchase and you need to extract information from this email and create a new item in your orders SharePoint list.

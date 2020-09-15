@@ -1,5 +1,5 @@
 Use in Power Automate (Microsoft Flow)
-=====================
+======================================
 
 Find `Plumsail SP <https://emea.flow.microsoft.com/en-us/connectors/shared_plumsailsp/plumsail-sp/>`_ in the list of available Power Automate (Microsoft Flow) connectors. Then you can search for "Plumsail" in you Flow and add appropriate action:
 

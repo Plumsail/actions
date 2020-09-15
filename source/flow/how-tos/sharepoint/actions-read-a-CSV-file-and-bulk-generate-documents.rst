@@ -1,5 +1,5 @@
 How to read a CSV file in Power Automate (Microsoft Flow) and bulk generate documents
-=============================================================
+=====================================================================================
 
 This article demonstrates how to read CSV files in Power Automate (Microsoft Flow) using **Parse CSV** action from Plumsail Actions connector. 
 We will use results from this action to bulk generate documents.
@@ -40,7 +40,7 @@ This is how our flow looks:
 Below is a step by step description of the flow.
 
 Parsing a CSV file
---------------------
+------------------
 
 Flow trigger
 ~~~~~~~~~~~~
@@ -56,7 +56,7 @@ Just specify the  **path** to your file. We use this action to read our sample C
 You can use any other connector to get files from your system.
 
 Parsing CSV
-~~~~~~~~~
+~~~~~~~~~~~
 
 This is an action from `Plumsail Actions connector <https://plumsail.com/actions/>`_.
 

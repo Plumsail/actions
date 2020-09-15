@@ -1,5 +1,5 @@
 How to read a CSV file and add an item to SharePoint list in Power Automate and Azure Logic Apps
-=================================================================================================
+================================================================================================
 
 In this article, we'll demonstrate how to read CSV files in Power Automate (Microsoft Flow) using `Parse CSV action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#parse-csv>`_ from Plumsail Documents connector.
 
@@ -53,7 +53,7 @@ After running the flow we have two new employees in the Employees list
 You can download the sample csv `here <../../../_static/files/document-generation/demos/employees.csv>`_ .
 
 Update a SharePoint list
--------------------------
+------------------------
 The same approach could be used to update a SharePoint list. However, in that case, you need to check if the item already exists.
 To filter the existing items you can use **Get Items** action from **SharePoint connector**.
 

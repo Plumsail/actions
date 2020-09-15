@@ -10,7 +10,7 @@ Before starting, ensure that you `added Plumsail connector to Power Automate (Mi
    :depth: 1
 
 Change Permissions on SharePoint site, list or list item
------------------------------------------------------------
+--------------------------------------------------------
 
 "Change Permissions" is a complex action that includes 12 different operations for granting, removing or restoring permissions on sites, lists, and list items.
 
@@ -50,7 +50,7 @@ You can find the documentation for all operations included in "Change Permission
 .. _grant-permissions-site:
 
 Grant Permissions on SharePoint Site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Grant specific permissions on site to a SharePoint user or Group with the help of Power Automate (Microsoft Flow).
 
@@ -94,7 +94,7 @@ Grant specific permissions on site to a SharePoint user or Group with the help o
 .. _remove-permissions-site:
 
 Remove Permissions from SharePoint Site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete permissions from site for specified SharePoint user or group with the help of Power Automate (Microsoft Flow).
 
@@ -128,7 +128,7 @@ Delete permissions from site for specified SharePoint user or group with the hel
 .. _remove-all-permissions-site:
 
 Remove All Permissions from SharePoint Site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removing all user permissions from a SharePoint site with the help of Power Automate (Microsoft Flow).
 
@@ -159,7 +159,7 @@ Removing all user permissions from a SharePoint site with the help of Power Auto
 .. _restore-inheritance-permissions-site:
 
 Restore Permissions Inheritance for SharePoint Site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove unique permissions and restore permission inheritance on current SharePoint site with the help of Power Automate (Microsoft Flow).
 
@@ -190,7 +190,7 @@ Remove unique permissions and restore permission inheritance on current SharePoi
 .. _grant-permissions-list:
 
 Grant Permissions on SharePoint List
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Grant specific permissions to a user on a SharePoint list with the help of Power Automate (Microsoft Flow).
 
@@ -237,7 +237,7 @@ Grant specific permissions to a user on a SharePoint list with the help of Power
 .. _remove-permissions-list:
 
 Remove Permissions from SharePoint List
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete permissions from a user on a SharePoint list with the help of Power Automate (Microsoft Flow).
 
@@ -274,7 +274,7 @@ Delete permissions from a user on a SharePoint list with the help of Power Autom
 .. _remove-all-permissions-list:
 
 Remove All Permissions from SharePoint List
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove all user permissions from a SharePoint list with the help of Power Automate (Microsoft Flow).
 
@@ -308,7 +308,7 @@ Remove all user permissions from a SharePoint list with the help of Power Automa
 .. _restore-inheritance-permissions-list:
 
 Restore Permissions Inheritance for SharePoint List
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove unique permissions and restore permission inheritance on a SharePoint list with the help of Power Automate (Microsoft Flow).
 
@@ -342,7 +342,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 .. _grant-permissions-item:
 
 Grant Permissions on SharePoint Item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Grant specific permissions to a user on a SharePoint list item with the help of Power Automate (Microsoft Flow).
 
@@ -392,7 +392,7 @@ Grant specific permissions to a user on a SharePoint list item with the help of 
 .. _remove-permissions-item:
 
 Remove Permissions from SharePoint Item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete permissions from a user on a SharePoint list item with the help of Power Automate (Microsoft Flow).
 
@@ -432,7 +432,7 @@ Delete permissions from a user on a SharePoint list item with the help of Power 
 .. _remove-all-permissions-item:
 
 Remove All Permissions from SharePoint Item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removing all user permissions from a SharePoint Item with the help of Power Automate (Microsoft Flow).
 
@@ -469,7 +469,7 @@ Removing all user permissions from a SharePoint Item with the help of Power Auto
 .. _restore-inheritance-permissions-item:
 
 Restore Permissions Inheritance for SharePoint Item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove unique permissions and restore permission inheritance on a SharePoint list item with the help of Power Automate (Microsoft Flow).
 
@@ -506,7 +506,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint lis
 .. _grant-permissions-folder:
 
 Grant Permissions on SharePoint Folder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Grant specific permissions on folder to a SharePoint user or Group with the help of Power Automate (Microsoft Flow).
 
@@ -554,7 +554,7 @@ Grant specific permissions on folder to a SharePoint user or Group with the help
 .. _remove-permissions-folder:
 
 Remove Permissions from SharePoint Folder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete permissions from a user on a SharePoint folder with the help of Power Automate (Microsoft Flow).
 
@@ -592,7 +592,7 @@ Delete permissions from a user on a SharePoint folder with the help of Power Aut
 .. _remove-all-permissions-folder:
 
 Remove All Permissions from SharePoint Folder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removing all user permissions from a SharePoint Folder with the help of Power Automate (Microsoft Flow).
 
@@ -627,7 +627,7 @@ Removing all user permissions from a SharePoint Folder with the help of Power Au
 .. _restore-inheritance-permissions-folder:
 
 Restore Permissions Inheritance for SharePoint Folder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Remove unique permissions and restore permission inheritance on a SharePoint folder with the help of Power Automate (Microsoft Flow).
 
@@ -662,7 +662,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint fol
 .. _grant-permissions-document:
 
 Grant Permissions on SharePoint Document
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Grant specific permissions on document to a SharePoint user or Group with the help of Power Automate (Microsoft Flow).
 
@@ -710,7 +710,7 @@ Grant specific permissions on document to a SharePoint user or Group with the he
 .. _remove-permissions-document:
 
 Remove Permissions from SharePoint Document
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete permissions from a user on a SharePoint document with the help of Power Automate (Microsoft Flow).
 
@@ -748,7 +748,7 @@ Delete permissions from a user on a SharePoint document with the help of Power A
 .. _remove-all-permissions-document:
 
 Remove All Permissions from SharePoint Document
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removing all user permissions from a SharePoint Document with the help of Power Automate (Microsoft Flow).
 
@@ -816,7 +816,7 @@ Remove unique permissions and restore permission inheritance on a SharePoint doc
    :alt: Restore Permissions Inheritance for SharePoint Document Example
 
 Provision PnP template to SharePoint
------------------------------------------
+------------------------------------
 The action provisions a PnP template to an existing SharePoint site. You can use it to create lists, libraries, pages, etc. Read the article `How to create a SharePoint site using PnP provisioning template <../how-tos/sharepoint/create-site-pnp.html>`_ for more information.
 
 .. note::
@@ -849,7 +849,7 @@ The action provisions a PnP template to an existing SharePoint site. You can use
        -  :code:`https://contoso.sharepoint.com/sites/subSite`
 
     * - Overwrite System PropertyBag Values
-      - Specify this parameter if you want to overwrite and/or create properties that are known to be system entries (starting with vti_, dlc_, etc.)
+      - Specify this parameter if you want to overwrite and/or create properties that are known to be system entries (starting with `vti_`, `dlc_`, etc.)
       - Yes
 
     *  - Ignore Duplicate Data Row Errors
@@ -883,7 +883,7 @@ The action provisions a PnP template to an existing SharePoint site. You can use
    :alt: PnP Provision Example
 
 Provision PnP Tenant template to SharePoint
------------------------------------------
+-------------------------------------------
 The action provisions a PnP tenant template to an existing SharePoint tenant. You can use both xml and pnp templates. Xml templates are better to use for simple templates with schema only. If you want to use resource and content files - better to use PnP templates.
 
 .. note::
@@ -912,7 +912,7 @@ The action provisions a PnP tenant template to an existing SharePoint tenant. Yo
       - tenantSequence
 
     * - Overwrite System PropertyBag Values
-      - Specify this parameter if you want to overwrite and/or create properties that are known to be system entries (starting with vti_, dlc_, etc.)
+      - Specify this parameter if you want to overwrite and/or create properties that are known to be system entries (starting with `vti_`, `dlc_`, etc.)
       - Yes
 
     *  - Ignore Duplicate Data Row Errors
@@ -950,7 +950,7 @@ The action provisions a PnP tenant template to an existing SharePoint tenant. Yo
    :alt: PnP Tenant Provision Example
 
 Activate SharePoint Feature
-----------------------------------
+---------------------------
 
 Activate a SharePoint feature with specific ID with the help of Power Automate (Microsoft Flow).
 
@@ -985,7 +985,7 @@ Activate a SharePoint feature with specific ID with the help of Power Automate (
    :alt: Activate SharePoint Feature Example
 
 Create SharePoint List or Library
-------------------------------------
+---------------------------------
 
 Create SharePoint list by template with the help of Power Automate (Microsoft Flow).
 
@@ -1113,7 +1113,7 @@ Create a new SharePoint subsite based on specific template with the help of Powe
    :alt: Create SharePoint Subsite from Template Example
 
 Create Modern SharePoint Site
----------------------------------------
+-----------------------------
 .. warning::
   This action work only with `SP Custom Credentials key type <../../getting-started/sign-up.html?highlight=auth#sharepoint-custom-credentials>`_ 
 
@@ -1140,7 +1140,7 @@ You can find the documentation for all operations included in "Create Modern Sha
 .. _create-team-site:
 
 Create Team SharePoint Site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -1199,7 +1199,7 @@ Create Team SharePoint Site
 .. _create-communication-site:
 
 Create Communication SharePoint Site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -1264,7 +1264,7 @@ Create Communication SharePoint Site
 .. _create-team-site-with-no-group:
 
 Create Team SharePoint Site with No Group
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. rubric:: Output Parameters
 
 .. list-table::
@@ -1324,7 +1324,7 @@ Create Team SharePoint Site with No Group
    :alt: Create Team SharePoint Site With No Group Example
 
 Apply SharePoint site design
----------------------------------------
+----------------------------
 Applies the selected site design to the specified SharePoint site. See more information `here <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-overview>`_. You can get a list of available site design by PowerShell cmdlet `Get-SPOSiteDesign <https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Get-SPOSiteDesign?view=sharepoint-ps>`_
 
 .. rubric:: Input Parameters
@@ -1352,7 +1352,7 @@ Applies the selected site design to the specified SharePoint site. See more info
    :alt: Apply selected design to SharePoint Site
 
 Add SharePoint site navigation node
------------------------------------------
+-----------------------------------
 Adds a menu item to either the quicklaunch or top navigation.
 You may find an example how to manage quick launch and top navigation items for a SharePoint site `in this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-manage-quick-launch-and-top-navigation-items.html>`_ .
 
@@ -1399,7 +1399,7 @@ You may find an example how to manage quick launch and top navigation items for 
 
 
 Remove SharePoint site navigation node
------------------------------------------
+--------------------------------------
 Removes a menu item from either the quicklaunch or top navigation.
 You may find an example how to manage quick launch and top navigation items for a SharePoint site `in this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-manage-quick-launch-and-top-navigation-items.html>`_ .
 
@@ -1436,7 +1436,7 @@ You may find an example how to manage quick launch and top navigation items for 
    :alt: Remove SharePoint site navigation node Example
 
 Get SharePoint Site Option Value  
-----------------------------------
+--------------------------------
 Reads a value from SharePoint Site Options (Property Bag) with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -1475,7 +1475,7 @@ Reads a value from SharePoint Site Options (Property Bag) with the help of Power
    :alt: Get SharePoint Site Option Value Example 
 
 Update SharePoint Site Properties
-----------------------------------
+---------------------------------
 Updates web properties with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -1585,7 +1585,7 @@ Updates web properties with the help of Power Automate (Microsoft Flow).
    :alt: Update SharePoint Site Properties Example
 
 Delete SharePoint Site
-------------------------
+----------------------
 Deletes the SharePoint site by a specific URL with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -1607,7 +1607,7 @@ Deletes the SharePoint site by a specific URL with the help of Power Automate (M
    :alt: Delete SharePoint Site Example  
 
 Invite External User to SharePoint
----------------------------------------
+----------------------------------
 Invites external users with specific permission to a SharePoint site, a specific SharePoint group or an item in a SharePoint list with the help of Power Automate (Microsoft Flow).
 
 "Invite External User to SharePoint" is a complex action that includes 3 different operations for inviting external users to a SharePoint site, a SharePoint list item or a SharePoint group.
@@ -1634,7 +1634,7 @@ Also, you can find examples how to share a site with external users in `this art
 .. _invite-external-user-site:
 
 Invite External User to SharePoint Site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Invites external users with specific permission to an SharePoint site with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -1678,7 +1678,7 @@ Invites external users with specific permission to an SharePoint site with the h
 .. _invite-external-user-item:
 
 Invite External User to SharePoint Item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Invites external users with specific permission to an item in a SharePoint list with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -1730,7 +1730,7 @@ Invites external users with specific permission to an item in a SharePoint list 
 .. _invite-external-user-group:
 
 Invite External User to SharePoint Group
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Invites external users to an specific SharePoint group with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -1796,7 +1796,7 @@ Configure default groups for a site with the help of Power Automate (Microsoft F
    :alt: Set Default SharePoint Site Group Example
 
 Copy SharePoint Document from Library
------------------------------------------
+-------------------------------------
 Copies the document from the document library to the specified URL with the help of Power Automate (Microsoft Flow). You can copy the document to another document library cross-site, to another site collection or to another folder.
 
 .. rubric:: Output Parameters
@@ -1849,7 +1849,7 @@ Copies the document from the document library to the specified URL with the help
    :alt: Copy SharePoint Document from Library Example
 
 Move SharePoint Document from Library
------------------------------------------
+-------------------------------------
 Moves the document from the document library to the specified URL with the help of Power Automate (Microsoft Flow). You can move the document to another document library cross-site, to another site collection or to another folder.
 
 .. rubric:: Output Parameters
@@ -1902,7 +1902,7 @@ Moves the document from the document library to the specified URL with the help 
    :alt: Move SharePoint Document from Library Example   
 
 Remove SharePoint Document by URL
------------------------------------------
+---------------------------------
 Remove a SharePoint document by a specific URL with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -1932,7 +1932,7 @@ Remove a SharePoint document by a specific URL with the help of Power Automate (
    :alt: Remove SharePoint Document by URL Example   
 
 Create SharePoint Document Set
------------------------------------------
+------------------------------
 Creates a new document set in the document library by the specified URL with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -1979,7 +1979,7 @@ Creates a new document set in the document library by the specified URL with the
    :alt: Create SharePoint Document Set Example
 
 Copy SharePoint Document Set
------------------------------------------
+----------------------------
 Copies a SharePoint document set from the document library to the specified URL with the help of Power Automate (Microsoft Flow). You can copy the document sets to another document library cross-site, to another site collection or to another folder.
 
 .. rubric:: Output Parameters
@@ -2032,7 +2032,7 @@ Copies a SharePoint document set from the document library to the specified URL 
    :alt: Copy SharePoint Document Set Example
    
 Move SharePoint Document Set
------------------------------------------
+----------------------------
 Moves a SharePoint document set from the document library to the specified URL with the help of Power Automate (Microsoft Flow). You can move the document sets to another document library cross-site, to another site collection or to another folder.
 
 .. rubric:: Output Parameters
@@ -2085,7 +2085,7 @@ Moves a SharePoint document set from the document library to the specified URL w
    :alt: Move SharePoint Document Set Example
 
 Create SharePoint Folder by URL
------------------------------------------
+-------------------------------
 Creates a new SharePoint folder in the document library by the specified URL with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2128,7 +2128,7 @@ Creates a new SharePoint folder in the document library by the specified URL wit
    :alt: Create SharePoint Folder by URL Example
 
 Create SharePoint Folder in List
------------------------------------------
+--------------------------------
 Creates a new SharePoint folder in the document library or list using the specified path with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2179,7 +2179,7 @@ Creates a new SharePoint folder in the document library or list using the specif
    :alt: Create SharePoint Folder in List Example
 
 Remove SharePoint Folder by URL
------------------------------------------
+-------------------------------
 Removes a SharePoint folder from the document library or list by the specified URL with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -2209,7 +2209,7 @@ Removes a SharePoint folder from the document library or list by the specified U
    :alt: Remove SharePoint Folder by URL Example
 
 Copy SharePoint Folder from Library
------------------------------------------
+-----------------------------------
 Copies a SharePoint folder from the document library to the specified URL with the help of Power Automate (Microsoft Flow). You can copy the folder to another document library cross-site, to another site collection or to another folder.
 
 .. rubric:: Output Parameters
@@ -2262,7 +2262,7 @@ Copies a SharePoint folder from the document library to the specified URL with t
    :alt: Copy SharePoint Folder from Library Example
 
 Move SharePoint Folder from Library
------------------------------------------
+-----------------------------------
 Moves a SharePoint folder from the document library to the specified URL with the help of Power Automate (Microsoft Flow). You can move the folder to another document library cross-site, to another site collection or to another folder.
 
 .. rubric:: Output Parameters
@@ -2315,7 +2315,7 @@ Moves a SharePoint folder from the document library to the specified URL with th
    :alt: Move SharePoint Folder from Library Example
 
 Declare SharePoint Document as Record
------------------------------------------
+-------------------------------------
 Declares a document from the specified library as a record.
 
 Check out the example How to declare SharePoint documents as a record in `this article <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/how-to-declare-sharepoint-document-as-a-record.html>`_ .
@@ -2347,7 +2347,7 @@ Check out the example How to declare SharePoint documents as a record in `this a
    :alt: Declare SharePoint Document as Record
 
 Undeclare SharePoint Document as Record
------------------------------------------
+---------------------------------------
 Uneclares a document from the specified library as a record.
 
 .. rubric:: Input Parameters
@@ -2377,7 +2377,7 @@ Uneclares a document from the specified library as a record.
    :alt: Undeclare SharePoint Document as Record
 
 Check In SharePoint Document
------------------------------------------
+----------------------------
 Check-in a SharePoint document at the specified URL with the specified comment with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2424,7 +2424,7 @@ Check-in a SharePoint document at the specified URL with the specified comment w
    :alt: Check In SharePoint Document Example
 
 Check Out SharePoint Document
------------------------------------------
+-----------------------------
 Check-out a SharePoint document at the specified URL with the specified comment with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2467,7 +2467,7 @@ Check-out a SharePoint document at the specified URL with the specified comment 
    :alt: Check Out SharePoint Document Example
 
 Create SharePoint Group
------------------------------------------
+-----------------------
 Creates the SharePoint group with a specified name with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -2501,7 +2501,7 @@ Creates the SharePoint group with a specified name with the help of Power Automa
    :alt: Create SharePoint Group Example
 
 Update SharePoint Group Properties
------------------------------------------
+----------------------------------
 Updates SharePoint group properties with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -2560,7 +2560,7 @@ Updates SharePoint group properties with the help of Power Automate (Microsoft F
    :alt: Update SharePoint Group Properties Example
 
 Remove SharePoint Group
------------------------------------------
+-----------------------
 Removes the SharePoint group by a specified name with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -2587,7 +2587,7 @@ Removes the SharePoint group by a specified name with the help of Power Automate
    :alt: Remove SharePoint Group Example
 
 Add User to SharePoint Group
------------------------------------------
+----------------------------
 Adds a user to a specific SharePoint group with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -2618,7 +2618,7 @@ Adds a user to a specific SharePoint group with the help of Power Automate (Micr
    :alt: Add User to SharePoint Group Example
 
 Is User Member of SharePoint Group
------------------------------------------
+----------------------------------
 Checks if a user is a member of a specifed SharePoint group with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2662,7 +2662,7 @@ Checks if a user is a member of a specifed SharePoint group with the help of Pow
    :alt: Is User Member of SharePoint Group Example
 
 Get Members of SharePoint Group
------------------------------------------
+-------------------------------
 Gets members of a specific SharePoint group with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2712,7 +2712,7 @@ Gets members of a specific SharePoint group with the help of Power Automate (Mic
    :alt: Get Members of SharePoint Group Example
 
 Remove User from SharePoint Group
------------------------------------------
+---------------------------------
 Removes a user from a specific SharePoint group with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -2743,7 +2743,7 @@ Removes a user from a specific SharePoint group with the help of Power Automate 
    :alt: Remove User from SharePoint Group Example
 
 Get SharePoint Items By CAML Query
------------------------------------------
+----------------------------------
 Executes a CAML query on a list or on a document library and returns the collection of elements with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2868,7 +2868,7 @@ More details on the action features are in `this article <../how-tos/sharepoint/
    :alt: Update SharePoint list item example
 
 Get SharePoint Item Versions History
------------------------------------------
+------------------------------------
 Returns the changes history for the specific field from the SharePoint list item with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2932,7 +2932,7 @@ Returns the changes history for the specific field from the SharePoint list item
    :alt: Get SharePoint Item Versions History Example
 
 Copy SharePoint Item Attachments to URL
------------------------------------------
+---------------------------------------
 Copies attachments from the SharePoint list item to the library using the specified folder URL with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -2989,7 +2989,7 @@ Copies attachments from the SharePoint list item to the library using the specif
    :alt: Copy SharePoint Item Attachments to URL Example
 
 Move SharePoint Item Attachments to URL
------------------------------------------
+---------------------------------------
 Moves attachments from the SharePoint list item to the library using the specified folder URL with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -3046,7 +3046,7 @@ Moves attachments from the SharePoint list item to the library using the specifi
    :alt: Move SharePoint Item Attachments to URL Example
 
 Add Content Type to SharePoint List
------------------------------------------
+-----------------------------------
 Adds the specified content type to a SharePoint list with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Input Parameters
@@ -3081,7 +3081,7 @@ Adds the specified content type to a SharePoint list with the help of Power Auto
    :alt: Add Content Type to SharePoint List Example  
 
 Copy List Item to SharePoint List
------------------------------------------
+---------------------------------
 Copies the specified list item to another SharePoint list with the help of Power Automate (Microsoft Flow).
 
 You may find an example how to copy or move SharePoint list items with attachments cross-site in `this article <../../flow/how-tos/sharepoint/move-sharepoint-list-items-with-attachments-cross-site.html>`_.
@@ -3135,7 +3135,7 @@ You may find an example how to copy or move SharePoint list items with attachmen
    :alt: Copy List Item to SharePoint List Example
 
 Move List Item to SharePoint List
------------------------------------------
+---------------------------------
 Moves the specified list item to another SharePoint list with the help of Power Automate (Microsoft Flow).
 
 You may find an example how to copy or move SharePoint list items with attachments cross-site in `this article <../../flow/how-tos/sharepoint/move-sharepoint-list-items-with-attachments-cross-site.html>`_.
@@ -3190,7 +3190,7 @@ You may find an example how to copy or move SharePoint list items with attachmen
    :alt: Move List Item to SharePoint List Example
 
 Start SharePoint Site Workflow (2013)
------------------------------------------
+-------------------------------------
 Starts a SharePoint site level workflow and pass input parameters, if they were specified. The action can run only 2013 workflows with the help of Power Automate (Microsoft Flow).
 
 .. rubric:: Output Parameters
@@ -3239,7 +3239,7 @@ Starts a SharePoint site level workflow and pass input parameters, if they were 
    :alt: Start SharePoint Site Workflow Example
 
 Start SharePoint List Workflow (2013)
------------------------------------------
+-------------------------------------
 Starts a SharePoint list level workflow and pass input parameters, if they were specified. The action can run only 2013 workflows with the help of Power Automate (Microsoft Flow).
 
 
@@ -3297,7 +3297,7 @@ Starts a SharePoint list level workflow and pass input parameters, if they were 
    :alt: Start SharePoint List Workflow Example
 
 Parse CSV
--------------------
+---------
 
 Parses a CSV file into an array of objects with properties in Power Automate (Microsoft Flow).
 Review `How to read a CSV file in Power Automate (Microsoft Flow) and bulk generate documents <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/actions-read-a-CSV-file-and-bulk-generate-documents.html>`_ article for more information.
@@ -3375,7 +3375,7 @@ Review `How to read a CSV file in Power Automate (Microsoft Flow) and bulk gener
 
 
 Regular Expression Match
-----------------------------
+------------------------
 
 Searches an input string for all occurrences of a regular expression and returns all the matches with the help of Power Automate (Microsoft Flow). We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 
@@ -3468,7 +3468,7 @@ In a specified input string, replaces all strings that match a regular expressio
    :alt: Regular Expression Replace Example
 
 Regular Expression Test
-----------------------------
+-----------------------
 
 Indicates whether the regular expression specified in the Regex constructor finds a match in a specified input string. We would recommend you to use `Regex Hero tool <http://regexhero.net/>`_ to test your expressions. It supports the same syntax as actions.
 

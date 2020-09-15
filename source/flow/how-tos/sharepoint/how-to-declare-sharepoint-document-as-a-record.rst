@@ -1,11 +1,11 @@
 How to declare SharePoint documents as a record
-====================================================================================
+===============================================
 
 This article will show how to declare SharePoint document as a record with help of  `Declare action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#declare-sharepoint-document-as-record>`_
 from `Plumsail Actions package <https:https://plumsail.com/actions/>`_.
 
 Site settings
-====================================================================================
+=============
 
 To be able to declare SharePoint document as a record you need to enable the feature on the site level.
 
@@ -21,7 +21,7 @@ These are the default settings. You can change it if it's needed
 
 
 Example
-====================================================================================
+=======
 
 Let's says we have a document library with business plans. When a user upload the plan the status is set to "Under review".
 I want to declare the document as a record after changing the status to "Approved".

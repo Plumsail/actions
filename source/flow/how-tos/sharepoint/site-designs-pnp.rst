@@ -1,5 +1,5 @@
 How to start Power Automate (Microsoft Flow) with PnP provision from a site design
-===========================================================================================================================================
+==================================================================================
 
 This article will show how to automatically start a Power Automate (Microsoft Flow) with PnP provision action from site design.
 The feature could be helpfull when you need to deploy some elements which are not supported by the site design itself.
@@ -10,7 +10,7 @@ If you are new to Plumsail Actions, follow this `getting started instruction <..
 and also check out the `PnP provisioning scheme <https://github.com/SharePoint/PnP-Provisioning-Schema>`_.
 
 Creating a PnP provisioning template
----------------------------------------------------------
+------------------------------------
 Our plan is to start a Power Automate (Microsoft Flow) from site design and deploy a PnP provisioning template.
 In the example, we will create a SharePoint Modern page using PnP provision template and to reach the goal we need to prepare the PnP template.
 
@@ -24,7 +24,7 @@ or create the template in PowerShell. Please check out the following articles. W
 Create the PnP file, we'll need it on the next steps.
 
 Creating a flow
----------------------------------------------------------
+---------------
 We'll start our Flow when a specific site design is selected. Site design contains a site script which has a link to the created Power Automate (Microsoft Flow).
 We can notify the Micrsoft flow that the site design is applied using trigger When an HTTP request is received.
 
@@ -70,7 +70,7 @@ On the next steps we need to start the Flow automatically once the site is creat
 
 
 Creating a site design and site script
----------------------------------------------------------
+--------------------------------------
 
 Site design is a container which includes one or more site scripts. 
 You can either make the site script manually or use an `online costructor <https://www.sitedesigner.io>`_.
@@ -122,7 +122,7 @@ After that we need to add the site script to our site design using some PowerShe
 You can find the detailed instruction and some other related to the subject things in the oficial `Microsoft article <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-pnp-provisioning#create-the-site-design>`_.
 
 Starting MS Flow from site design
----------------------------------------------------------
+---------------------------------
 
 The last step is when you select the site design it triggers the created flow and deploy the PnP template with modern page.
 

@@ -1,5 +1,5 @@
 Set SharePoint item level permissions (break role inheritance and assign permissions) in Power Automate (Microsoft Flow) and Azure Logic Apps
-============================================================================================================================
+=============================================================================================================================================
 
 This article will show how to use Power Automate (Microsoft Flow) to break role inheritance and grant permissions on the list item for the user and for specific SharePoint group.
 
@@ -32,7 +32,7 @@ This is how the new form looks like:
 .. _configureFlow:
 
 Configure Power Automate (Microsoft Flow)
-------------------------
+-----------------------------------------
 At this stage was created a flow and configured it to start on list item creation for *‘Business Travel Requests’* list.
 
 You can find more information about specific parameters of the flow actions in `the documentation <https://plumsail.com/docs/actions/v1.x>`_ .

@@ -1,5 +1,5 @@
 How to share a SharePoint document with external users in Power Automate (Microsoft Flow) and Azure Logic Apps
-=============================================================================================
+==============================================================================================================
 
 In this article, we will demonstrate how to share SharePoint documents with external users with help of Power Automate (Microsoft Flow). This approach works in SharePoint Online (Office 365).
 
