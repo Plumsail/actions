@@ -39,7 +39,7 @@ This type of key allows SharePoint actions to work under account of specific use
    :alt: API keys
 
 .. note::
-  To use this type of the API key, you need to create `App passwords`_ . Otherwise, it is necessary to disable `multi-factor authentication`_ (MFA) for a user under whose account the key is generated. Actions using the key will have the same level of permissions as the user.
+  To use this type of the API key, you need to use `App passwords`_ . Otherwise, it is necessary to disable `multi-factor authentication`_ (MFA) for a user under whose account the key is generated. Actions using the key will have the same level of permissions as the user.
 
 Copy and use API key
 --------------------
