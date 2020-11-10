@@ -19,34 +19,42 @@ You need to navigate to the "API Keys" section and click "Add new". Then select 
    :alt: API keys
 
 
-SharePoint - App auth
-~~~~~~~~~~~~~~~~~~~~~
+SharePoint - Admin permissions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This type of key authenticates Actions as an app in your SharePoint tennant. You need to fill domain of your SharePoint Online, click "Submit" and then click "Accept" in the opened window. You may need to allow your browser to open popup windows.
+Plumsail Actions will connect to SharePoint using permissions of tenant admin. Fill SharePoint Online address below and grant them by signing in under SharePoint tenant admin user.
 
-.. image:: ../_static/img/getting-started/add-app-auth-api-key.png
+.. image:: ../_static/img/getting-started/add-admin-permissions-api-key.png
    :alt: API keys
 
-.. note::
-  Though this type of the API key doesn't depand on users' permission level and multi-factor authentication enabled for them, it can't be used with a `Create Modern SharePoint Site`_ action. 
 
 SharePoint - Custom credentials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This type of key allows SharePoint actions to work under account of specific user. You need to fill account name and password for your user:
 
-.. image:: ../_static/img/getting-started/add-sp-credentials-api-key.png
+.. image:: ../_static/img/getting-started/add-custom-user-credentials-api-key.png
    :alt: API keys
 
 .. note::
   To use this type of the API key, you need to create `App passwords`_ . Otherwise, it is necessary to disable `multi-factor authentication`_ (MFA) for a user under whose account the key is generated. Actions using the key will have the same level of permissions as the user.
+
+
+SharePoint - Actions basic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It allows you to execute Plumsail Actions that don't require access to SharePoint. Use it with Parse CSV, Regular Expression Match and other similar actions.
+
+.. image:: ../_static/img/getting-started/add-actions-basic-api-key.png
+   :alt: API keys
+
 
 Copy and use API key
 --------------------
 
 Once you created an API key, you can see your key right in the "Secret" column. You can also change a name of a key by clicking on it in the "Name" column:
 
-.. image:: ../_static/img/getting-started/copy-api-key.png
+.. image:: ../_static/img/getting-started/copy-api-key1.png
    :alt: API keys
 
 |
