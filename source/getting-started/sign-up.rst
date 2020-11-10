@@ -15,7 +15,7 @@ Generate API key
 
 You need to navigate to the "API Keys" section and click "Add new". Then select type of API key according to your needs.
 
-.. image:: ../_static/img/getting-started/create-api-key.png
+.. image:: ../_static/img/getting-started/create-api-key1.png
    :alt: API keys
 
 
