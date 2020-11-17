@@ -40,8 +40,8 @@ This type of key allows SharePoint actions to work under account of specific use
   To use this type of the API key, you need to create `App passwords`_ . Otherwise, it is necessary to disable `multi-factor authentication`_ (MFA) for a user under whose account the key is generated. Actions using the key will have the same level of permissions as the user.
 
 
-SharePoint - Actions basic
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Basic
+~~~~~~
 
 It allows you to execute Plumsail Actions that don't require access to SharePoint. Use it with Parse CSV, Regular Expression Match and other similar actions.
 
