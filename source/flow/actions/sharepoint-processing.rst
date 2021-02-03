@@ -1326,6 +1326,8 @@ Create Team SharePoint Site with No Group
 Apply SharePoint site design
 ----------------------------
 Applies the selected site design to the specified SharePoint site. See more information `here <https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-design-overview>`_. You can get a list of available site design by PowerShell cmdlet `Get-SPOSiteDesign <https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Get-SPOSiteDesign?view=sharepoint-ps>`_
+Please find an example of using the action in this article `How to apply a site design to SharePoint site using Apply Site Design action <https://plumsail.com/docs/actions/v1.x/flow/how-tos/sharepoint/apply-site-design.html>`_ .
+
 
 .. rubric:: Input Parameters
 
