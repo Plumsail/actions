@@ -31,6 +31,99 @@ Then I can export the site design to a power shell script
    :alt: PowerShell script export
 
 
+This is the site design JSON:
+
+.. code:: json
+
+   {
+    "$schema": "schema.json",
+    "actions": [
+        {
+            "verb": "setRegionalSettings",
+            "locale": 1033,
+            "sortOrder": 25
+        },
+        {
+            "verb": "addPrincipalToSPGroup",
+            "principal": "ContosoAdmins",
+            "group": "Visitors"
+        },
+        {
+            "verb": "createSPList",
+            "listName": "Employees",
+            "templateType": 100,
+            "subactions": [
+                {
+                    "displayName": "Full name",
+                    "internalName": "fullName",
+                    "isRequired": true,
+                    "addToDefaultView": false,
+                    "fieldType": "Text",
+                    "enforceUnique": false,
+                    "verb": "addSPField"
+                },
+                {
+                    "displayName": "Job Title",
+                    "internalName": "jobTitle",
+                    "isRequired": true,
+                    "addToDefaultView": false,
+                    "fieldType": "Text",
+                    "enforceUnique": false,
+                    "verb": "addSPField"
+                },
+                {
+                    "displayName": "Department",
+                    "internalName": "department",
+                    "isRequired": true,
+                    "addToDefaultView": false,
+                    "fieldType": "Text",
+                    "enforceUnique": false,
+                    "verb": "addSPField"
+                },
+                {
+                    "displayName": "Office",
+                    "internalName": "office",
+                    "isRequired": true,
+                    "addToDefaultView": false,
+                    "fieldType": "Text",
+                    "enforceUnique": false,
+                    "verb": "addSPField"
+                },
+                {
+                    "displayName": "Work Phone",
+                    "internalName": "workPhone",
+                    "isRequired": true,
+                    "addToDefaultView": false,
+                    "fieldType": "Text",
+                    "enforceUnique": false,
+                    "verb": "addSPField"
+                },
+                {
+                    "displayName": "Work Email",
+                    "internalName": "workEmail",
+                    "isRequired": true,
+                    "addToDefaultView": false,
+                    "fieldType": "Text",
+                    "enforceUnique": false,
+                    "verb": "addSPField"
+                },
+                {
+                    "verb": "setTitle",
+                    "title": "employees"
+                }
+             ]
+          }
+      ],
+      "bindata": {},
+      "version": 1
+    }
+
+
+.. note::
+
+   You can download the sample `JSON <../../../_static/files/flow/how-tos/apply-site-design-json-sample.json>`_ and `PowerShell script <../../../_static/files/flow/how-tos/employees_list_sitescript.ps1>`_ or just make you own JSON or PS script to add a site design.
+
+
 How to add a site design to your SharePoint tenant
 ---------------------------------------------------
 
@@ -61,11 +154,7 @@ This is a simple flow to do this:
    :alt: Apply site design
 
 
-You can use the action with Site Design ID too. To get the ID you can use a PowerShell command  
-
-.. code:: 
-    
-    Get-SPOSiteDesign
+You can use the action with Site Design ID too. To get the ID you can use a PowerShell command `Get-SPOSiteDesign <https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/get-spositedesign>`_
 
 .. image:: ../../../_static/img/flow/sharepoint/get-site-design-ps-command.png
    :alt: Get Site design ID

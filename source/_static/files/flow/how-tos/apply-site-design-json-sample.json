@@ -1,0 +1,82 @@
+{
+  "$schema": "schema.json",
+  "actions": [
+      {
+          "verb": "setRegionalSettings",
+          "locale": 1033,
+          "sortOrder": 25
+      },
+      {
+          "verb": "addPrincipalToSPGroup",
+          "principal": "ContosoAdmins",
+          "group": "Visitors"
+      },
+      {
+          "verb": "createSPList",
+          "listName": "Employees",
+          "templateType": 100,
+          "subactions": [
+              {
+                  "displayName": "Full name",
+                  "internalName": "fullName",
+                  "isRequired": true,
+                  "addToDefaultView": false,
+                  "fieldType": "Text",
+                  "enforceUnique": false,
+                  "verb": "addSPField"
+              },
+              {
+                  "displayName": "Job Title",
+                  "internalName": "jobTitle",
+                  "isRequired": true,
+                  "addToDefaultView": false,
+                  "fieldType": "Text",
+                  "enforceUnique": false,
+                  "verb": "addSPField"
+              },
+              {
+                  "displayName": "Department",
+                  "internalName": "department",
+                  "isRequired": true,
+                  "addToDefaultView": false,
+                  "fieldType": "Text",
+                  "enforceUnique": false,
+                  "verb": "addSPField"
+              },
+              {
+                  "displayName": "Office",
+                  "internalName": "office",
+                  "isRequired": true,
+                  "addToDefaultView": false,
+                  "fieldType": "Text",
+                  "enforceUnique": false,
+                  "verb": "addSPField"
+              },
+              {
+                  "displayName": "Work Phone",
+                  "internalName": "workPhone",
+                  "isRequired": true,
+                  "addToDefaultView": false,
+                  "fieldType": "Text",
+                  "enforceUnique": false,
+                  "verb": "addSPField"
+              },
+              {
+                  "displayName": "Work Email",
+                  "internalName": "workEmail",
+                  "isRequired": true,
+                  "addToDefaultView": false,
+                  "fieldType": "Text",
+                  "enforceUnique": false,
+                  "verb": "addSPField"
+              },
+              {
+                  "verb": "setTitle",
+                  "title": "employees"
+              }
+          ]
+      }
+  ],
+  "bindata": {},
+  "version": 1
+}
