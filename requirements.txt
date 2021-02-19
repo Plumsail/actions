@@ -1,4 +1,1 @@
-sphinx_rtd_theme
-guzzle_sphinx_theme
 sphinx-sitemap
-Sphinx==1.4.8
