@@ -17,19 +17,24 @@ What are executions?
 
 We consider an execution each time an action is exectued in Power Automate (Microsoft Flow), Azure Logic Apps, PowerApps or called from REST API.
 
-What happens when credits are spent?
---------------------------------------
+What happens when executions are spent?
+---------------------------------------
 
-You can see usage stats in your Plumsail Documents account. If you see that you most likely reach the limit this month, you can purchase `additional 500 executions <https://plumsail.com/actions/store/>`_ or pay a differential cost to `start using another plan <upgrade-renew.html>`_.
+You can control usage stats in your `Plumsail Actions account <https://account.plumsail.com/actions/subscription>`_.
+If you see that you most likely reach the limit this month, you can purchase `additional 500 executions`_ or pay a differential cost to `start using another plan`_.
 
-The executions amount will be reset at 1st day in a month according to your current plan.
+The executions amount will be reset at 1st day of a month according to your current plan.
 
-Trial subscription
-------------------
+How to upgrade or renew subscription
+------------------------------------
 
-Likely you start using Plumsail Actions with a trial. The trial version gives you an opportunity to try our product on "Orca" plan. The trial period lasts for 30 days. If you choose not to purchase the license, the product will stop working.
+`Subscription management`_ is available in the Plumsail account.
 
 End-User Software License Agreement
 ------------------------------------
 
 `End-User Software License Agreement <https://plumsail.com/license-agreement/>`_
+
+.. _`additional 500 executions`: ../user-guide/manage-email-notifications.html#how-to-increase-the-monthly-limit-of-executions
+.. _`start using another plan`: ./licensing-details.html#how-to-upgrade-or-renew-subscription
+.. _`Subscription management`: ../user-guide/manage-email-notifications.html#how-to-manage-subscription
