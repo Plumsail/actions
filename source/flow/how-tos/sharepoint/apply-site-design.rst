@@ -1,4 +1,4 @@
-How to apply a site design to SharePoint site using Apply Site Design action
+How to create SharePoint list using Site Design and Power Automate
 =====================================================================================
 
 This article demonstrates how to create a Site design and add it to your SharePoint domain and apply it using `Apply Site Design action <https://plumsail.com/docs/actions/v1.x/flow/actions/sharepoint-processing.html#apply-sharepoint-site-design>`_.
