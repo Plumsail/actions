@@ -1,7 +1,7 @@
 Plumsail Actions Data Processing Agreement
 ==========================================
 
-.. Note:: Updated 28 June, 2021
+.. Note:: Updated 29 June, 2021
 
 From the date of subscribing the Plumsail Actions (Service) by the Subscriber: (hereafter referred to as the "**Agreement**")
 
